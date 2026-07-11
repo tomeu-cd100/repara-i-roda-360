@@ -11,17 +11,12 @@ de l'ofici**.
 
 ## El mapa del curs (el teu viatge de mecànic/a)
 
-```
-1r TRIMESTRE — El taller          2n TRIMESTRE — Ajust fi        3r TRIMESTRE — Al carrer
-┌───────────────────────────┐    ┌────────────────────────┐    ┌────────────────────────┐
-│ 📍 SA0  Punt de partida   │    │ 🔩 SA5  Transmissió I  │    │ 💡 SA8  Seguretat       │
-│ 🚲 SA1  La bici per dins  │    │ ⚙️ SA6  Transmissió II │    │ 🚦 SA9  Repara i Roda   │
-│ 🧼 SA2  Posada a punt     │    │ 🪑 SA7  Punts contacte │    │      sortides + rutes   │
-│ 🛞 SA3  Rodes i punxades  │    │                        │    │      360/VR + EXPO 🎪    │
-│ 🛑 SA4  Frens             │    │                        │    │      + CERTIFICAT 🏅    │
-└───────────────────────────┘    └────────────────────────┘    └────────────────────────┘
-        ETS AQUÍ 📍
-```
+Cada setmana tens **dues hores separades**: **2 hores al taller de bicicletes** (seguides) i,
+**a part, 1 hora a l'aula maker**. Aquí les veus totes dues, SA a SA. El número de dins de cada
+cercle és la SA: la peça que fas al maker (carril de baix) serveix per al que arregles al taller
+(carril de dalt).
+
+[[MAPA_CURS]]
 
 ## Com funciona aquest curs (les 6 coses que has de saber)
 

@@ -354,6 +354,11 @@ img { max-width: 100%; }
 .mapa-curs svg {
   display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto;
 }
+/* mapa de dos carrils (bicicletes 2h / maker 1h) */
+.mapa2 { margin: 1.4rem 0; overflow-x: auto; }
+.mapa2 svg {
+  display: block; width: 1040px; max-width: 100%; height: auto; margin: 0 auto;
+}
 
 /* ── peu ───────────────────────────────────── */
 .site-footer {

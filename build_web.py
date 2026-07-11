@@ -232,6 +232,80 @@ def checkboxify(html_text: str) -> str:
     return html_text
 
 
+# ── mapa del curs en SVG: dos carrils (bicicletes 2h / maker 1h) ──────────────
+_MAP_BIKES = ["Punt de\npartida", "La bici\nper dins", "Posada\na punt",
+              "Rodes i\npunxades", "Frens", "Transmis-\nsió I", "Transmis-\nsió II",
+              "Punts de\ncontacte", "Seguretat", "Sortides\ni rutes"]
+_MAP_MAKER = ["Carnets\nd'eines", "Placa\nidentif.", "Organit-\nzadors", "Kit de\nroda",
+              "Peces\nde fre", "Mesura-\ndor", "Classifi-\ncadora", "Peça de\nconfort",
+              "Suport\ncàmera 360", "Rutes\n360/VR"]
+
+
+def _map_label(cx, y, text, size=10.5):
+    out = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-size="{size}" '
+           f'font-weight="600" fill="var(--ink)">']
+    for i, ln in enumerate(text.split("\n")):
+        dy = "0" if i == 0 else "1.15em"
+        out.append(f'<tspan x="{cx}" dy="{dy}">{html.escape(ln)}</tspan>')
+    out.append("</text>")
+    return "".join(out)
+
+
+def course_map_svg():
+    def cx(i):
+        return 70 + i * 100
+    p = ['<div class="mapa2"><svg viewBox="0 0 1040 415" '
+         'xmlns="http://www.w3.org/2000/svg" '
+         'font-family="system-ui, Segoe UI, Roboto, sans-serif" role="img" '
+         'aria-label="Mapa del curs amb dos carrils: taller de bicicletes (2 hores) '
+         'i aula maker (1 hora), alineats per SA.">',
+         '<defs><linearGradient id="mgb" x1="0" y1="0" x2="0" y2="1">'
+         '<stop offset="0" stop-color="#8b7dff"/><stop offset="1" stop-color="#6d5efc"/>'
+         '</linearGradient></defs>']
+    # trimestres
+    for lbl, x in [("1r trimestre", 270), ("2n trimestre", 670), ("3r trimestre", 920)]:
+        p.append(f'<text x="{x}" y="20" text-anchor="middle" font-size="12" '
+                 f'font-weight="700" fill="var(--ink-soft)">{lbl}</text>')
+    for x in (520, 820):
+        p.append(f'<line x1="{x}" y1="28" x2="{x}" y2="398" stroke="var(--ink-soft)" '
+                 f'stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 6"/>')
+    # PANEL bicicletes
+    p.append('<rect x="10" y="44" width="1020" height="150" rx="16" '
+             'fill="var(--accent)" fill-opacity="0.06" stroke="var(--accent)" stroke-opacity="0.30"/>')
+    p.append('<rect x="10" y="44" width="1020" height="28" rx="14" fill="var(--accent)"/>')
+    p.append('<rect x="10" y="58" width="1020" height="14" fill="var(--accent)"/>')
+    p.append('<text x="26" y="63" font-size="13.5" font-weight="800" fill="#fff">'
+             '&#128690;&#160;&#160;TALLER DE BICICLETES&#160;&#183;&#160;2 hores seguides</text>')
+    # ticks de vincle
+    for i in range(10):
+        p.append(f'<line x1="{cx(i)}" y1="196" x2="{cx(i)}" y2="232" stroke="var(--ink-soft)" '
+                 f'stroke-opacity="0.22" stroke-width="1.4" stroke-dasharray="2 4"/>')
+    p.append(f'<line x1="{cx(0)}" y1="135" x2="{cx(9)}" y2="135" stroke="var(--accent)" '
+             f'stroke-opacity="0.30" stroke-width="3"/>')
+    for i, lab in enumerate(_MAP_BIKES):
+        p.append(f'<circle cx="{cx(i)}" cy="135" r="15" fill="url(#mgb)"/>')
+        p.append(f'<text x="{cx(i)}" y="139" text-anchor="middle" font-size="12" '
+                 f'font-weight="800" fill="#fff">{i}</text>')
+        p.append(_map_label(cx(i), 165, lab))
+    # PANEL maker
+    p.append('<rect x="10" y="234" width="1020" height="150" rx="16" '
+             'fill="var(--accent-2)" fill-opacity="0.08" stroke="var(--accent-2)" stroke-opacity="0.35"/>')
+    p.append('<rect x="10" y="234" width="1020" height="28" rx="14" fill="var(--accent-2)"/>')
+    p.append('<rect x="10" y="248" width="1020" height="14" fill="var(--accent-2)"/>')
+    p.append('<text x="26" y="253" font-size="13.5" font-weight="800" fill="#fff">'
+             '&#128736;&#160;&#160;AULA MAKER&#160;&#183;&#160;1 hora (a part)</text>')
+    p.append(f'<line x1="{cx(0)}" y1="325" x2="{cx(9)}" y2="325" stroke="var(--accent-2)" '
+             f'stroke-opacity="0.35" stroke-width="3"/>')
+    for i, lab in enumerate(_MAP_MAKER):
+        p.append(f'<circle cx="{cx(i)}" cy="325" r="15" fill="var(--bg-card)" '
+                 f'stroke="var(--accent-2)" stroke-width="2.5"/>')
+        p.append(f'<text x="{cx(i)}" y="329" text-anchor="middle" font-size="12" '
+                 f'font-weight="800" fill="var(--accent-2)">{i}</text>')
+        p.append(_map_label(cx(i), 355, lab))
+    p.append("</svg></div>")
+    return "".join(p)
+
+
 def render_page(title, body, out_rel, crumb):
     prefix = rel_prefix(out_rel)
     crumb_html = " <span class=\"sep\">›</span> ".join(
@@ -476,6 +550,8 @@ def build_doc_pages():
         current_dir = rel.rsplit("/", 1)[0] if "/" in rel else ""
         body = rewrite_links(body, out_rel, current_dir)
         body = checkboxify(body)
+        if "[[MAPA_CURS]]" in body:
+            body = body.replace("<p>[[MAPA_CURS]]</p>", course_map_svg())
         plain_src = body
         parts = rel.split("/")
         if len(parts) >= 3 and parts[0] == "Classes" and sa_idx(parts[1]) is not None:
@@ -516,6 +592,10 @@ def build_section_indexes(pages):
         icon = SECTION_ICONS.get(section, "📄")
         if section == "Classes":
             body_html = (f"<h1>{icon} El curs, SA a SA</h1>"
+                         f"<p class=\"lead\">Cada setmana: <strong>2 h al taller de bicicletes</strong> "
+                         f"(seguides) i, a part, <strong>1 h a l'aula maker</strong>. Els dos carrils "
+                         f"van alineats per SA.</p>"
+                         f"{course_map_svg()}"
                          f"<p class=\"lead\">Clica una SA per obrir-la: hi trobaràs la fitxa de "
                          f"l'alumnat, el material del docent i la rúbrica.</p>"
                          f"<div class='grid'>{sa_cards('../')}</div>")
