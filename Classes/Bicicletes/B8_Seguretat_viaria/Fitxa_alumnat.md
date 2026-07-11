@@ -12,6 +12,11 @@ Deixa una bici equipada i legal per circular i coneix les normes de circulació.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/HnpAjaHac9o" title="20 normes de circulació per a bicicletes (DGT, en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: 20 normes de circulació per a bicicletes (DGT, en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

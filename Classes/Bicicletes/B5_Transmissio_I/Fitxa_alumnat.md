@@ -12,6 +12,11 @@ Comprova si la cadena està gastada, mantén-la o canvia-la, i revisa bieles i p
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/W3alcslVgaE" title="Com canviar la cadena de la bicicleta (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Com canviar la cadena de la bicicleta (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

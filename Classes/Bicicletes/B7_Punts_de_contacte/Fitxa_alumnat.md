@@ -12,6 +12,11 @@ Ajusta una bici a la persona que la farà servir: alçada, posició, direcció s
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/iha16E-qMmc" title="Com ajustar el seient: 3 ajustos bàsics (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Com ajustar el seient: 3 ajustos bàsics (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

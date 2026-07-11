@@ -12,6 +12,11 @@ Acaba les bicis, surt a rodar amb seguretat i dona-les a la comunitat.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/6Zmc18NzWeg" title="Normes de circulació i seguretat vial per a ciclistes (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Normes de circulació i seguretat vial per a ciclistes (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

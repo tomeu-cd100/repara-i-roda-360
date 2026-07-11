@@ -12,6 +12,11 @@ Mou-te pel taller amb seguretat i autonomia: guanya't el carnet d'eines.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/2Lq-OvujjsM" title="Eines bàsiques d'un taller de bicis (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Eines bàsiques d'un taller de bicis (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

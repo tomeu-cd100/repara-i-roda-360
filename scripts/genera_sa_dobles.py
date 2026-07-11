@@ -124,7 +124,8 @@ def fitxa_md(track, s):
 
 # ─────────────────────────── DADES: BICICLETES (B0–B9) ──────────────────────
 BICI = [
- {"code": "B0", "folder": "B0_Punt_de_partida", "name": "Punt de partida", "setm": "1–2",
+ {"video": ("Eines bàsiques d'un taller de bicis (en castellà)", "2Lq-OvujjsM"),
+  "code": "B0", "folder": "B0_Punt_de_partida", "name": "Punt de partida", "setm": "1–2",
   "producte": "**Carnet d'eines** + contracte d'aula + avaluació inicial",
   "compl": "l'hora de maker **M0** (benvinguda i carnet de màquina)",
   "desc": "Abans de tocar cap bici, cal conèixer el taller, les eines i treballar segur.",
@@ -164,7 +165,8 @@ BICI = [
            ("Seguretat i contracte", "Observació", "CA1.4, CA6.1"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B1", "folder": "B1_La_bici_per_dins", "name": "La bici per dins", "setm": "3–4",
+ {"video": ("Les parts de la bicicleta (en castellà)", "uQ2csLLygps"),
+  "code": "B1", "folder": "B1_La_bici_per_dins", "name": "La bici per dins", "setm": "3–4",
   "producte": "**Fitxa de recepció** d'una bici + diagnosi",
   "compl": "l'hora de maker **M1** (placa identificativa a làser)",
   "desc": "Han arribat les bicis de donació. Cal conèixer-les, identificar-les i diagnosticar-les.",
@@ -199,7 +201,8 @@ BICI = [
            ("Fitxa de recepció", "Rúbrica de diagnosi", "CA1.2"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B2", "folder": "B2_Posada_a_punt", "name": "Posada a punt", "setm": "5–7",
+ {"video": ("Com netejar i greixar la cadena (en castellà)", "1Z14L21k3yA"),
+  "code": "B2", "folder": "B2_Posada_a_punt", "name": "Posada a punt", "setm": "5–7",
   "producte": "Una bici amb el **M-check** fet",
   "compl": "l'hora de maker **M2** (organitzadors d'eines)",
   "desc": "Un mecànic segueix una rutina: netejar, greixar i fer la revisió de seguretat (M-check).",
@@ -263,7 +266,8 @@ BICI = [
            ("Punxada reparada", "Prova: la roda aguanta", "CA1.2, CA1.3"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B4", "folder": "B4_Frens", "name": "Frens", "setm": "11–14",
+ {"video": ("Com muntar i ajustar frens V-Brake (en castellà)", "-KoffE0P9HE"),
+  "code": "B4", "folder": "B4_Frens", "name": "Frens", "setm": "11–14",
   "producte": "Una bici amb els **frens segurs**",
   "compl": "l'hora de maker **M4** (separadors i guies de fre en 3D)",
   "desc": "El fre és el sistema de seguretat: una bici que no frena bé no es pot donar.",
@@ -298,7 +302,8 @@ BICI = [
            ("Comprovació de seguretat", "Prova de frenada", "CA1.4"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B5", "folder": "B5_Transmissio_I", "name": "Transmissió I: cadena i pedals",
+ {"video": ("Com canviar la cadena de la bicicleta (en castellà)", "W3alcslVgaE"),
+  "code": "B5", "folder": "B5_Transmissio_I", "name": "Transmissió I: cadena i pedals",
   "setm": "15–17", "producte": "Cadena **mantinguda o substituïda**",
   "compl": "l'hora de maker **M5** (mesurador de desgast de cadena)",
   "desc": "La transmissió és el cor de la bici: converteix el pedaleig en moviment.",
@@ -330,7 +335,8 @@ BICI = [
            ("Manteniment de cadena", "Observació", "CA1.3, CA2.2"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B6", "folder": "B6_Transmissio_II", "name": "Transmissió II: canvis i desviadors",
+ {"video": ("Com ajustar el desviador (canvi) posterior (en castellà)", "oo8IIL2ofxY"),
+  "code": "B6", "folder": "B6_Transmissio_II", "name": "Transmissió II: canvis i desviadors",
   "setm": "18–21", "producte": "Bici amb els **canvis ben ajustats**",
   "compl": "l'hora de maker **M6** (caixa classificadora de recanvis)",
   "desc": "Que una bici canviï de marxa suau i sense saltar separa una reparació correcta d'una excel·lent.",
@@ -363,7 +369,8 @@ BICI = [
            ("Diagnosi encreuada", "Coavaluació entre parelles", "CA1.2, CA6.2"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B7", "folder": "B7_Punts_de_contacte", "name": "Punts de contacte", "setm": "22–24",
+ {"video": ("Com ajustar el seient: 3 ajustos bàsics (en castellà)", "iha16E-qMmc"),
+  "code": "B7", "folder": "B7_Punts_de_contacte", "name": "Punts de contacte", "setm": "22–24",
   "producte": "Bici **ajustada a la persona**",
   "compl": "l'hora de maker **M7** (peces de confort i adaptadors)",
   "desc": "Una bici pot ser perfecta i incòmoda si no s'ajusta a qui la fa servir.",
@@ -396,7 +403,8 @@ BICI = [
            ("Ergonomia bici-usuari", "Prova bici-usuari", "CA1.2"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B8", "folder": "B8_Seguretat_viaria", "name": "Seguretat i normativa viària",
+ {"video": ("20 normes de circulació per a bicicletes (DGT, en castellà)", "HnpAjaHac9o"),
+  "code": "B8", "folder": "B8_Seguretat_viaria", "name": "Seguretat i normativa viària",
   "setm": "25–27", "producte": "Bici **equipada i legal** per circular",
   "compl": "l'hora de maker **M8** (suports de llum i suport de càmera 360)",
   "desc": "Abans de sortir al carrer, la bici ha de ser visible i legal i cal conèixer les normes.",
@@ -424,7 +432,8 @@ BICI = [
            ("Normes de circulació", "Casos pràctics al pati", "CA5.1"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
 
- {"code": "B9", "folder": "B9_Repara_i_Roda", "name": "Repara i Roda (sortides)", "setm": "28–35",
+ {"video": ("Normes de circulació i seguretat vial per a ciclistes (en castellà)", "6Zmc18NzWeg"),
+  "code": "B9", "folder": "B9_Repara_i_Roda", "name": "Repara i Roda (sortides)", "setm": "28–35",
   "producte": "**Bicis acabades i donades** + exposició",
   "compl": "l'hora de maker **M9** (rutes virtualitzades 360/VR per a l'exposició)",
   "desc": "Sortim al carrer amb les bicis reparades, apliquem les normes i acabem amb l'exposició.",
