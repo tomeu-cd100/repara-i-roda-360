@@ -5,8 +5,15 @@
 ## El repte 🚲
 Deixa una bici amb els frens ajustats, canvia el que calgui i comprova que frena.
 
-## Els meus passos
-*(marca'ls a mesura que els fas)*
+## 🧑‍🏫 Com ho aprendràs avui
+**No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.
+
+1. **Mira la demostració** del profe (com es fa, pas a pas).
+2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
+3. **Fes-ho tu** i marca els passos de sota.
+
+## Els passos d'avui
+*(marca'ls a mesura que els aprens i els fas)*
 
 - [ ] He ajustat un fre de sabata.
 - [ ] He centrat una pinça de disc o canviat pastilles.

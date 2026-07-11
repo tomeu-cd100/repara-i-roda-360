@@ -5,8 +5,15 @@
 ## El repte 🛠️
 Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb seguretat.
 
-## Els meus passos
-*(marca'ls a mesura que els fas)*
+## 🧑‍🏫 Com ho aprendràs avui
+**No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.
+
+1. **Mira la demostració** del profe (com es fa, pas a pas).
+2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
+3. **Fes-ho tu** i marca els passos de sota.
+
+## Els passos d'avui
+*(marca'ls a mesura que els aprens i els fas)*
 
 - [ ] Sé què fabricarem per al taller aquest curs.
 - [ ] Tinc el carnet de màquina (nivell làser i nivell 3D).
