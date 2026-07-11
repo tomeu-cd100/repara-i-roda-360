@@ -586,6 +586,9 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
         card("impressos/Full_valoracio_diaria.pdf", "🗂️", "Valoració diària de grup (graella)",
              "A4 apaïsat: tot el grup d'un cop d'ull, taller + aula maker", "imprimible"),
     ])
+    sections = "\n".join(
+        card(slugify(s) + "/index.html", SECTION_ICONS[s], s, SECTION_DESC[s])
+        for s in SECTIONS)
     body = f"""
 <h1>👩‍🏫 Per al professorat</h1>
 <p class="lead">El material complet de l'optativa. Comença per la programació didàctica i tingues
@@ -687,11 +690,12 @@ def copy_assets():
         if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"):
             dest.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(f, dest / slugify(f.name))
-    # tots els PDF imprimibles de les carpetes de contingut → web/impressos/
-    for section in SECTIONS:
+    # PDF imprimibles PROPIS → web/impressos/. NOMÉS d'aquestes carpetes: mai de
+    # Recursos/ (hi ha el llibre de manteniment, amb drets d'autor, que no es publica).
+    for section in ("Avaluació", "Programació didàctica"):
         d = ROOT / section
         if d.is_dir():
-            for pdf in d.rglob("*.pdf"):
+            for pdf in d.glob("*.pdf"):
                 (OUT / "impressos").mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(pdf, OUT / "impressos" / pdf.name)
     if (ROOT / "LICENSE").exists():
