@@ -361,6 +361,14 @@ img { max-width: 100%; }
   text-align: center; color: var(--ink-soft); background: var(--bg-card); min-height: 9rem;
   display: flex; align-items: center; justify-content: center; }
 .doc img.zoomable { cursor: zoom-in; }
+.eines-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: .8rem; margin: 1.2rem 0; }
+.eina { display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: .35rem; padding: .9rem .6rem; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--bg-card); box-shadow: var(--shadow); }
+.eina svg { width: 58px; height: 58px; color: var(--accent); }
+.eina .num { font-weight: 800; color: var(--ink-soft); font-size: .78rem; }
+.eina .nom { font-weight: 600; font-size: .88rem; line-height: 1.2; }
 .zoomhint { font-size: .85rem; color: var(--ink-soft); margin-top: .3rem; }
 .g2 ol { margin: 0; padding-left: 1.4rem; }
 .g2 ol li { margin: .35rem 0; font-weight: 600; }
