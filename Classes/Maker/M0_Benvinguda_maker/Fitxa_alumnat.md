@@ -14,6 +14,10 @@ Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb s
 
 **Una cosa que vull fabricar aquest curs:** ________________
 
+## 🖨️ Per imprimir
+- [Contracte d'aula i carnet de màquina (PDF)](Contracte_carnet_maker.pdf)
+- [Diari setmanal (PDF)](Diari_setmanal_paper.pdf)
+
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|

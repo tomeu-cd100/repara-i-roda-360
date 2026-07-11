@@ -87,6 +87,10 @@ def fitxa_md(track, s):
         for titol, linia in s["fitxa"]:
             out.append(f"**{titol}** {linia}")
             out.append("")
+    if s.get("imprimibles"):
+        out.append("## 🖨️ Per imprimir")
+        out += [f"- [{txt}]({fitxer})" for txt, fitxer in s["imprimibles"]]
+        out.append("")
     out.append("## Com m'avaluaran")
     out.append("| Què miraran | Com |")
     out.append("|-------------|-----|")
@@ -131,6 +135,9 @@ BICI = [
                 "`Avaluació/Avaluacio_inicial_alumne.pdf`."],
   "fitxa": [("Una eina que ara sé fer servir:", "________________"),
             ("Una norma de seguretat important i per què:", "________________")],
+  "imprimibles": [("Contracte d'aula i carnet d'eines (PDF)", "Contracte_carnet_bicicletes.pdf"),
+                  ("Avaluació inicial (PDF)", "Avaluacio_inicial_alumne.pdf"),
+                  ("Diari setmanal (PDF)", "Diari_setmanal_paper.pdf")],
   "aval": [("Carnet d'eines", "Checkpoint pràctic", "CA2.3, CA1.1"),
            ("Seguretat i contracte", "Observació", "CA1.4, CA6.1"),
            ("Diari del taller", "Pauta del diari", "CA4.1")]},
@@ -455,6 +462,8 @@ MAKER = [
                 "Imprimible: `Normativa/Passaport_alumne.pdf`."],
   "fitxa": [("La norma de seguretat més important de la làser:", "________________"),
             ("Una cosa que vull fabricar aquest curs:", "________________")],
+  "imprimibles": [("Contracte d'aula i carnet de màquina (PDF)", "Contracte_carnet_maker.pdf"),
+                  ("Diari setmanal (PDF)", "Diari_setmanal_paper.pdf")],
   "aval": [("Carnet de màquina", "Checkpoint pràctic", "CA1.4"),
            ("Seguretat a l'aula maker", "Observació", "CA1.4, CA6.1"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},

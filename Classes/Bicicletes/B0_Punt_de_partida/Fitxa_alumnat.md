@@ -15,6 +15,11 @@ Mou-te pel taller amb seguretat i autonomia: guanya't el carnet d'eines.
 
 **Una norma de seguretat important i per què:** ________________
 
+## 🖨️ Per imprimir
+- [Contracte d'aula i carnet d'eines (PDF)](Contracte_carnet_bicicletes.pdf)
+- [Avaluació inicial (PDF)](Avaluacio_inicial_alumne.pdf)
+- [Diari setmanal (PDF)](Diari_setmanal_paper.pdf)
+
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|
