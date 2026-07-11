@@ -90,7 +90,7 @@ professionalitzador:
 | **CE3** Dissenyar i fabricar amb tecnologies maker | **CE2** (2.2) + **CE5** (5.1, 5.2) | C6 | Procés tecnològic complet: dissenyar amb eines digitals (2D/3D) i fabricar amb **tècniques de fabricació digital: impressió 3D i tall** (bloc de sabers «Fabricació») |
 | **CE4** Documentar el treball tècnic | **CE3** (3.1, 3.2) + **CE5** (5.3) | C5 | Comunicar amb vocabulari i símbols tècnics; difondre amb eines digitals (memòria, exposició); captura 360 com a recurs de difusió |
 | **CE5** Seguretat i responsabilitat viària | **CE6** (6.2, 6.3) | C8 | Ús ecosocialment responsable de la tecnologia: **mobilitat eficient** (criteri 6.2) i ciutadania activa a l'espai urbà |
-| **CE6** Cooperació i contribució comunitària (ApS) | **CE1** (1.1) + **CE6** (6.3) + **CE3** (3.1) | C3, C8 | Solucions que **generen valor a la comunitat** i **projectes de servei a la comunitat**; treball en equip amb rols |
+| **CE6** Cooperació i contribució comunitària (ApS) | **CE1** (1.1) + **CE6** (6.3) + **CE3** (3.1) | C3, C8 | Solucions que **generen valor a la comunitat** i **projectes de servei a la comunitat**; treball en parella |
 
 ### Mapatge SA per SA
 
@@ -133,7 +133,7 @@ Contribució principal (●) i secundària (○):
 | Competència clau | Contribució | Com hi contribueix «Repara i Roda 360» |
 |------------------|:----------:|-----------------------------------------|
 | **STEM** | ● | Mecanismes, transmissió, mesura, tolerància, fabricació |
-| **Personal, social i d'aprendre a aprendre (CPSAA)** | ● | Autonomia, constància, rols, diari setmanal, autoestima |
+| **Personal, social i d'aprendre a aprendre (CPSAA)** | ● | Autonomia, constància, treball en parella, diari setmanal, autoestima |
 | **Emprenedora (CE)** | ● | Ofici real, protocols professionals, projecte amb destinatari |
 | **Ciutadana (CC)** | ● | Seguretat viària, ApS, mobilitat sostenible |
 | **Competència digital (CD)** | ○ | Disseny 2D/3D, captura 360/VR, memòria digital |

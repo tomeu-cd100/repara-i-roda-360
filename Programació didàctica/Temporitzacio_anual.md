@@ -70,7 +70,7 @@
 
 - **5 sortides urbanes** en bici (setmanes 28–32), dins les 2h de taller, amb cicle:
   1. **Preparació** (setmana anterior): visionat VR de la ruta, revisió de bicis, casc i armilla.
-  2. **Execució**: sortida amb rols de grup i captura 360 (suport fabricat a SA8).
+  2. **Execució**: sortida amb ordre de marxa i normes de circulació, i captura 360 (suport fabricat a SA8).
   3. **Reflexió**: diari setmanal + anàlisi d'infraestructures i comportaments viaris.
 - Cal: autoritzacions de famílies, comunicació al centre, ràtio d'acompanyament segons NOFC.
   Si alguna sortida no és possible (meteorologia, permisos), es fa pràctica de circulació al

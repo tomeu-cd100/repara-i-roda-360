@@ -48,10 +48,10 @@ a partir de la SA1.
 > **Focals d'aquesta SA.** A **totes les SA** s'hi avaluen, a més, els **constants** de sota
 > (avaluació contínua). Matriu completa: `Avaluació/Criteris_i_qualificacio.md`.
 
-- **CE6** → CA6.1 (assumir rols i normes de treball cooperatiu)
+- **CE6** → CA6.1 (treball en parella responsable i normes de treball)
 - **CE2** → CA2.3 (ordre del lloc de treball i control de les eines)
 - **CE1** → CA1.1 (identificar parts de la bici i funció de cada sistema — introducció)
-- **Constants (totes les SA)** → CA1.4 (seguretat) · CA4.1 (diari setmanal) · CA6.1 (rols)
+- **Constants (totes les SA)** → CA1.4 (seguretat) · CA4.1 (diari setmanal) · CA6.1 (treball en parella)
 
 **Ancoratge oficial (Tecnologia 4t):** CE1 oficial (necessitats de l'entorn), CE2 oficial
 (recursos i tècniques). Vegeu `Programació didàctica/Mapatge_competencial_oficial.md`.

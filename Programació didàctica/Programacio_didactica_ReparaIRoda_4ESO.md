@@ -112,9 +112,9 @@ La justificació pedagògica és triple:
   responsabilitat dins el grup.
 - **CA5.3** Analitza infraestructures i comportaments viaris i en fa una reflexió al diari.
 
-### CE6. Cooperar en equip amb rols rotatius i contribuir a la comunitat (ApS).
-- **CA6.1** Assumeix amb responsabilitat els rols rotatius (mecànic/a, ajudant, encarregat/da
-  d'eines, supervisor/a).
+### CE6. Cooperar en parella i contribuir a la comunitat (ApS).
+- **CA6.1** Treballa en parella amb responsabilitat, repartint-se la feina i el control de les
+  eines.
 - **CA6.2** Ajuda els companys i demana o ofereix suport quan cal.
 - **CA6.3** Participa en les accions comunitàries (captació de bicis, donació, exposició).
 
@@ -163,8 +163,9 @@ La justificació pedagògica és triple:
   4. Microrepte o pausa activa (10')
   5. Pràctica autònoma (25')
   6. Tancament i reflexió — diari setmanal (5')
-- **Treball cooperatiu amb rols rotatius:** mecànic/a, ajudant, encarregat/da d'eines,
-  supervisor/a.
+- **Treball individual o en parella** (no en grups): cada alumne/a treballa en una bici, sol/a
+  o amb un company/a, repartint-se la feina i les eines. El docent supervisa i dona suport
+  individualitzat, cosa que afavoreix el seguiment en un grup reduït.
 - **Reforç positiu i feedback immediat**; tasques curtes amb resultat visible.
 - **Materials visuals:** pictogrames, fitxes plastificades amb passos numerats, vídeos curts.
 
@@ -174,7 +175,7 @@ La justificació pedagògica és triple:
 - **Acció i expressió:** l'alumnat pot mostrar l'aprenentatge reparant, fabricant, documentant
   amb foto/360 o explicant; el diari admet dibuix, esquema o text.
 - **Implicació:** feina amb sentit real (bicis que es donaran), elecció de microprojectes,
-  rols rotatius, reconeixement amb el certificat final.
+  parelles d'ajuda mútua, reconeixement amb el certificat final.
 
 ---
 
@@ -219,7 +220,7 @@ i reparació, autoavaluació i coavaluació trimestrals, exposició pública fin
 | Competència transversal | Què s'hi valora | Instruments | Pes |
 |---|---|---|---|
 | **C6** — emprenedora i professionalitzadora | Tècnica de taller i fabricació (CE1, CE2, CE3) | Rúbrica d'observació de taller + microprojectes maker | **35 %** |
-| **C3** — personal, social i d'aprendre a aprendre | Autonomia, responsabilitat, constància (CE2, CE6) | Diari setmanal + rols + carnet d'eines/màquina | **25 %** |
+| **C3** — personal, social i d'aprendre a aprendre | Autonomia, responsabilitat, constància (CE2, CE6) | Diari setmanal + carnet d'eines/màquina + observació | **25 %** |
 | **C8** — ciutadana i cívica | Cooperació, seguretat, comportament viari, ApS (CE5, CE6) | Observació + sortides + accions comunitàries | **25 %** |
 | **C5** — digital | Documentar i comunicar (CE4) | Rutes 360/VR, memòria digital, exposició | **15 %** |
 
@@ -245,7 +246,7 @@ programació està dissenyada des de l'accessibilitat, no com a adaptació poste
 - **Sessió tipus fixa i predictible** que redueix l'ansietat i facilita l'autoregulació.
 - **Instruccions segmentades** amb suport visual; fitxes plastificades amb passos numerats.
 - **Tempos flexibles** i tasques graduades per nivells; ningú no queda aturat.
-- **Rols rotatius** que garanteixen participació i responsabilitat de tothom.
+- **Treball en parella** i seguiment individualitzat, possible gràcies al grup reduït.
 - **Visionat previ en VR de les rutes** del 3r trimestre: la sortida ja s'ha «viscut» abans de
   fer-la, cosa que redueix l'ansietat i anticipa els punts conflictius.
 - Coordinació amb **tutoria, orientació i CAD** per a alumnat amb NESE.

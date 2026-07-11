@@ -18,7 +18,7 @@
 
 **Nom:** ______________________ **Setmana:** ____ **SA:** ____ **Data:** ____/____/______
 
-**El meu rol aquesta setmana:** ⬜ Mecànic/a ⬜ Ajudant ⬜ Encarregat/da d'eines ⬜ Supervisor/a
+**Aquesta setmana treballo:** ⬜ sol/a ⬜ amb parella — company/a: ________________
 
 **Bici en què he treballat (núm. de placa):** ________
 
