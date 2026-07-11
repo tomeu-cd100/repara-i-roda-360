@@ -687,7 +687,7 @@ def build_section_indexes(pages):
                          f"complementen: el <strong>taller de bicicletes</strong> (2 h) i l'<strong>aula "
                          f"maker</strong> (1 h). Tria on vols entrar.</p>"
                          f"<div class='grid'>{tria}</div>"
-                         f"<h2>Com es complementen (SA a SA)</h2>"
+                         f"<h2>Com es complementen (unitat a unitat)</h2>"
                          f"{course_map_svg()}")
         else:
             if not entries:
