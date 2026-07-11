@@ -54,24 +54,51 @@ SECTION_DESC = {
     "Recursos": "Material de referència del taller",
 }
 
-# (codi, nom, trimestre, "icona + producte", carpeta)
-SA_CARDS = [
-    ("SA0", "Punt de partida", "setm. 1-2", "📍 Carnets d'eines i de màquina", "SA0"),
-    ("SA1", "La bici per dins", "1r trim.", "🚲 Fitxa de recepció + placa", "SA1"),
-    ("SA2", "Posada a punt", "1r trim.", "🧼 M-check + organitzador d'eines", "SA2"),
-    ("SA3", "Rodes i punxades", "1r trim.", "🛞 Punxada reparada + kit", "SA3"),
-    ("SA4", "Frens", "1r-2n trim.", "🛑 Frens segurs + peces 3D", "SA4"),
-    ("SA5", "Transmissió I", "2n trim.", "🔩 Cadena + mesurador de desgast", "SA5"),
-    ("SA6", "Transmissió II", "2n trim.", "⚙️ Canvis ajustats + classificadora", "SA6"),
-    ("SA7", "Punts de contacte", "2n trim.", "🪑 Bici ajustada + peça de confort", "SA7"),
-    ("SA8", "Seguretat i accessoris", "3r trim.", "💡 Bici legal + suport càmera 360", "SA8"),
-    ("SA9", "Repara i Roda", "3r trim. ⭐", "🚦 Sortides, rutes VR i exposició", "SA9"),
+# Dues assignatures separades. Cada card: (codi, nom, trimestre, icona, carpeta_rel a Classes/)
+BIKE_CARDS = [
+    ("B0", "Punt de partida", "setm. 1-2", "📍", "Bicicletes/B0_Punt_de_partida"),
+    ("B1", "La bici per dins", "1r trim.", "🚲", "Bicicletes/B1_La_bici_per_dins"),
+    ("B2", "Posada a punt", "1r trim.", "🧼", "Bicicletes/B2_Posada_a_punt"),
+    ("B3", "Rodes i punxades", "1r trim.", "🛞", "Bicicletes/B3_Rodes_i_punxades"),
+    ("B4", "Frens", "1r-2n trim.", "🛑", "Bicicletes/B4_Frens"),
+    ("B5", "Transmissió I", "2n trim.", "🔩", "Bicicletes/B5_Transmissio_I"),
+    ("B6", "Transmissió II", "2n trim.", "⚙️", "Bicicletes/B6_Transmissio_II"),
+    ("B7", "Punts de contacte", "2n trim.", "🪑", "Bicicletes/B7_Punts_de_contacte"),
+    ("B8", "Seguretat viària", "3r trim.", "💡", "Bicicletes/B8_Seguretat_viaria"),
+    ("B9", "Repara i Roda", "3r trim.", "🚦", "Bicicletes/B9_Repara_i_Roda"),
 ]
+MAKER_CARDS = [
+    ("M0", "Benvinguda maker", "setm. 1-2", "🔒", "Maker/M0_Benvinguda_maker"),
+    ("M1", "Placa identificativa", "1r trim.", "🔑", "Maker/M1_Placa"),
+    ("M2", "Organitzadors d'eines", "1r trim.", "🧰", "Maker/M2_Organitzadors"),
+    ("M3", "Kit de reparació", "1r trim.", "🧳", "Maker/M3_Kit_reparacio"),
+    ("M4", "Peces de fre", "1r-2n trim.", "🖨️", "Maker/M4_Peces_de_fre"),
+    ("M5", "Mesurador de desgast", "2n trim.", "📏", "Maker/M5_Mesurador"),
+    ("M6", "Caixa classificadora", "2n trim.", "🗄️", "Maker/M6_Classificadora"),
+    ("M7", "Peces de confort", "2n trim.", "🛋️", "Maker/M7_Confort"),
+    ("M8", "Suports i captura 360", "3r trim.", "🎥", "Maker/M8_Suports_i_360"),
+    ("M9", "Rutes 360/VR", "3r trim.", "🥽", "Maker/M9_Rutes_VR"),
+]
+TRACKS = {
+    "bicicletes": {"slug": "bicicletes", "icon": "🚲", "label": "Taller de bicicletes",
+                   "hores": "2 h", "cards": BIKE_CARDS, "prefix": "Bicicletes/"},
+    "maker": {"slug": "maker", "icon": "🛠️", "label": "Aula maker",
+              "hores": "1 h", "cards": MAKER_CARDS, "prefix": "Maker/"},
+}
+ALL_CARDS = BIKE_CARDS + MAKER_CARDS
+
+
+def track_of(folder_rel):
+    """'Bicicletes/B0_…' → 'bicicletes'; 'Maker/M0_…' → 'maker'; si no, None."""
+    for key, t in TRACKS.items():
+        if folder_rel.startswith(t["prefix"]):
+            return key
+    return None
 
 ALUMNAT_LINKS = [
     ("📓", "El diari setmanal", "Programació didàctica/Diari_setmanal_paper.md",
      "Com és el teu full de cada setmana (taller i maker)"),
-    ("📖", "Vocabulari bàsic", "Classes/SA0/Vocabulari_basic.md",
+    ("📖", "Vocabulari bàsic", "Classes/Bicicletes/B0_Punt_de_partida/Vocabulari_basic.md",
      "Les paraules de mecànic, curt i clar"),
     ("🔍", "Com m'avaluaran?", "Avaluació/Criteris_i_qualificacio.md",
      "El sistema d'avaluació explicat"),
@@ -306,6 +333,48 @@ def course_map_svg():
     return "".join(p)
 
 
+_TRACK_LABELS = {"bicicletes": _MAP_BIKES, "maker": _MAP_MAKER}
+
+
+def track_map_svg(track_key):
+    """Mapa d'un sol carril per a una assignatura (timeline B0–B9 o M0–M9)."""
+    t = TRACKS[track_key]
+    labels = _TRACK_LABELS[track_key]
+    codes = [c[0] for c in t["cards"]]
+    accent = "var(--accent)" if track_key == "bicicletes" else "var(--accent-2)"
+
+    def cx(i):
+        return 70 + i * 100
+    p = [f'<div class="mapa2"><svg viewBox="0 0 1040 230" '
+         'xmlns="http://www.w3.org/2000/svg" '
+         'font-family="system-ui, Segoe UI, Roboto, sans-serif" role="img" '
+         f'aria-label="Mapa de {html.escape(t["label"])}: unitats {codes[0]}–{codes[-1]}.">',
+         '<defs><linearGradient id="tg1" x1="0" y1="0" x2="0" y2="1">'
+         '<stop offset="0" stop-color="#8b7dff"/><stop offset="1" stop-color="#6d5efc"/>'
+         '</linearGradient></defs>']
+    for lbl, x in [("1r trimestre", 270), ("2n trimestre", 670), ("3r trimestre", 920)]:
+        p.append(f'<text x="{x}" y="22" text-anchor="middle" font-size="12" '
+                 f'font-weight="700" fill="var(--ink-soft)">{lbl}</text>')
+    for x in (520, 820):
+        p.append(f'<line x1="{x}" y1="30" x2="{x}" y2="215" stroke="var(--ink-soft)" '
+                 f'stroke-opacity="0.18" stroke-width="1" stroke-dasharray="2 6"/>')
+    p.append(f'<line x1="{cx(0)}" y1="95" x2="{cx(9)}" y2="95" stroke="{accent}" '
+             f'stroke-opacity="0.30" stroke-width="3"/>')
+    for i, lab in enumerate(labels):
+        if track_key == "bicicletes":
+            p.append(f'<circle cx="{cx(i)}" cy="95" r="16" fill="url(#tg1)"/>')
+            tcol = "#fff"
+        else:
+            p.append(f'<circle cx="{cx(i)}" cy="95" r="16" fill="var(--bg-card)" '
+                     f'stroke="{accent}" stroke-width="2.5"/>')
+            tcol = accent
+        p.append(f'<text x="{cx(i)}" y="99" text-anchor="middle" font-size="11.5" '
+                 f'font-weight="800" fill="{tcol}">{codes[i]}</text>')
+        p.append(_map_label(cx(i), 128, lab))
+    p.append("</svg></div>")
+    return "".join(p)
+
+
 def render_page(title, body, out_rel, crumb):
     prefix = rel_prefix(out_rel)
     crumb_html = " <span class=\"sep\">›</span> ".join(
@@ -327,7 +396,8 @@ def render_page(title, body, out_rel, crumb):
   <a class="brand" href="{prefix}index.html">🚲 <strong>Repara i Roda 360</strong> <span>4t ESO</span></a>
   <nav>
     <a href="{prefix}index.html">Inici</a>
-    <a href="{prefix}sa.html">Les SA</a>
+    <a href="{prefix}classes/bicicletes/index.html">🚲 Bicicletes</a>
+    <a href="{prefix}classes/maker/index.html">🛠️ Maker</a>
     <a href="{prefix}docent.html">Docent</a>
     <a href="{prefix}alumnat.html">Alumnat</a>
     <a href="{prefix}families.html">Famílies</a>
@@ -381,15 +451,21 @@ veu.textContent='⏹';s.speak(u);}};
 SEARCH_INDEX = []
 
 
-def sa_idx(folder):
-    for i, c in enumerate(SA_CARDS):
+def sa_card(folder):
+    """Torna la tupla de card (code, name, trim, icon, folder) per a una carpeta_rel."""
+    for c in ALL_CARDS:
         if c[4] == folder:
-            return i
+            return c
     return None
 
 
+def sa_idx(folder):
+    return next((i for i, c in enumerate(ALL_CARDS) if c[4] == folder), None)
+
+
 def sa_siblings(folder):
-    order = {"fitxa": 0, "doc": 1, "rubrica": 2, "extra": 5}
+    """folder = 'Bicicletes/B0_…' o 'Maker/M0_…'."""
+    order = {"fitxa": 0, "doc": 1, "extra": 5}
     out = []
     for p in MD_FILES:
         rel = str(p.relative_to(ROOT)).replace("\\", "/")
@@ -399,10 +475,8 @@ def sa_siblings(folder):
         base = PATH_MAP[rel].rsplit("/", 1)[-1]
         if fn.startswith("Fitxa"):
             lbl, kind = "✏️ Fitxa de l'alumnat", "fitxa"
-        elif re.match(r"SA\d", fn):
-            lbl, kind = "📖 La SA (docent)", "doc"
-        elif fn.startswith("Rubrica"):
-            lbl, kind = "📊 Rúbrica", "rubrica"
+        elif re.match(r"[BM]\d", fn):
+            lbl, kind = "📖 La unitat (docent)", "doc"
         elif fn.startswith("Material_gimcana"):
             lbl, kind = "🛡️ Gimcana d'eines i seguretat", "extra"
         elif fn.startswith("Vocabulari"):
@@ -425,13 +499,14 @@ SEQ_INDEX = {}        # (folder, base) → posició a SA_SEQUENCE
 def build_sequence():
     SA_SEQUENCE.clear()
     SEQ_INDEX.clear()
-    for code, name, _trim, _product, folder in SA_CARDS:
-        SA_SEQUENCE.append({"folder": folder, "base": "index.html", "kind": "hub",
-                            "label": f"{code} · {html.escape(name)}"})
-        sibs = [s for s in sa_siblings(folder) if s[2] in _WALK_PRIO]
-        for lbl, base, kind in sorted(sibs, key=lambda s: _WALK_PRIO[s[2]]):
-            SA_SEQUENCE.append({"folder": folder, "base": base, "kind": kind,
-                                "label": f"{code} · {lbl}"})
+    for tkey, t in TRACKS.items():
+        for code, name, _trim, _icon, folder in t["cards"]:
+            SA_SEQUENCE.append({"folder": folder, "base": "index.html", "kind": "hub",
+                                "track": tkey, "label": f"{code} · {html.escape(name)}"})
+            sibs = [s for s in sa_siblings(folder) if s[2] in _WALK_PRIO]
+            for lbl, base, kind in sorted(sibs, key=lambda s: _WALK_PRIO[s[2]]):
+                SA_SEQUENCE.append({"folder": folder, "base": base, "kind": kind,
+                                    "track": tkey, "label": f"{code} · {lbl}"})
     for i, e in enumerate(SA_SEQUENCE):
         SEQ_INDEX[(e["folder"], e["base"])] = i
 
@@ -444,18 +519,22 @@ def _fitxa_base(folder):
 
 
 def step_nav(folder, base):
-    """Recorregut guiat bidireccional per a la pàgina (folder, base)."""
+    """Recorregut guiat bidireccional dins la MATEIXA assignatura."""
     i = SEQ_INDEX.get((folder, base))
-    if i is None:  # pàgina de referència (doc/rúbrica): situa't a la fitxa de la SA
+    if i is None:  # pàgina de referència (la unitat docent): situa't a la fitxa
         i = SEQ_INDEX.get((folder, _fitxa_base(folder)))
     if i is None:
         return ""
+    tk = SA_SEQUENCE[i]["track"]
 
     def rel_href(e):
-        return e["base"] if e["folder"] == folder else f'../{slugify(e["folder"])}/{e["base"]}'
+        # les carpetes de SA són a dos nivells (classes/<track>/<carpeta>/…)
+        return e["base"] if e["folder"] == folder \
+            else f'../{slugify(e["folder"]).split("/")[-1]}/{e["base"]}'
 
-    prev = SA_SEQUENCE[i - 1] if i > 0 else None
-    nxt = SA_SEQUENCE[i + 1] if i < len(SA_SEQUENCE) - 1 else None
+    prev = SA_SEQUENCE[i - 1] if i > 0 and SA_SEQUENCE[i - 1]["track"] == tk else None
+    nxt = SA_SEQUENCE[i + 1] if i < len(SA_SEQUENCE) - 1 \
+        and SA_SEQUENCE[i + 1]["track"] == tk else None
     if prev:
         left = (f'<a class="sa-step prev" href="{rel_href(prev)}">'
                 f'<small>← pas anterior</small><strong>{prev["label"]}</strong></a>')
@@ -488,13 +567,12 @@ pinta();}})();</script>
 """
 
 
-def sa_cards(prefix):
+def sa_cards(track_key, prefix):
     return "\n".join(
         f'<a class="card sa" href="{prefix}classes/{slugify(folder)}/index.html">'
-        f'<div class="card-icon">{product.split()[0]}</div>'
-        f'<div><h3>{code} · {html.escape(name)} <span class="badge">{trim}</span></h3>'
-        f'<p>{html.escape(product.split(" ", 1)[1])}</p></div></a>'
-        for code, name, trim, product, folder in SA_CARDS)
+        f'<div class="card-icon">{icon}</div>'
+        f'<div><h3>{code} · {html.escape(name)} <span class="badge">{trim}</span></h3></div></a>'
+        for code, name, trim, icon, folder in TRACKS[track_key]["cards"])
 
 
 def sa_context_bar(folder, current_base):
@@ -508,34 +586,36 @@ def sa_context_bar(folder, current_base):
 
 
 def build_sa_hubs():
-    for code, name, trim, product, folder in SA_CARDS:
-        slug = slugify(folder)
-        out_rel = f"classes/{slug}/index.html"
-        sibs = sa_siblings(folder)
-        fitxa = next((b for lbl, b, k in sibs if k == "fitxa"), None)
-        primary = ""
-        if fitxa:
-            primary = (f'<a class="sa-primary" href="{fitxa}"><span class="sa-primary-ic">✏️</span>'
-                       f'<span><strong>Fitxa de l\'alumnat</strong>'
-                       f'<small>el full amb què treballes aquesta SA</small></span></a>')
-        others = [(lbl, b, k) for lbl, b, k in sibs if k != "fitxa"]
-        cards = "\n".join(
-            f'<a class="card" href="{b}"><div class="card-icon">{lbl.split(" ", 1)[0]}</div>'
-            f'<div><h3>{html.escape(lbl.split(" ", 1)[1])}</h3></div></a>'
-            for lbl, b, k in others)
-        body = f"""
-<h1>{code} · {html.escape(name)} <span class="badge">{trim}</span></h1>
-<p class="product">{html.escape(product)}</p>
+    for tkey, t in TRACKS.items():
+        for code, name, trim, icon, folder in t["cards"]:
+            slug = slugify(folder)
+            out_rel = f"classes/{slug}/index.html"
+            sibs = sa_siblings(folder)
+            fitxa = next((b for lbl, b, k in sibs if k == "fitxa"), None)
+            primary = ""
+            if fitxa:
+                primary = (f'<a class="sa-primary" href="{fitxa}"><span class="sa-primary-ic">✏️</span>'
+                           f'<span><strong>Fitxa de l\'alumnat</strong>'
+                           f'<small>el full amb què treballes aquesta unitat</small></span></a>')
+            others = [(lbl, b, k) for lbl, b, k in sibs if k != "fitxa"]
+            cards = "\n".join(
+                f'<a class="card" href="{b}"><div class="card-icon">{lbl.split(" ", 1)[0]}</div>'
+                f'<div><h3>{html.escape(lbl.split(" ", 1)[1])}</h3></div></a>'
+                for lbl, b, k in others)
+            body = f"""
+<h1>{icon} {code} · {html.escape(name)} <span class="badge">{trim}</span></h1>
+<p class="product">{t["icon"]} {html.escape(t["label"])} · {t["hores"]}/setmana</p>
 {primary}
-<h2>Tot el material d'aquesta SA</h2>
+<h2>Tot el material d'aquesta unitat</h2>
 <div class="grid">{cards}</div>
 <footer class="sa-foot">{step_nav(folder, "index.html")}</footer>
 """
-        crumb = [("Inici", "index.html"), ("Classes", "classes/index.html"),
-                 (f"{code} · {name}", None)]
-        (OUT / out_rel).parent.mkdir(parents=True, exist_ok=True)
-        (OUT / out_rel).write_text(
-            render_page(f"{code} · {name}", body, out_rel, crumb), encoding="utf-8")
+            crumb = [("Inici", "index.html"),
+                     (t["label"], f"classes/{t['slug']}/index.html"),
+                     (f"{code} · {name}", None)]
+            (OUT / out_rel).parent.mkdir(parents=True, exist_ok=True)
+            (OUT / out_rel).write_text(
+                render_page(f"{code} · {name}", body, out_rel, crumb), encoding="utf-8")
 
 
 def build_doc_pages():
@@ -554,18 +634,23 @@ def build_doc_pages():
             body = body.replace("<p>[[MAPA_CURS]]</p>", course_map_svg())
         plain_src = body
         parts = rel.split("/")
-        if len(parts) >= 3 and parts[0] == "Classes" and sa_idx(parts[1]) is not None:
-            foot = sa_context_bar(parts[1], out_rel.rsplit("/", 1)[-1])
+        sa_folder = f"{parts[1]}/{parts[2]}" if len(parts) >= 4 and parts[0] == "Classes" else None
+        crumb = [("Inici", "index.html")]
+        if sa_folder is not None and sa_idx(sa_folder) is not None:
+            foot = sa_context_bar(sa_folder, out_rel.rsplit("/", 1)[-1])
             body = f'<article class="doc">{body}<footer class="sa-foot">{foot}</footer></article>'
+            c = sa_card(sa_folder)
+            tk = TRACKS[track_of(sa_folder)]
+            crumb.append((tk["label"], f"classes/{tk['slug']}/index.html"))
+            crumb.append((f"{c[0]} · {c[1]}", None))
         else:
             body = f'<article class="doc">{body}</article>'
-        crumb = [("Inici", "index.html")]
-        if "/" in rel:
-            section = rel.split("/")[0]
-            crumb.append((section, slugify(section) + "/index.html"))
-            if rel.count("/") > 1:
-                crumb.append((rel.split("/")[1].replace("_", " "), None))
-        crumb.append((title if len(title) < 60 else title[:57] + "…", None))
+            if "/" in rel:
+                section = rel.split("/")[0]
+                crumb.append((section, slugify(section) + "/index.html"))
+                if rel.count("/") > 1:
+                    crumb.append((rel.split("/")[1].replace("_", " "), None))
+            crumb.append((title if len(title) < 60 else title[:57] + "…", None))
         out = OUT / out_rel
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render_page(title, body, out_rel, crumb), encoding="utf-8")
@@ -591,14 +676,19 @@ def build_section_indexes(pages):
         out_rel = slugify(section) + "/index.html"
         icon = SECTION_ICONS.get(section, "📄")
         if section == "Classes":
-            body_html = (f"<h1>{icon} El curs, SA a SA</h1>"
-                         f"<p class=\"lead\">Cada setmana: <strong>2 h al taller de bicicletes</strong> "
-                         f"(seguides) i, a part, <strong>1 h a l'aula maker</strong>. Els dos carrils "
-                         f"van alineats per SA.</p>"
-                         f"{course_map_svg()}"
-                         f"<p class=\"lead\">Clica una SA per obrir-la: hi trobaràs la fitxa de "
-                         f"l'alumnat, el material del docent i la rúbrica.</p>"
-                         f"<div class='grid'>{sa_cards('../')}</div>")
+            tria = "\n".join(
+                f'<a class="card sa" href="{t["slug"]}/index.html">'
+                f'<div class="card-icon">{t["icon"]}</div>'
+                f'<div><h3>{html.escape(t["label"])} <span class="badge">{t["hores"]}/setm.</span></h3>'
+                f'<p>{len(t["cards"])} unitats: {t["cards"][0][0]}–{t["cards"][-1][0]}</p></div></a>'
+                for t in TRACKS.values())
+            body_html = (f"<h1>{icon} Tria l'assignatura</h1>"
+                         f"<p class=\"lead\">Són <strong>dues assignatures separades</strong> que es "
+                         f"complementen: el <strong>taller de bicicletes</strong> (2 h) i l'<strong>aula "
+                         f"maker</strong> (1 h). Tria on vols entrar.</p>"
+                         f"<div class='grid'>{tria}</div>"
+                         f"<h2>Com es complementen (SA a SA)</h2>"
+                         f"{course_map_svg()}")
         else:
             if not entries:
                 continue
@@ -613,40 +703,84 @@ def build_section_indexes(pages):
                         [("Inici", "index.html"), (section, None)]), encoding="utf-8")
 
 
+def build_track_indexes():
+    """Portada de cada assignatura: mapa d'un carril + les seves unitats."""
+    for tkey, t in TRACKS.items():
+        out_rel = f"classes/{t['slug']}/index.html"
+        altre = "maker" if tkey == "bicicletes" else "bicicletes"
+        alt = TRACKS[altre]
+        body = f"""
+<h1>{t["icon"]} {html.escape(t["label"])} <span class="badge">{t["hores"]}/setmana</span></h1>
+<p class="lead">Aquesta és una de les dues assignatures. Es complementa amb
+<a href="../{alt['slug']}/index.html">{alt["icon"]} {html.escape(alt["label"])}</a>, però es
+treballa <strong>a part</strong>: aquí, només {html.escape(t["label"]).lower()}.</p>
+{track_map_svg(tkey)}
+<p class="lead">Clica una unitat per obrir-la: hi trobaràs la fitxa de l'alumnat i el material
+del docent, amb la navegació pas a pas.</p>
+<div class="grid">{sa_cards(tkey, "../../")}</div>
+"""
+        (OUT / out_rel).parent.mkdir(parents=True, exist_ok=True)
+        (OUT / out_rel).write_text(
+            render_page(t["label"], body, out_rel,
+                        [("Inici", "index.html"), (t["label"], None)]), encoding="utf-8")
+
+
 def build_home(pages):
+    b = TRACKS["bicicletes"]
+    m = TRACKS["maker"]
     body = f"""
 <section class="hero">
   <h1>🚲 Repara i Roda 360</h1>
   <p class="tagline">Optativa de 4t d'ESO · <strong>reparar bicicletes de veritat</strong> i
   fabricar-ne les peces amb làser i impressió 3D. Les bicis reparades es donen a la comunitat.</p>
   <div class="hero-actions">
-    <a class="btn btn-primary" href="sa.html">🧩 Les SA</a>
+    <a class="btn btn-primary" href="classes/{b['slug']}/index.html">🚲 Taller de bicicletes</a>
+    <a class="btn btn-primary" href="classes/{m['slug']}/index.html">🛠️ Aula maker</a>
+  </div>
+  <div class="hero-actions" style="margin-top:.7rem">
     <a class="btn" href="docent.html">👩‍🏫 Soc docent</a>
     <a class="btn" href="alumnat.html">🧑‍🎓 Soc alumne/a</a>
     <a class="btn" href="families.html">👨‍👩‍👧 Soc família</a>
   </div>
 </section>
 <section>
-  <h2>El curs, SA a SA</h2>
-  <div class="grid">{sa_cards("")}</div>
+  <h2>Dues assignatures que es complementen</h2>
+  <p class="lead">El <strong>taller de bicicletes</strong> (2 h) i l'<strong>aula maker</strong>
+  (1 h) es treballen per separat, com dues assignatures. Tria per on entres:</p>
+  <div class="grid">
+    <a class="card sa" href="classes/{b['slug']}/index.html"><div class="card-icon">🚲</div>
+      <div><h3>Taller de bicicletes <span class="badge">2 h</span></h3>
+      <p>{len(b['cards'])} unitats: B0–B9 · mecànica de la bici</p></div></a>
+    <a class="card sa" href="classes/{m['slug']}/index.html"><div class="card-icon">🛠️</div>
+      <div><h3>Aula maker <span class="badge">1 h</span></h3>
+      <p>{len(m['cards'])} unitats: M0–M9 · fabricació per al taller</p></div></a>
+  </div>
 </section>
 """
     (OUT / "index.html").write_text(
         render_page("Inici", body, "index.html", [("Inici", None)]), encoding="utf-8")
 
-    # Alumnat
+    # Alumnat — dues assignatures separades
     cards = "\n".join(card(PATH_MAP[rel], icon, t, d) for icon, t, rel, d in ALUMNAT_LINKS)
-    fitxes = "\n".join(
-        f'<a class="chip" href="classes/{slugify(folder)}/index.html">{code}</a>'
-        for code, _n, _t, _p, folder in SA_CARDS)
+
+    def chips(tkey):
+        return "\n".join(
+            f'<a class="chip" href="classes/{slugify(folder)}/index.html">{code}</a>'
+            for code, _n, _t, _i, folder in TRACKS[tkey]["cards"])
     body = f"""
 <h1>🧑‍🎓 Per a l'alumnat</h1>
-<p class="lead">Tot el que fas servir tu: les fitxes de cada SA, com t'avaluaran i els carnets.</p>
+<p class="lead">Tens <strong>dues assignatures</strong>: el taller de bicicletes i l'aula maker.
+Cada una té les seves unitats i la seva fitxa. Canvia d'una a l'altra com si fossin matèries
+diferents.</p>
 <blockquote><p>💡 <strong>Fes-te la web teva</strong> amb els botons de dalt: <strong>A−/A+</strong>
 per la mida de la lletra, <strong>Aa↔</strong> per llegir amb més espai, <strong>🔊</strong> perquè
 es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
-<h2>✏️ Les fitxes de cada SA</h2>
-<div class="chips">{fitxes}</div>
+<h2>🚲 Taller de bicicletes (2 h)</h2>
+<p><a class="btn btn-primary" href="classes/bicicletes/index.html">Obre el taller de bicicletes →</a></p>
+<div class="chips">{chips("bicicletes")}</div>
+<h2>🛠️ Aula maker (1 h)</h2>
+<p><a class="btn btn-primary" href="classes/maker/index.html">Obre l'aula maker →</a></p>
+<div class="chips">{chips("maker")}</div>
 <h2>Els teus documents</h2>
 <div class="grid">{cards}</div>
 """
@@ -678,10 +812,19 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
     sections = "\n".join(
         card(slugify(s) + "/index.html", SECTION_ICONS[s], s, SECTION_DESC[s])
         for s in SECTIONS)
+    tracks_grid = (
+        f'<a class="card sa" href="classes/bicicletes/index.html"><div class="card-icon">🚲</div>'
+        f'<div><h3>Taller de bicicletes <span class="badge">2 h</span></h3>'
+        f'<p>Unitats B0–B9 · mecànica</p></div></a>'
+        f'<a class="card sa" href="classes/maker/index.html"><div class="card-icon">🛠️</div>'
+        f'<div><h3>Aula maker <span class="badge">1 h</span></h3>'
+        f'<p>Unitats M0–M9 · fabricació</p></div></a>')
     body = f"""
 <h1>👩‍🏫 Per al professorat</h1>
-<p class="lead">El material complet de l'optativa. Comença per la programació didàctica i tingues
-a mà els fulls per imprimir.</p>
+<p class="lead">El material complet de l'optativa, organitzat com <strong>dues assignatures
+separades</strong> que es complementen.</p>
+<h2>Les dues assignatures</h2>
+<div class="grid">{tracks_grid}</div>
 <h2>🖨️ Imprimibles per a l'alumnat</h2>
 <p class="lead">Descarrega'ls en PDF, imprimeix-los i porta'ls al taller (molts es fan servir a
 la SA0).</p>
@@ -696,12 +839,6 @@ la SA0).</p>
     (OUT / "docent.html").write_text(
         render_page("Docent", body, "docent.html",
                     [("Inici", "index.html"), ("Docent", None)]), encoding="utf-8")
-
-    # SA (accés directe = còpia de l'índex de Classes amb rutes ajustades)
-    shutil.copyfile(OUT / "classes/index.html", OUT / "sa.html")
-    sa_html = (OUT / "sa.html").read_text(encoding="utf-8")
-    sa_html = sa_html.replace('href="../', 'href="').replace('src="../', 'src="')
-    (OUT / "sa.html").write_text(sa_html, encoding="utf-8")
 
     # Famílies
     fam = "\n".join([
@@ -802,6 +939,7 @@ def main():
     build_sequence()
     pages = build_doc_pages()
     build_sa_hubs()
+    build_track_indexes()
     build_section_indexes(pages)
     build_home(pages)
     copy_assets()
