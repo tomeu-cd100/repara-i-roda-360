@@ -4,62 +4,70 @@
 > la Programació didàctica). Com que és una matèria de **disseny de centre**, davant del
 > claustre i la inspecció cal mostrar que els seus aprenentatges **es vinculen al currículum
 > oficial**. Aquest document fa de **pont**: relaciona les CE pròpies amb (1) les competències
-> específiques de l'àmbit tecnològic del Decret 175/2022, (2) les **competències transversals**
-> que estructuren l'avaluació (C3, C5, C6, C8), (3) les **competències clau** del perfil de
-> sortida i (4) els **vectors** del currículum de Catalunya.
+> específiques oficials de la matèria *Tecnologia* de 4t d'ESO, (2) les **competències
+> transversals** que estructuren l'avaluació (C3, C5, C6, C8), (3) les **competències clau** del
+> perfil de sortida i (4) els **vectors** del currículum de Catalunya.
 
-> ⚠️ **Nota de validació:** els enunciats de §2 estan transcrits del currículum oficial de
-> *Tecnologia i Digitalització* (cursos 1r–3r). Per a **4t d'ESO**, el Decret 175/2022 preveu
-> la matèria optativa *Tecnologia*, amb currículum propi publicat a XTEC. Abans de presentar
-> aquest document al claustre o a la inspecció, **compara literalment** els enunciats amb el
-> PDF oficial de la matèria de 4t del curs vigent i ajusta la taula §3 si cal.
+> ✅ **Verificat (juliol 2026):** els enunciats de les 6 competències específiques de §2 s'han
+> contrastat amb el PDF oficial de la matèria *Tecnologia* del Decret 175/2022 (XTEC):
+> `https://xtec.gencat.cat/web/.content/curriculum/eso/curriculum-175-2022/Tecnologia.pdf`.
+> És la matèria de 4t d'ESO (no *Tecnologia i Digitalització*, que és de 1r–3r). Reviseu que el
+> PDF segueixi vigent cada curs.
 
 ---
 
 ## 1. Fonts oficials (Decret 175/2022, Catalunya)
 
+- **Currículum de la matèria *Tecnologia* (4t d'ESO):**
+  https://xtec.gencat.cat/web/.content/curriculum/eso/curriculum-175-2022/Tecnologia.pdf
 - **Portal del currículum 175/2022 (XTEC):**
   https://xtec.gencat.cat/ca/curriculum/eso/curriculum-175-2022/
-- **Currículum de *Tecnologia i Digitalització* (ESO):**
-  https://xtec.gencat.cat/web/.content/curriculum/eso/curriculum-175-2022/Tecnologia-i-Digitalitzacio.pdf
-- **Matèries optatives de 4t (XTEC)** — localitzar-hi el PDF de la matèria *Tecnologia* de 4t.
 - **Decret 175/2022 (text consolidat, Portal Jurídic):**
   https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=938401
 
 ---
 
-## 2. Competències específiques oficials de referència (àmbit tecnològic)
+## 2. Les 6 competències específiques oficials de *Tecnologia* (4t d'ESO)
 
-> Transcrites del currículum de *Tecnologia i Digitalització* (1r–3r). Es fan servir com a
-> referent de continuïtat; vegeu l'avís de validació sobre la matèria *Tecnologia* de 4t.
+> Enunciats transcrits del PDF oficial. La matèria en defineix **6** i organitza els sabers en
+> quatre blocs: *procés de resolució de problemes i projectes*, *operadors tecnològics*,
+> *pensament computacional, automatització i robòtica* i *tecnologia sostenible*.
 
-- **CE1 T&D** — Buscar, analitzar i seleccionar la informació adequada, de manera crítica i
-  experimentant amb eines de simulació, per delimitar problemes tecnològics i proposar
-  solucions a partir de la informació obtinguda.
-- **CE2 T&D** — Planificar, dissenyar i desenvolupar solucions a problemes tecnològics amb
-  autonomia i actitud creativa, tot aplicant el procés tecnològic, coneixements
-  interdisciplinaris i treballant de manera ordenada i cooperativa, per resoldre problemes o
-  necessitats de manera eficaç, innovadora i sostenible.
-- **CE3 T&D** — Aplicar de manera apropiada diferents tècniques i coneixements
-  interdisciplinaris, tot utilitzant operadors, sistemes tecnològics i eines, seguint la
-  planificació i el disseny sostenible previ, per construir solucions tecnològiques que donin
-  resposta a necessitats en diferents contextos.
-- **CE4 T&D** — Descriure, representar i intercanviar idees o solucions a problemes
-  tecnològics o digitals, utilitzant els mitjans de representació, simbologia i vocabulari
-  adequats, així com els instruments i els recursos disponibles, utilitzant les eines digitals
-  per argumentar, comunicar i difondre informació.
-- **CE6 T&D** — Utilitzar els fonaments del funcionament dels dispositius i de les
-  aplicacions habituals de l'entorn digital d'aprenentatge, analitzant-ne els components i les
-  funcions i ajustant-los a les necessitats per fer-ne un ús més eficient i segur, per
-  detectar i resoldre problemes tècnics senzills.
-- **CE7 T&D** — Fer un ús ètic, sostenible i ecosocialment responsable de la tecnologia,
-  identificant-ne les repercussions i les aportacions, per valorar l'impacte del
-  desenvolupament tecnològic a la societat i a l'entorn.
+- **CE1 (oficial)** — Identificar i proposar problemes tecnològics amb iniciativa i creativitat,
+  tot estudiant les necessitats de l'entorn proper, aplicant estratègies i processos
+  col·laboratius i iteratius relatius a projectes, per idear i planificar solucions de manera
+  eficient i innovadora.
+  - Criteris: 1.1 (idear solucions que **generin un valor a la comunitat**), 1.2 (estratègies
+    col·laboratives de gestió de projectes), 1.3 (gestió creativa i respectuosa amb el medi).
+- **CE2 (oficial)** — Aplicar diferents tècniques i coneixements interdisciplinaris utilitzant
+  procediments i recursos tecnològics tot preveient el cicle de vida dels productes per
+  construir solucions tecnològiques sostenibles que donin resposta a necessitats plantejades.
+  - Criteris: 2.1 (cicle de vida amb criteri ètic i sostenible), 2.2 (**fabricar amb tècniques
+    d'elaboració manual, mecànica i digital i recursos mecànics**), 2.3 (argumentar-ne la
+    viabilitat i l'ús funcional i eficient).
+- **CE3 (oficial)** — Comunicar, argumentar i difondre idees i solucions tecnològiques en
+  diferents espais virtuals, emprant diversos recursos tot aplicant els elements i les
+  tècniques necessàries per intercanviar la informació i fomentar el treball en equip.
+  - Criteris: 3.1 (intercanviar informació i **treball en equip** amb vocabulari i símbols
+    tècnics), 3.2 (presentar i difondre amb llenguatge inclusiu).
+- **CE4 (oficial)** — Desenvolupar solucions sostenibles a problemes plantejats que incorporin
+  l'automatització i les tecnologies emergents, per dissenyar i construir sistemes de control
+  programables i robòtics.
+  - *(No és objecte d'aquesta optativa; vegeu «Cobertura i límits».)*
+- **CE5 (oficial)** — Emprar les eines digitals de disseny i fabricació, adaptant-les i
+  configurant-les a les necessitats tot aplicant els coneixements interdisciplinaris, per a una
+  producció més eficient i sostenible.
+  - Criteris: 5.1 (ús eficient d'aplicacions i eines digitals), 5.2 (**eines de representació en
+    tres dimensions i d'experimentació virtual mitjançant simuladors**), 5.3 (gestors de
+    presentació i difusió per a tasques col·laboratives).
+- **CE6 (oficial)** — Analitzar processos tecnològics, valorant l'impacte en la societat i
+  l'entorn, tot aplicant criteris de sostenibilitat, per fer un ús ètic i ecosocialment
+  responsable de la tecnologia.
+  - Criteris: 6.1 (criteris de sostenibilitat en materials i fabricació), 6.2 (contribució de
+    les energies renovables i la **mobilitat eficient**), 6.3 (**projectes tecnològics de
+    caràcter social: voluntariat i servei a la comunitat**).
 
-*(No es llista la CE5 T&D — pensament computacional, programació i robòtica — perquè no és
-objecte d'aquesta optativa; vegeu «Cobertura i límits».)*
-
-### Competències transversals de l'avaluació (continuïtat amb el projecte «Repara i Roda 360»)
+### Competències transversals de l'avaluació (estructura de la qualificació)
 
 Aquestes quatre competències estructuren la qualificació (PD §8) i responen al perfil del grup
 professionalitzador:
@@ -73,46 +81,48 @@ professionalitzador:
 
 ---
 
-## 3. Mapatge: CE pròpia ↔ currículum oficial i competències transversals
+## 3. Mapatge: CE pròpia ↔ CE oficial de *Tecnologia* 4t i competències transversals
 
-| CE pròpia (Repara i Roda 360) | CE(s) oficial(s) | Transversal | Justificació |
+| CE pròpia (Repara i Roda 360) | CE(s) oficial(s) i criteris | Transversal | Justificació |
 |---|---|---|---|
-| **CE1** Diagnosticar i reparar sistemes mecànics | CE1 + CE3 T&D | C6 | Delimitar el problema (diagnosi d'avaries) i construir la solució amb eines i operadors mecànics, amb seguretat i salut |
-| **CE2** Rutines de manteniment preventiu | CE3 T&D | C6, C3 | Aplicar tècniques seguint protocols pautats; ordre i constància en el treball |
-| **CE3** Dissenyar i fabricar amb tecnologies maker | CE2 + CE3 + CE4 T&D | C6 | Procés tecnològic complet: dissenyar (2D/3D), fabricar (làser/impressió 3D) i provar peces funcionals |
-| **CE4** Documentar el treball tècnic | CE4 + CE6 T&D | C5 | Representar i comunicar amb vocabulari tècnic; ús eficient i segur de dispositius (càmera 360, VR) |
-| **CE5** Seguretat i responsabilitat viària | CE7 T&D | C8 | Ús ecosocialment responsable de la tecnologia (mobilitat sostenible) i ciutadania activa a l'espai urbà |
-| **CE6** Cooperació i contribució comunitària (ApS) | CE2 T&D | C3, C8 | Treball ordenat i cooperatiu amb rols; servei a la comunitat amb producte real |
+| **CE1** Diagnosticar i reparar sistemes mecànics | **CE2** (2.2) + **CE1** (1.1) | C6 | Detectar el problema (diagnosi d'avaries a l'entorn proper) i construir la solució amb **tècniques i recursos mecànics**, nucli del criteri 2.2 |
+| **CE2** Rutines de manteniment preventiu | **CE2** (2.1, 2.2) | C6, C3 | Aplicar tècniques d'elaboració mecànica seguint protocols; preveure el cicle de vida (mantenir en lloc de substituir); ordre i constància |
+| **CE3** Dissenyar i fabricar amb tecnologies maker | **CE2** (2.2) + **CE5** (5.1, 5.2) | C6 | Procés tecnològic complet: dissenyar amb eines digitals (2D/3D) i fabricar amb **tècniques de fabricació digital: impressió 3D i tall** (bloc de sabers «Fabricació») |
+| **CE4** Documentar el treball tècnic | **CE3** (3.1, 3.2) + **CE5** (5.3) | C5 | Comunicar amb vocabulari i símbols tècnics; difondre amb eines digitals (memòria, exposició); captura 360 com a recurs de difusió |
+| **CE5** Seguretat i responsabilitat viària | **CE6** (6.2, 6.3) | C8 | Ús ecosocialment responsable de la tecnologia: **mobilitat eficient** (criteri 6.2) i ciutadania activa a l'espai urbà |
+| **CE6** Cooperació i contribució comunitària (ApS) | **CE1** (1.1) + **CE6** (6.3) + **CE3** (3.1) | C3, C8 | Solucions que **generen valor a la comunitat** i **projectes de servei a la comunitat**; treball en equip amb rols |
 
 ### Mapatge SA per SA
 
-| SA | CE pròpies principals | Instrument principal d'avaluació |
-|----|----------------------|----------------------------------|
-| SA0 Punt de partida | CE6, CE2 | Observació + carnet de màquina + avaluació inicial |
-| SA1 La bici per dins | CE1, CE3 | Fitxa de recepció/diagnosi + placa fabricada |
-| SA2 Posada a punt | CE2, CE3 | Rúbrica M-check + organitzadors fabricats |
-| SA3 Rodes i punxades | CE1, CE3 | Rúbrica pràctica de reparació + kit fabricat |
-| SA4 Frens | CE1, CE3 | Rúbrica pràctica de frens + peces 3D provades |
-| SA5 Transmissió I | CE1, CE2 | Rúbrica pràctica + mesurador aplicat |
-| SA6 Transmissió II | CE1, CE6 | Rúbrica d'ajust de canvis + diagnosi per parelles |
-| SA7 Punts de contacte | CE1, CE3 | Rúbrica d'ajust ergonòmic + peces de confort |
-| SA8 Seguretat i accessoris | CE5, CE4 | Casos pràctics de normativa + suports fabricats |
-| SA9 Repara i Roda | CE5, CE4, CE6 | Rúbrica de sortides + rutes 360/VR + exposició i donació |
+| SA | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
+|----|----------------------|---------------|----------------------------------|
+| SA0 Punt de partida | CE6, CE2 | CE1, CE2 | Observació + carnet de màquina + avaluació inicial |
+| SA1 La bici per dins | CE1, CE3 | CE1, CE2 | Fitxa de recepció/diagnosi + placa fabricada |
+| SA2 Posada a punt | CE2, CE3 | CE2, CE5 | Rúbrica M-check + organitzadors fabricats |
+| SA3 Rodes i punxades | CE1, CE3 | CE2, CE5 | Rúbrica pràctica de reparació + kit fabricat |
+| SA4 Frens | CE1, CE3 | CE2, CE5 | Rúbrica pràctica de frens + peces 3D provades |
+| SA5 Transmissió I | CE1, CE2 | CE2 | Rúbrica pràctica + mesurador aplicat |
+| SA6 Transmissió II | CE1, CE6 | CE2, CE1 | Rúbrica d'ajust de canvis + diagnosi per parelles |
+| SA7 Punts de contacte | CE1, CE3 | CE2, CE5 | Rúbrica d'ajust ergonòmic + peces de confort |
+| SA8 Seguretat i accessoris | CE5, CE4 | CE6, CE3 | Casos pràctics de normativa + suports fabricats |
+| SA9 Repara i Roda | CE5, CE4, CE6 | CE6, CE3, CE5 | Rúbrica de sortides + rutes 360/VR + exposició i donació |
 
-El **diari setmanal en paper** (CE4/C3) és transversal: s'avalua a totes les SA.
+El **diari setmanal en paper** (CE4/C3, vinculat a CE3 oficial) és transversal: s'avalua a
+totes les SA.
 
 ### Cobertura i límits (honest, per a la inspecció)
 
-- **CE5 T&D (pensament computacional, programació i robòtica) no es treballa** en aquesta
-  optativa. Qui la necessiti la desplegarà a les matèries de Digitalització/Tecnologia. Convé
-  fer-ho explícit al claustre.
-- A canvi, l'optativa **aprofundeix** en àmbits que el currículum tracta de manera més
-  transversal: **mecànica real** (operadors, mecanismes, manteniment — nucli de la matèria
-  Tecnologia de 4t), **fabricació digital** aplicada i **educació viària i mobilitat
-  sostenible**, poc presents en altres matèries.
-- La dimensió professionalitzadora (C6) es justifica pel perfil del grup: protocols de taller,
-  responsabilitat amb les eines i tracte amb «clients» (comunitat receptora de les bicis) són
-  aprenentatges de transició al món laboral.
+- **CE4 oficial (automatització, sistemes de control programables i robòtica) no es treballa**
+  en aquesta optativa; és el bloc de sabers *pensament computacional, automatització i
+  robòtica*. Qui el necessiti el desplegarà a la matèria optativa *Robòtica i Programació* o a
+  *Digitalització*. Convé fer-ho explícit al claustre.
+- A canvi, l'optativa **cobreix amb molta profunditat** els blocs *procés de resolució de
+  problemes i projectes* (fabricació manual, mecànica i digital), *operadors tecnològics*
+  (elements mecànics de la bicicleta) i *tecnologia sostenible* (mobilitat, servei a la
+  comunitat) — encaixos literals amb els criteris 2.2, 6.2 i 6.3 del currículum oficial.
+- La dimensió professionalitzadora (C6) i el servei comunitari (ApS) tenen ancoratge **directe**
+  al text oficial: el criteri 1.1 demana solucions que «generin un valor a la comunitat» i el
+  6.3, «projectes de servei a la comunitat». No és una interpretació forçada.
 
 ---
 
@@ -135,7 +145,7 @@ Contribució principal (●) i secundària (○):
 
 ## 5. Vectors del currículum de Catalunya
 
-> ⚠️ Verifica la llista i la redacció oficial dels vectors al Decret 175/2022.
+> ⚠️ Verifiqueu la llista i la redacció oficial dels vectors al Decret 175/2022.
 
 | Vector | Com es concreta a «Repara i Roda 360» | Referència |
 |--------|----------------------------------------|------------|
@@ -149,10 +159,10 @@ Contribució principal (●) i secundària (○):
 
 ## 6. Nota per a l'aprovació de centre
 
-- Adjunta aquest mapatge a la programació quan presentis l'optativa al claustre / inspecció.
-- Localitza i conserva el **PDF oficial de la matèria *Tecnologia* de 4t** del curs vigent i
-  contrasta-hi els enunciats de §2 abans de la presentació.
-- Revisa el mapatge **cada curs** si s'actualitza el currículum.
+- Adjunteu aquest mapatge a la programació quan presenteu l'optativa al claustre / inspecció.
+- Conserveu una còpia del **PDF oficial de *Tecnologia*** del curs vigent (les referències
+  poden canviar) i reviseu el mapatge cada curs.
+- Els enunciats de §2 estan verificats amb el PDF oficial de juliol de 2026.
 
 > Relacionat amb: `Programacio_didactica_ReparaIRoda_4ESO.md` (§2, §4 i §8) i
 > `Temporitzacio_anual.md`.
