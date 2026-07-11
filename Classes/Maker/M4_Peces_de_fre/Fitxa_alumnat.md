@@ -7,6 +7,7 @@ Fabrica una peça de fre (separador o guia) i millora-la segons la prova real.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He dissenyat i imprès una peça de fre.
 - [ ] L'he provada al taller.
 - [ ] L'he millorada segons la prova.

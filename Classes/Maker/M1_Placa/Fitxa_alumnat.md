@@ -7,6 +7,7 @@ Dissenya i grava la placa identificativa de la teva bici.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He dissenyat la placa amb número i un detall.
 - [ ] He gravat la placa a la làser.
 - [ ] La placa és muntada a la bici.

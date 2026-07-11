@@ -7,6 +7,7 @@ Repara una punxada de principi a fi i deixa la roda rodona i segura.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He tret i posat la roda sense danyar res.
 - [ ] He reparat la punxada i la roda aguanta la pressió.
 - [ ] La roda gira recta.

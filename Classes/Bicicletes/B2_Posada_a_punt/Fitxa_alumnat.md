@@ -7,6 +7,7 @@ Fes la posada a punt completa d'una bici seguint la rutina.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He netejat i greixat la bici (sense excés de greix).
 - [ ] He fet el M-check complet i he anotat què cal ajustar.
 

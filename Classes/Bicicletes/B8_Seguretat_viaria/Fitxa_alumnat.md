@@ -7,6 +7,7 @@ Deixa una bici equipada i legal per circular i coneix les normes de circulació.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] La bici té llums, reflectors i timbre, i tot funciona.
 - [ ] Sé les normes bàsiques (per on circular, senyals, prioritats).
 

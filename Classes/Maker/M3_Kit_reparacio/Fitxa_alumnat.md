@@ -7,6 +7,7 @@ Fabrica una caixa-kit amb les palanques perquè qui rebi la bici pugui reparar s
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He imprès les palanques desmuntables.
 - [ ] He tallat i muntat la caixa-kit.
 - [ ] El kit funciona amb material real.

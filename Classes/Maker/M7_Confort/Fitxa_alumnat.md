@@ -7,6 +7,7 @@ Fabrica una peça de confort que millori una bici i prova-la.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He dissenyat una peça de confort 3D.
 - [ ] L'he impresa i provada.
 - [ ] L'he millorada si calia.

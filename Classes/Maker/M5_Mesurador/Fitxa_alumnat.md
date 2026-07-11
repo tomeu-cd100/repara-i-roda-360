@@ -7,6 +7,7 @@ Fabrica un mesurador de desgast i prova'l a totes les cadenes del taller.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He dissenyat el mesurador amb la mida crítica.
 - [ ] L'he fabricat.
 - [ ] Funciona a les cadenes del taller.

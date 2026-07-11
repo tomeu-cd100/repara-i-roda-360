@@ -7,6 +7,7 @@ Mou-te pel taller amb seguretat i autonomia: guanya't el carnet d'eines.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He signat el contracte d'aula.
 - [ ] Tinc el carnet d'eines.
 - [ ] He fet l'avaluació inicial i la primera entrada del diari.

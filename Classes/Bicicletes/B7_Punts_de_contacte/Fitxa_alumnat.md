@@ -7,6 +7,7 @@ Ajusta una bici a la persona que la farà servir: alçada, posició, direcció s
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He ajustat el seient (alçada, avanç, inclinació).
 - [ ] He revisat el joc de direcció i el manillar.
 - [ ] La bici queda còmoda i segura.

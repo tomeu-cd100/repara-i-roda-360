@@ -7,6 +7,7 @@ Rep una bici, identifica'n el tipus i les parts i omple la fitxa de recepció.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] Identifico 10 parts sobre una bici real.
 - [ ] Dic de quin tipus és la meva bici i ho justifico.
 - [ ] He omplert la fitxa de recepció.

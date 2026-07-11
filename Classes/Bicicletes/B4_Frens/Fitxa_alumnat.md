@@ -7,6 +7,7 @@ Deixa una bici amb els frens ajustats, canvia el que calgui i comprova que frena
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He ajustat un fre de sabata.
 - [ ] He centrat una pinça de disc o canviat pastilles.
 - [ ] El fre atura la roda amb una pressió raonable.

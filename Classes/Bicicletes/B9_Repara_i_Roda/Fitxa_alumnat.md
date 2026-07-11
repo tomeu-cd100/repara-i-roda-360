@@ -7,6 +7,7 @@ Acaba les bicis, surt a rodar amb seguretat i dona-les a la comunitat.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He fet les sortides circulant amb seguretat.
 - [ ] La meva bici està acabada i llesta per donar.
 - [ ] He participat a l'exposició pública.

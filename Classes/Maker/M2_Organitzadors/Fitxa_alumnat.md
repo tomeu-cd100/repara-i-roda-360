@@ -7,6 +7,7 @@ Dissenya i fabrica un organitzador d'eines útil per al taller.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He mesurat les eines i dissenyat l'organitzador.
 - [ ] He fabricat l'organitzador i ja s'usa al taller.
 - [ ] He col·laborat en la retolació.

@@ -7,6 +7,7 @@ Grava, edita i munta les rutes 360/VR i prepara l'estació VR de l'exposició.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He contribuït a la col·lecció de rutes 360/VR.
 - [ ] He visionat en VR una ruta abans de fer-la.
 - [ ] He col·laborat en l'estació VR de l'exposició.

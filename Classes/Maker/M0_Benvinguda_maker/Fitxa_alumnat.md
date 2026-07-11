@@ -7,6 +7,7 @@ Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb s
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] Sé què fabricarem per al taller aquest curs.
 - [ ] Tinc el carnet de màquina (nivell làser i nivell 3D).
 

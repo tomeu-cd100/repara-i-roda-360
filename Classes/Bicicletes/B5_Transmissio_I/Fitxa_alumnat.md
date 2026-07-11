@@ -7,6 +7,7 @@ Comprova si la cadena està gastada, mantén-la o canvia-la, i revisa bieles i p
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He mesurat el desgast i he decidit què fer.
 - [ ] He lubricat o substituït la cadena correctament.
 - [ ] Bieles i pedals ben collats (rosca correcta).

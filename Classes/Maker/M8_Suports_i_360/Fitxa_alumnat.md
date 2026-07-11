@@ -7,6 +7,7 @@ Fabrica el suport de càmera 360 per a la bici i fes una primera captura 360.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He fabricat el suport de càmera 360 i s'aguanta a la bici.
 - [ ] He fet una captura 360 i l'he visualitzada.
 - [ ] Tinc el carnet de càmera 360 / VR.

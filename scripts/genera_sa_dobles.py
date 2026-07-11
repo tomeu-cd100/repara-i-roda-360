@@ -39,9 +39,11 @@ def sa_md(track, s):
     out.append("")
     out.append("## 2. Aprenentatge visible")
     out.append("En acabar seré capaç de…")
+    out.append("")
     out += [f"- {x}" for x in s["visible"]]
     out.append("")
     out.append("**Criteris d'èxit**")
+    out.append("")
     out += [f"- [ ] {x}" for x in s["exit"]]
     out.append("")
     out.append("## 3. Sabers")
@@ -50,6 +52,7 @@ def sa_md(track, s):
     out.append("## 4. Sessions")
     for titol, bullets in s["sessions"]:
         out.append(f"**{titol}**")
+        out.append("")
         out += [f"{i + 1}. {b}" for i, b in enumerate(bullets)]
         out.append("")
     out.append("## 5. Atenció a la diversitat (DUA)")
@@ -81,6 +84,7 @@ def fitxa_md(track, s):
     out.append("")
     out.append("## Els meus passos")
     out.append("*(marca'ls a mesura que els fas)*")
+    out.append("")
     out += [f"- [ ] {x}" for x in s["exit"]]
     out.append("")
     if s.get("fitxa"):

@@ -7,6 +7,7 @@ Ajusta els canvis perquè pugin i baixin net i sense saltar.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He ajustat topalls i tensió del canvi posterior.
 - [ ] He ajustat el canvi davanter.
 - [ ] La bici canvia suau i no salta.

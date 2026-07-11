@@ -7,6 +7,7 @@ Fabrica una caixa classificadora i ordena el magatzem de recanvis.
 
 ## Els meus passos
 *(marca'ls a mesura que els fas)*
+
 - [ ] He dissenyat la classificadora (mòduls).
 - [ ] L'he tallada i muntada.
 - [ ] El magatzem de recanvis està ordenat.
