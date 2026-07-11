@@ -656,10 +656,19 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
 
     # Docent
     dest = "\n".join(card(PATH_MAP[rel], icon, t, d) for icon, t, rel, d in DOCENT_DESTACATS)
-    impresos = "\n".join([
-        card("impressos/Diari_setmanal_paper.pdf", "📓", "Diari setmanal de l'alumnat (PDF)",
+    impr_alumnat = "\n".join([
+        card("impressos/Normes_contracte.pdf", "🛡️", "Normes de seguretat + contracte d'aula",
+             "A4: les normes del taller i el contracte per signar (SA0)", "imprimible"),
+        card("impressos/Passaport_alumne.pdf", "🎫", "Passaport: carnets i fites",
+             "2 per full (A5): carnets d'eines i de màquina, fites de trimestre, certificat",
+             "imprimible"),
+        card("impressos/Avaluacio_inicial_alumne.pdf", "📝", "Avaluació inicial (SA0)",
+             "A4: el punt de partida de cada alumne/a, sense nota", "imprimible"),
+        card("impressos/Diari_setmanal_paper.pdf", "📓", "Diari setmanal de l'alumnat",
              "A4, 2 cares: taller (cara A) i aula maker (cara B). Una còpia per alumne i setmana",
              "imprimible"),
+    ])
+    impr_docent = "\n".join([
         card("impressos/Full_valoracio_alumne.pdf", "✅", "Valoració diària per alumne (checklist)",
              "2 fitxes per full: compleix / encara no, amb les normes del taller. Una per alumne",
              "imprimible"),
@@ -673,10 +682,12 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
 <h1>👩‍🏫 Per al professorat</h1>
 <p class="lead">El material complet de l'optativa. Comença per la programació didàctica i tingues
 a mà els fulls per imprimir.</p>
-<h2>🖨️ Imprimibles (per al taller)</h2>
-<p class="lead">Descarrega'ls en PDF, imprimeix-los i porta'ls al taller. El diari és per a
-l'alumnat; els fulls de valoració, per a tu.</p>
-<div class="grid">{impresos}</div>
+<h2>🖨️ Imprimibles per a l'alumnat</h2>
+<p class="lead">Descarrega'ls en PDF, imprimeix-los i porta'ls al taller (molts es fan servir a
+la SA0).</p>
+<div class="grid">{impr_alumnat}</div>
+<h2>🖨️ Imprimibles per al docent (valoració)</h2>
+<div class="grid">{impr_docent}</div>
 <h2>Imprescindibles</h2>
 <div class="grid">{dest}</div>
 <h2>Tot el material, per carpetes</h2>
@@ -772,7 +783,7 @@ def copy_assets():
             shutil.copyfile(f, dest / slugify(f.name))
     # PDF imprimibles PROPIS → web/impressos/. NOMÉS d'aquestes carpetes: mai de
     # Recursos/ (hi ha el llibre de manteniment, amb drets d'autor, que no es publica).
-    for section in ("Avaluació", "Programació didàctica"):
+    for section in ("Avaluació", "Programació didàctica", "Normativa"):
         d = ROOT / section
         if d.is_dir():
             for pdf in d.glob("*.pdf"):

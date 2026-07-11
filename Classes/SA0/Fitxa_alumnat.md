@@ -67,6 +67,13 @@ Tria **una eina o una màquina** del taller i completa:
 - [ ] He fet l'**avaluació inicial** i la primera setmana de **diari**
 - [ ] Sé què farem aquest curs i tinc ganes de començar amb la SA1 🚲
 
+## 🖨️ Per imprimir (fulls d'aquesta SA)
+
+- [Normes de seguretat i contracte d'aula (PDF)](Normes_contracte.pdf)
+- [Passaport: carnets d'eines i de màquina (PDF)](Passaport_alumne.pdf)
+- [Avaluació inicial — el meu punt de partida (PDF)](Avaluacio_inicial_alumne.pdf)
+- [Diari setmanal (PDF)](Diari_setmanal_paper.pdf)
+
 ## Com m'avaluaran en aquesta SA
 
 | Què miraran | Com |
