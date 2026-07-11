@@ -89,6 +89,17 @@ def fitxa_md(track, s):
     out.append("2. **Prova-ho amb ajuda** (pràctica guiada, en parella).")
     out.append("3. **Fes-ho tu** i marca els passos de sota.")
     out.append("")
+    if s.get("video"):
+        vtit, vid = s["video"]
+        out.append("## 📹 Mira com es fa")
+        out.append(f'<div class="video-wrap"><iframe '
+                   f'src="https://www.youtube-nocookie.com/embed/{vid}" '
+                   f'title="{vtit}" loading="lazy" '
+                   f'allow="accelerometer; encrypted-media; picture-in-picture" '
+                   f'allowfullscreen></iframe></div>')
+        out.append("")
+        out.append(f"*Vídeo: {vtit} (YouTube).*")
+        out.append("")
     out.append("## Els passos d'avui")
     out.append("*(marca'ls a mesura que els aprens i els fas)*")
     out.append("")
@@ -245,6 +256,7 @@ BICI = [
   "materials": ["Cambres, pegats, pneumàtics, palanques, bomba.",
                 "`Recursos/Llibre Manteniment Bici/Cap06_ruedas.pdf` (docent), "
                 "`Recursos/reparació de punxades.docx`."],
+  "video": ("Aprèn a reparar una punxada — Decathlon", "sNt0N9CNjAM"),
   "fitxa": [("El pas de la punxada que més em costa:", "________________"),
             ("Pressió correcta del pneumàtic (mira el flanc):", "______ bar/psi")],
   "aval": [("Desmuntatge/muntatge de roda", "Observació", "CA1.3"),
