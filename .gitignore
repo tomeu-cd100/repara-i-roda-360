@@ -1,0 +1,21 @@
+# Sistema operatiu
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporals
+*.tmp
+*~
+~$*
+
+# Web generada (fase final, com al projecte Maker)
+web/
+
+# ⚠️ Drets d'autor: capítols de llibre publicat, només ús docent local.
+Recursos/Llibre Manteniment Bici/
+
+# ⚠️ RGPD: MAI comitejar fitxers amb dades d'alumnes.
+# El quadern digital emplenat i qualsevol exportació amb noms van aquí:
+dades/
+*_DADES.*
+*_dades.*
