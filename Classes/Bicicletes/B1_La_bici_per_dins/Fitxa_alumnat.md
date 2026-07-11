@@ -16,6 +16,10 @@ Rep una bici, identifica'n el tipus i les parts i omple la fitxa de recepció.
 
 **La primera reparació que crec que necessitarà:** ________________
 
+## 🖨️ Per imprimir
+- [Full de recepció de la bicicleta (Excel — imprimeix-lo i omple'l)](Fitxa_recepció_bicicleta.xlsx)
+- [Diari setmanal (PDF)](Diari_setmanal_paper.pdf)
+
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|

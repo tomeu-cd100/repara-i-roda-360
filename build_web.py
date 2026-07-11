@@ -213,7 +213,7 @@ def rewrite_links(html_text: str, out_rel: str, current_rel_dir: str) -> str:
             target = FOLDER_MAP.get(href, FOLDER_MAP.get(href.rstrip("/") + "/"))
         elif href.endswith(".md"):
             target = resolve_ref(href.replace("%20", " "), current_rel_dir)
-        elif href.endswith(".pdf"):
+        elif href.endswith((".pdf", ".xlsx")):
             target = "impressos/" + href.rsplit("/", 1)[-1]
         if target:
             return f'href="{prefix}{target}"'
@@ -228,7 +228,7 @@ def rewrite_links(html_text: str, out_rel: str, current_rel_dir: str) -> str:
         target = None
         if base.endswith(".md"):
             target = resolve_ref(base, current_rel_dir)
-        elif base.endswith(".pdf"):
+        elif base.endswith((".pdf", ".xlsx")):
             target = "impressos/" + base.rsplit("/", 1)[-1]
         elif base in FOLDER_MAP:
             target = FOLDER_MAP[base]
@@ -929,6 +929,10 @@ def copy_assets():
             for pdf in d.glob("*.pdf"):
                 (OUT / "impressos").mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(pdf, OUT / "impressos" / pdf.name)
+    # fulls Excel del docent (Recursos/*.xlsx) → web/impressos/ (mantenint el nom)
+    for x in (ROOT / "Recursos").glob("*.xlsx"):
+        (OUT / "impressos").mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(x, OUT / "impressos" / x.name)
     if (ROOT / "LICENSE").exists():
         shutil.copyfile(ROOT / "LICENSE", OUT / "LICENSE")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
