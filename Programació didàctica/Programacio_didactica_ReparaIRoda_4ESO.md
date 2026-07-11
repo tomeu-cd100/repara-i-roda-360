@@ -82,7 +82,7 @@ La justificació pedagògica és triple:
 ## 4. Competències específiques i criteris d'avaluació
 
 > Codificació pròpia de la matèria (CE = competència específica). Els criteris (CA) es
-> numeren per a la traçabilitat amb les SA i les rúbriques.
+> numeren per a la traçabilitat amb les unitats (B0–B9, M0–M9) i les rúbriques.
 
 ### CE1. Diagnosticar i reparar sistemes mecànics de la bicicleta amb eines adequades i de manera segura.
 - **CA1.1** Identifica les parts de la bicicleta i la funció de cada sistema.
@@ -154,8 +154,11 @@ La justificació pedagògica és triple:
 
 - **Aprenentatge basat en projectes (ABP) + aprenentatge servei (ApS):** cada bicicleta
   reparada és un projecte real amb destinatari real.
-- **SA integrades:** cada situació d'aprenentatge té doble cara — eix de taller (2h) i
-  microprojecte maker (1h) — amb un únic fil narratiu.
+- **Dues assignatures que es complementen:** el projecte s'organitza en **dues seqüències
+  separades** que es treballen com dues matèries diferents, tot i que es complementen:
+  el **🚲 Taller de bicicletes** (2 h/setmana, unitats **B0–B9**) i l'**🛠️ Aula maker**
+  (1 h/setmana, unitats **M0–M9**). Cada unitat de maker fabrica peces al servei de la unitat
+  de bicicletes del mateix número (M3 fa el kit que B3 fa servir a rodes i punxades, etc.).
 - **Sessió tipus fixa i predictible**, adequada al perfil del grup:
   1. Acollida i recordatori d'objectius (10')
   2. Demostració guiada pas a pas (20')
@@ -181,27 +184,41 @@ La justificació pedagògica és triple:
 
 ## 7. Temporització anual (visió de conjunt)
 
-Curs de ~35 setmanes lectives (2h taller + 1h maker per setmana = 105 hores). Detall a
-`Temporitzacio_anual.md`.
+Curs de ~35 setmanes lectives. **Dues assignatures** en paral·lel: 2 h de taller de bicicletes +
+1 h d'aula maker per setmana = 105 hores. Detall setmana a setmana a `Temporitzacio_anual.md`.
 
-| SA | Títol | Setm. | Taller (2h) | Maker (1h) |
-|----|-------|-------|-------------|------------|
-| SA0 | Punt de partida | 2 | Acollida, normes, seguretat, gimcana d'eines | Carnet de màquina, seguretat làser/3D |
-| SA1 | La bici per dins | 2 | Anatomia, tipus, història; recepció i diagnosi de bicis donades | Placa identificativa làser per a cada bici |
-| SA2 | Posada a punt | 3 | Neteja, lubricació, M-check de seguretat | Organitzadors i penjadors d'eines (làser/3D), retolació del taller |
-| SA3 | Rodes i punxades | 3 | Cambres, pneumàtics, radis, alineació | Palanques desmuntables 3D, caixa kit reparació làser |
-| SA4 | Frens | 4 | Sabata i disc: ajust, cables, pastilles | Separadors de pastilles i guies de cable 3D |
-| SA5 | Transmissió I | 3 | Cadena, bieles, pedals | Mesurador de desgast de cadena, clauer engranatge |
-| SA6 | Transmissió II | 4 | Canvis i desviadors, ajust fi | Caixa classificadora de recanvis, suports de treball |
-| SA7 | Punts de contacte | 3 | Seient, manillar, direcció, ergonomia | Peces de confort i adaptadors 3D |
-| SA8 | Seguretat i accessoris | 3 | Llums, reflectors, casc, normativa viària | Suports de llum/mòbil 3D + suport càmera 360 per a bici + iniciació captura 360 |
-| SA9 | Repara i Roda | 8 | Sortides urbanes setmanals + reparació final | Rutes virtualitzades 360/VR, material per a l'exposició pública |
+### 🚲 Taller de bicicletes (2 h/setmana · unitats B0–B9)
 
-| Trim. | Eix | SA | Setmanes aprox. |
-|-------|-----|----|-----------------|
-| 1r | El taller: seguretat, diagnosi, rodes i frens | SA0–SA4 | 1–12 |
-| 2n | Transmissió, ergonomia i fabricació per al taller | SA4–SA7 | 13–24 |
-| 3r | Carrer: sortides, rutes 360/VR, exposició i certificat | SA8–SA9 | 25–35 |
+| Unitat | Títol | Setm. | Contingut |
+|--------|-------|-------|-----------|
+| **B0** | Punt de partida | 1–2 | Acollida, normes, seguretat, gimcana d'eines, carnet d'eines |
+| **B1** | La bici per dins | 3–4 | Anatomia, tipus, història; recepció i diagnosi de bicis donades |
+| **B2** | Posada a punt | 5–7 | Neteja, lubricació, M-check de seguretat |
+| **B3** | Rodes i punxades | 8–10 | Cambres, pneumàtics, radis, alineació |
+| **B4** | Frens | 11–14 | Sabata i disc: ajust, cables, pastilles |
+| **B5** | Transmissió I | 15–17 | Cadena, bieles, pedals |
+| **B6** | Transmissió II | 18–21 | Canvis i desviadors, ajust fi |
+| **B7** | Punts de contacte | 22–24 | Seient, manillar, direcció, ergonomia |
+| **B8** | Seguretat viària | 25–27 | Llums, reflectors, casc, normativa viària |
+| **B9** | Repara i Roda | 28–35 | Sortides urbanes setmanals + reparació final + exposició |
+
+### 🛠️ Aula maker (1 h/setmana · unitats M0–M9)
+
+| Unitat | Títol | Setm. | Contingut | Serveix |
+|--------|-------|-------|-----------|:------:|
+| **M0** | Benvinguda maker | 1–2 | L'aula, seguretat làser/3D, carnet de màquina | B0 |
+| **M1** | Placa identificativa | 3–4 | Inkscape + gravat làser | B1 |
+| **M2** | Organitzadors d'eines | 5–7 | Suports d'eines (làser/3D) + retolació | B2 |
+| **M3** | Kit de reparació | 8–10 | Palanques 3D + caixa làser | B3 |
+| **M4** | Peces de fre | 11–14 | Separadors i guies (3D) | B4 |
+| **M5** | Mesurador de desgast | 15–17 | Mesurador de cadena + clauer | B5 |
+| **M6** | Caixa classificadora | 18–21 | Classificadora de recanvis | B6 |
+| **M7** | Peces de confort | 22–24 | Adaptadors i peces de confort (3D) | B7 |
+| **M8** | Suports i captura 360 | 25–27 | Suport càmera 360 + iniciació captura 360 | B8 |
+| **M9** | Rutes 360/VR | 28–35 | Rutes virtualitzades + estació VR de l'exposició | B9 |
+
+**Trimestres** (per a les dues assignatures): 1r = unitats 0–4 (setm. 1–12) · 2n = unitats 4–7
+(13–24) · 3r = unitats 8–9 (25–35).
 
 ---
 
@@ -242,7 +259,7 @@ comunitària.
 El grup professionalitzador **és** el destinatari primari d'aquesta optativa: tota la
 programació està dissenyada des de l'accessibilitat, no com a adaptació posterior.
 
-- **Avaluació inicial pràctica** (SA0) per conèixer el punt de partida real de cada alumne/a.
+- **Avaluació inicial pràctica** (B0) per conèixer el punt de partida real de cada alumne/a.
 - **Sessió tipus fixa i predictible** que redueix l'ansietat i facilita l'autoregulació.
 - **Instruccions segmentades** amb suport visual; fitxes plastificades amb passos numerats.
 - **Tempos flexibles** i tasques graduades per nivells; ningú no queda aturat.
@@ -274,7 +291,7 @@ programació està dissenyada des de l'accessibilitat, no com a adaptació poste
   ordinadors.
 - **Programari:** Inkscape, Tinkercad, Bambu Studio, xTool Creative Space, visor 360.
 - **Documentació de suport:** carpeta `Recursos/` — llibre de manteniment per capítols
-  (referència tècnica de cada SA), fitxes de taller, làmina de parts de la bicicleta,
+  (referència tècnica de cada unitat), fitxes de taller, làmina de parts de la bicicleta,
   vocabulari anglès de la bicicleta.
 - **Per a les sortides:** cascos, armilles reflectants, kit de reparació portàtil,
   autoritzacions de famílies.

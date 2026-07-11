@@ -92,23 +92,44 @@ professionalitzador:
 | **CE5** Seguretat i responsabilitat viària | **CE6** (6.2, 6.3) | C8 | Ús ecosocialment responsable de la tecnologia: **mobilitat eficient** (criteri 6.2) i ciutadania activa a l'espai urbà |
 | **CE6** Cooperació i contribució comunitària (ApS) | **CE1** (1.1) + **CE6** (6.3) + **CE3** (3.1) | C3, C8 | Solucions que **generen valor a la comunitat** i **projectes de servei a la comunitat**; treball en parella |
 
-### Mapatge SA per SA
+### Mapatge unitat per unitat (dues assignatures)
 
-| SA | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
-|----|----------------------|---------------|----------------------------------|
-| SA0 Punt de partida | CE6, CE2 | CE1, CE2 | Observació + carnet de màquina + avaluació inicial |
-| SA1 La bici per dins | CE1, CE3 | CE1, CE2 | Fitxa de recepció/diagnosi + placa fabricada |
-| SA2 Posada a punt | CE2, CE3 | CE2, CE5 | Rúbrica M-check + organitzadors fabricats |
-| SA3 Rodes i punxades | CE1, CE3 | CE2, CE5 | Rúbrica pràctica de reparació + kit fabricat |
-| SA4 Frens | CE1, CE3 | CE2, CE5 | Rúbrica pràctica de frens + peces 3D provades |
-| SA5 Transmissió I | CE1, CE2 | CE2 | Rúbrica pràctica + mesurador aplicat |
-| SA6 Transmissió II | CE1, CE6 | CE2, CE1 | Rúbrica d'ajust de canvis + diagnosi per parelles |
-| SA7 Punts de contacte | CE1, CE3 | CE2, CE5 | Rúbrica d'ajust ergonòmic + peces de confort |
-| SA8 Seguretat i accessoris | CE5, CE4 | CE6, CE3 | Casos pràctics de normativa + suports fabricats |
-| SA9 Repara i Roda | CE5, CE4, CE6 | CE6, CE3, CE5 | Rúbrica de sortides + rutes 360/VR + exposició i donació |
+Les competències es reparteixen entre les dues assignatures: el **taller de bicicletes** cobreix
+sobretot **CE1, CE2, CE5 i CE6**; l'**aula maker**, **CE3 i CE4**. El **diari setmanal** (CE4/C3)
+és transversal a totes dues.
 
-El **diari setmanal en paper** (CE4/C3, vinculat a CE3 oficial) és transversal: s'avalua a
-totes les SA.
+#### 🚲 Taller de bicicletes (B0–B9)
+
+| Unitat | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
+|--------|----------------------|---------------|----------------------------------|
+| **B0** Punt de partida | CE6, CE2 | CE1, CE2 | Observació + carnet d'eines + avaluació inicial |
+| **B1** La bici per dins | CE1 | CE1, CE2 | Fitxa de recepció/diagnosi |
+| **B2** Posada a punt | CE2 | CE2 | Rúbrica del M-check |
+| **B3** Rodes i punxades | CE1 | CE2 | Rúbrica pràctica de reparació |
+| **B4** Frens | CE1 | CE2 | Rúbrica pràctica de frens (comprovació de seguretat) |
+| **B5** Transmissió I | CE1, CE2 | CE2 | Rúbrica pràctica de cadena i pedals |
+| **B6** Transmissió II | CE1, CE6 | CE2, CE1 | Rúbrica d'ajust de canvis + diagnosi per parelles |
+| **B7** Punts de contacte | CE1 | CE2 | Rúbrica d'ajust ergonòmic |
+| **B8** Seguretat viària | CE5 | CE6 | Casos pràctics de normativa + bici equipada |
+| **B9** Repara i Roda | CE5, CE6 | CE6 | Rúbrica de sortides + bici donada (ApS) |
+
+#### 🛠️ Aula maker (M0–M9)
+
+| Unitat | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
+|--------|----------------------|---------------|----------------------------------|
+| **M0** Benvinguda maker | CE6 | CE5, CE7 | Carnet de màquina (làser/3D) + seguretat |
+| **M1** Placa identificativa | CE3 | CE5, CE2 | Placa dissenyada i gravada |
+| **M2** Organitzadors d'eines | CE3 | CE2, CE5 | Organitzador fabricat + retolació |
+| **M3** Kit de reparació | CE3 | CE2, CE5 | Palanques 3D + caixa fabricada |
+| **M4** Peces de fre | CE3 | CE2 | Peça 3D provada i iterada |
+| **M5** Mesurador de desgast | CE3 | CE2, CE5 | Mesurador fabricat i aplicat |
+| **M6** Caixa classificadora | CE3 | CE2, CE5 | Classificadora + magatzem ordenat |
+| **M7** Peces de confort | CE3 | CE2 | Adaptador 3D provat |
+| **M8** Suports i captura 360 | CE3, CE4 | CE5, CE6 | Suport càmera 360 + primera captura |
+| **M9** Rutes 360/VR | CE4 | CE3, CE5 | Rutes virtualitzades + estació VR |
+
+El **diari setmanal en paper** (CE4/C3, vinculat a CE3 oficial) s'avalua a totes les unitats
+(cara A al taller, cara B a l'aula maker).
 
 ### Cobertura i límits (honest, per a la inspecció)
 
