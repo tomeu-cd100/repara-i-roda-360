@@ -354,6 +354,17 @@ img { max-width: 100%; }
 .mapa-curs svg {
   display: block; width: 100%; max-width: 720px; height: auto; margin: 0 auto;
 }
+/* gimcana projectable: dues columnes + imatge ampliable */
+.g2 { display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: flex-start; margin: 1.2rem 0; }
+.g2 > * { flex: 1 1 18rem; }
+.gph { border: 2px dashed var(--line); border-radius: 14px; padding: 1.4rem;
+  text-align: center; color: var(--ink-soft); background: var(--bg-card); min-height: 9rem;
+  display: flex; align-items: center; justify-content: center; }
+.doc img.zoomable { cursor: zoom-in; }
+.zoomhint { font-size: .85rem; color: var(--ink-soft); margin-top: .3rem; }
+.g2 ol { margin: 0; padding-left: 1.4rem; }
+.g2 ol li { margin: .35rem 0; font-weight: 600; }
+
 /* mapa de dos carrils (bicicletes 2h / maker 1h) */
 .mapa2 { margin: 1.4rem 0; overflow-x: auto; }
 .mapa2 svg {
