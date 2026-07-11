@@ -10,6 +10,7 @@ germans (Aula Maker, Robòtica).
 Requereix: pip install markdown
 """
 
+import hashlib
 import html
 import json
 import re
@@ -21,6 +22,10 @@ import markdown
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "web"
+
+# versió del CSS (hash del contingut) per invalidar la memòria cau a cada desplegament
+CSS_VER = hashlib.md5(
+    (ROOT / "web_assets" / "style.css").read_bytes()).hexdigest()[:8]
 
 SECTIONS = [
     "Programació didàctica",
@@ -239,7 +244,7 @@ def render_page(title, body, out_rel, crumb):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · Repara i Roda 360</title>
-<link rel="stylesheet" href="{prefix}assets/style.css">
+<link rel="stylesheet" href="{prefix}assets/style.css?v={CSS_VER}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>">
 </head>
 <body>
