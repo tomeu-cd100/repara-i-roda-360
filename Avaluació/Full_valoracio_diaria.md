@@ -1,13 +1,19 @@
-# Full de valoració diària del docent — «Repara i Roda 360»
+# Fulls de valoració diària del docent — «Repara i Roda 360»
 
-> **Instrument d'avaluació ràpida de cada sessió.** El docent valora cada alumne/a al **taller
-> de bicicletes** i a l'**aula maker** amb codis d'un cop d'ull. Es fa servir imprès (un full
-> per sessió) i després es buida al `Full_seguiment_grup.md` i al `Full_progres_competencial.md`.
+> Hi ha **dos** fulls per avaluar cada dia, tria segons el que et convingui:
 >
-> 📄 **Versió imprimible:** `Full_valoracio_diaria.pdf` (A4 apaïsat, 12 alumnes). Es regenera
-> amb `py -3.11 scripts/genera_full_valoracio.py` (canvieu `NObiles` per a més o menys files).
+> 📄 **Per alumne (checklist):** `Full_valoracio_alumne.pdf` — 2 fitxes per full. Per a cada
+> alumne/a, llista de coses que **compleix** o **encara no** té assolides, incloent-hi les
+> **normes del taller**. Ideal per a un seguiment detallat i individual. Es regenera amb
+> `py -3.11 scripts/genera_valoracio_alumne.py`.
+>
+> 🗂️ **De grup (graella):** `Full_valoracio_diaria.pdf` — A4 apaïsat amb tot el grup d'un cop
+> d'ull (taller + aula maker), amb codis ràpids. Es regenera amb
+> `py -3.11 scripts/genera_full_valoracio.py` (canvieu `NObiles` per a més o menys files).
+>
+> Tots dos es buiden després al `Full_seguiment_grup.md` i al `Full_progres_competencial.md`.
 
-## Estructura del full
+## Estructura de la graella de grup
 
 Capçalera: **Data · Setmana · SA · quin espai s'avalua avui** (taller 2h / maker 1h).
 

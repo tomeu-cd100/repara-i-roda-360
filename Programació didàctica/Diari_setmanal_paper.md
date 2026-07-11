@@ -9,8 +9,12 @@
 > **no l'ortografia ni la quantitat de text**. Una frase sincera per camp ja és una bona
 > entrada. Es pot respondre amb dibuix o esquema (DUA).
 >
+> 📄 **Versió imprimible (PDF):** `Diari_setmanal_paper.pdf` — A4, 2 cares (A taller, B maker),
+> llest per imprimir i omplir a mà al taller. Es regenera amb
+> `py -3.11 scripts/genera_diari_setmanal.py`.
+>
 > 🔁 **El format es refinarà amb l'alumnat durant el curs**: aquest document és el disseny de
-> partida; els canvis s'anoten aquí i es traslladen a les plantilles imprimibles.
+> partida; els canvis s'anoten aquí i es traslladen a la plantilla imprimible.
 
 ---
 

@@ -576,20 +576,26 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
 
     # Docent
     dest = "\n".join(card(PATH_MAP[rel], icon, t, d) for icon, t, rel, d in DOCENT_DESTACATS)
-    impresos = card("impressos/Full_valoracio_diaria.pdf", "🖨️",
-                    "Full de valoració diària (PDF)",
-                    "A4 apaïsat per avaluar cada dia el taller i l'aula maker", "imprimible")
-    sections = "\n".join(
-        card(slugify(s) + "/index.html", SECTION_ICONS[s], s, SECTION_DESC[s])
-        for s in SECTIONS)
+    impresos = "\n".join([
+        card("impressos/Diari_setmanal_paper.pdf", "📓", "Diari setmanal de l'alumnat (PDF)",
+             "A4, 2 cares: taller (cara A) i aula maker (cara B). Una còpia per alumne i setmana",
+             "imprimible"),
+        card("impressos/Full_valoracio_alumne.pdf", "✅", "Valoració diària per alumne (checklist)",
+             "2 fitxes per full: compleix / encara no, amb les normes del taller. Una per alumne",
+             "imprimible"),
+        card("impressos/Full_valoracio_diaria.pdf", "🗂️", "Valoració diària de grup (graella)",
+             "A4 apaïsat: tot el grup d'un cop d'ull, taller + aula maker", "imprimible"),
+    ])
     body = f"""
 <h1>👩‍🏫 Per al professorat</h1>
 <p class="lead">El material complet de l'optativa. Comença per la programació didàctica i tingues
-a mà el full de valoració diària.</p>
+a mà els fulls per imprimir.</p>
+<h2>🖨️ Imprimibles (per al taller)</h2>
+<p class="lead">Descarrega'ls en PDF, imprimeix-los i porta'ls al taller. El diari és per a
+l'alumnat; els fulls de valoració, per a tu.</p>
+<div class="grid">{impresos}</div>
 <h2>Imprescindibles</h2>
 <div class="grid">{dest}</div>
-<h2>🖨️ Per imprimir</h2>
-<div class="grid">{impresos}</div>
 <h2>Tot el material, per carpetes</h2>
 <div class="grid">{sections}</div>
 """
@@ -681,10 +687,13 @@ def copy_assets():
         if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"):
             dest.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(f, dest / slugify(f.name))
-    pdf = ROOT / "Avaluació" / "Full_valoracio_diaria.pdf"
-    if pdf.exists():
-        (OUT / "impressos").mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(pdf, OUT / "impressos" / pdf.name)
+    # tots els PDF imprimibles de les carpetes de contingut → web/impressos/
+    for section in SECTIONS:
+        d = ROOT / section
+        if d.is_dir():
+            for pdf in d.rglob("*.pdf"):
+                (OUT / "impressos").mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(pdf, OUT / "impressos" / pdf.name)
     if (ROOT / "LICENSE").exists():
         shutil.copyfile(ROOT / "LICENSE", OUT / "LICENSE")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
