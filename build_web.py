@@ -912,12 +912,15 @@ q.addEventListener('input',()=>{clearTimeout(q._d);q._d=setTimeout(cerca,250);})
 
 
 def copy_assets():
+    # imatges de Recursos/ (i subcarpetes com Recursos/imatges/eines/) → web/recursos/…
     imatges = ROOT / "Recursos"
-    dest = OUT / "recursos"
-    for f in imatges.glob("*"):
-        if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"):
-            dest.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(f, dest / slugify(f.name))
+    if imatges.is_dir():
+        for f in imatges.rglob("*"):
+            if f.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"):
+                rel = str(f.relative_to(ROOT)).replace("\\", "/")
+                out = OUT / slugify(rel)
+                out.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(f, out)
     # PDF imprimibles PROPIS → web/impressos/. NOMÉS d'aquestes carpetes: mai de
     # Recursos/ (hi ha el llibre de manteniment, amb drets d'autor, que no es publica).
     for section in ("Avaluació", "Programació didàctica", "Normativa"):
