@@ -1,33 +1,40 @@
-/* Aula Maker — estil «taller càlid» */
+/* Repara i Roda 360 — estil modern (indigo-violeta + cian) */
 :root {
-  --bg: #faf6ef;
+  --bg: #f4f5fb;
   --bg-card: #ffffff;
-  --ink: #2b2318;
-  --ink-soft: #6b5d4b;
-  --accent: #e8641b;
-  --accent-soft: #fdeadd;
-  --amber: #f5a623;
-  --line: #e8ddcc;
-  --code-bg: #f4ede0;
-  --shadow: 0 2px 10px rgba(90, 60, 20, .08);
-  --radius: 14px;
+  --ink: #14172a;
+  --ink-soft: #5a6079;
+  --accent: #6d5efc;
+  --accent-2: #12c2c9;
+  --accent-soft: #ecebff;
+  --amber: #ff5d8f;
+  --line: #e5e7f2;
+  --code-bg: #f0f1fb;
+  --grad: linear-gradient(120deg, #6d5efc 0%, #a05cff 45%, #12c2c9 100%);
+  --shadow: 0 6px 22px rgba(80, 70, 160, .10);
+  --radius: 16px;
 }
 :root[data-theme="dark"] {
-  --bg: #1e1a15;
-  --bg-card: #29231c;
-  --ink: #f0e8db;
-  --ink-soft: #b3a488;
-  --accent: #ff8a3d;
-  --accent-soft: #3a2b1d;
-  --line: #3d342a;
-  --code-bg: #322a20;
-  --shadow: 0 2px 10px rgba(0, 0, 0, .35);
+  --bg: #0e1020;
+  --bg-card: #191d33;
+  --ink: #e9ebfb;
+  --ink-soft: #9aa1c4;
+  --accent: #8b7dff;
+  --accent-2: #2ad4db;
+  --accent-soft: #241f4a;
+  --amber: #ff7aa6;
+  --line: #2a2f4c;
+  --code-bg: #1c2138;
+  --grad: linear-gradient(120deg, #8b7dff 0%, #b47bff 45%, #2ad4db 100%);
+  --shadow: 0 6px 22px rgba(0, 0, 0, .45);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #1e1a15; --bg-card: #29231c; --ink: #f0e8db; --ink-soft: #b3a488;
-    --accent: #ff8a3d; --accent-soft: #3a2b1d; --line: #3d342a; --code-bg: #322a20;
-    --shadow: 0 2px 10px rgba(0, 0, 0, .35);
+    --bg: #0e1020; --bg-card: #191d33; --ink: #e9ebfb; --ink-soft: #9aa1c4;
+    --accent: #8b7dff; --accent-2: #2ad4db; --accent-soft: #241f4a;
+    --amber: #ff7aa6; --line: #2a2f4c; --code-bg: #1c2138;
+    --grad: linear-gradient(120deg, #8b7dff 0%, #b47bff 45%, #2ad4db 100%);
+    --shadow: 0 6px 22px rgba(0, 0, 0, .45);
   }
 }
 
@@ -207,18 +214,32 @@ img { max-width: 100%; }
 .jqz-feedback .jqz-opcions { margin-top: .6rem; }
 
 /* ── portada ───────────────────────────────── */
-.hero { text-align: center; padding: 2.5rem 0 1.5rem; }
-.hero h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); margin-bottom: .5rem; }
-.tagline { font-size: 1.15rem; color: var(--ink-soft); max-width: 38rem; margin: 0 auto 1.5rem; }
-.hero-actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
-.btn {
-  display: inline-block; padding: .7rem 1.5rem; border-radius: 999px;
-  text-decoration: none; font-weight: 600; color: var(--ink);
-  background: var(--bg-card); border: 2px solid var(--line);
-  box-shadow: var(--shadow);
+.hero {
+  text-align: center; padding: 3rem 1.2rem 2rem; margin: .5rem 0 1rem;
+  border-radius: 26px;
+  background:
+    radial-gradient(80% 120% at 50% -20%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    var(--bg-card);
+  border: 1px solid var(--line);
 }
-.btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.btn:hover { transform: translateY(-2px); transition: transform .15s; }
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 3.6rem); margin-bottom: .5rem; letter-spacing: -.02em;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.tagline { font-size: 1.15rem; color: var(--ink-soft); max-width: 40rem; margin: 0 auto 1.6rem; }
+.hero-actions { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: .75rem 1.6rem; border-radius: 999px;
+  text-decoration: none; font-weight: 700; color: var(--ink);
+  background: var(--bg-card); border: 2px solid var(--line);
+  box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s;
+}
+.btn-primary {
+  background: var(--grad); border-color: transparent; color: #fff;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(80, 70, 160, .22); }
 
 /* ── targetes i graelles ───────────────────── */
 .grid {
@@ -282,6 +303,32 @@ img { max-width: 100%; }
 .sa-nav strong { font-size: .85rem; font-weight: 600; }
 .sa-nav .sa-next { text-align: right; }
 .sa-nav .sa-dis { opacity: .3; }
+/* recorregut pas a pas (guiat, bidireccional) */
+.sa-walk { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 2px solid var(--accent-soft); }
+.sa-walk > h2 { margin: 0 0 .2rem; border: none; font-size: 1.15rem;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent; display: inline-block; }
+.sa-walk-hint { margin: .1rem 0 1rem; color: var(--ink-soft); font-size: .92rem; }
+.sa-steps { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; align-items: stretch; }
+.sa-step { display: flex; flex-direction: column; gap: .15rem; text-decoration: none;
+  padding: .9rem 1.1rem; border: 1.5px solid var(--line); border-radius: 14px;
+  background: var(--bg-card); color: var(--ink); box-shadow: var(--shadow);
+  transition: transform .15s, border-color .15s; }
+.sa-step:hover { transform: translateY(-2px); border-color: var(--accent); }
+.sa-step small { font-size: .72rem; color: var(--ink-soft); font-weight: 600;
+  text-transform: uppercase; letter-spacing: .04em; }
+.sa-step strong { font-size: .98rem; font-weight: 700; }
+.sa-step.next { text-align: right; border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.sa-step.dis { opacity: .35; pointer-events: none; box-shadow: none; }
+.sa-done-row { display: flex; justify-content: center; margin: .9rem 0 .2rem; }
+.sa-done { font: inherit; font-weight: 700; cursor: pointer; color: #fff;
+  background: var(--grad); border: none; border-radius: 999px; padding: .55rem 1.4rem;
+  box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: transform .15s, filter .15s; }
+.sa-done:hover { transform: translateY(-1px); }
+.sa-done.fet { background: none; color: #12b76a; border: 2px solid #12b76a;
+  box-shadow: none; }
+@media (max-width: 33rem) { .sa-steps { grid-template-columns: 1fr; } }
 /* chips de germanes: petits i sobris */
 .sa-sib { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; margin: 0 0 .6rem; }
 .sa-chip, .sa-hublink { border: 1px solid var(--line); border-radius: 999px;

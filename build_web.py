@@ -335,6 +335,80 @@ def sa_siblings(folder):
     return [(lbl, base, kind) for _o, lbl, base, kind in out]
 
 
+# Recorregut pas a pas de l'alumnat: dins de cada SA es passa pels seus passos
+# (hub → fitxa → material extra) i, al final, se salta a la SA següent. Les pàgines de
+# referència del docent (la SA completa i la rúbrica) NO són passos de l'alumne.
+_WALK_PRIO = {"hub": -1, "fitxa": 0, "extra": 2}
+SA_SEQUENCE = []      # [{folder, base, kind, label}] en ordre de recorregut
+SEQ_INDEX = {}        # (folder, base) → posició a SA_SEQUENCE
+
+
+def build_sequence():
+    SA_SEQUENCE.clear()
+    SEQ_INDEX.clear()
+    for code, name, _trim, _product, folder in SA_CARDS:
+        SA_SEQUENCE.append({"folder": folder, "base": "index.html", "kind": "hub",
+                            "label": f"{code} · {html.escape(name)}"})
+        sibs = [s for s in sa_siblings(folder) if s[2] in _WALK_PRIO]
+        for lbl, base, kind in sorted(sibs, key=lambda s: _WALK_PRIO[s[2]]):
+            SA_SEQUENCE.append({"folder": folder, "base": base, "kind": kind,
+                                "label": f"{code} · {lbl}"})
+    for i, e in enumerate(SA_SEQUENCE):
+        SEQ_INDEX[(e["folder"], e["base"])] = i
+
+
+def _fitxa_base(folder):
+    for lbl, base, kind in sa_siblings(folder):
+        if kind == "fitxa":
+            return base
+    return "index.html"
+
+
+def step_nav(folder, base):
+    """Recorregut guiat bidireccional per a la pàgina (folder, base)."""
+    i = SEQ_INDEX.get((folder, base))
+    if i is None:  # pàgina de referència (doc/rúbrica): situa't a la fitxa de la SA
+        i = SEQ_INDEX.get((folder, _fitxa_base(folder)))
+    if i is None:
+        return ""
+
+    def rel_href(e):
+        return e["base"] if e["folder"] == folder else f'../{slugify(e["folder"])}/{e["base"]}'
+
+    prev = SA_SEQUENCE[i - 1] if i > 0 else None
+    nxt = SA_SEQUENCE[i + 1] if i < len(SA_SEQUENCE) - 1 else None
+    if prev:
+        left = (f'<a class="sa-step prev" href="{rel_href(prev)}">'
+                f'<small>← pas anterior</small><strong>{prev["label"]}</strong></a>')
+    else:
+        left = ('<span class="sa-step prev dis"><small>← pas anterior</small>'
+                '<strong>Aquí comença tot</strong></span>')
+    if nxt:
+        right = (f'<a class="sa-step next" href="{rel_href(nxt)}">'
+                 f'<small>pas següent →</small><strong>{nxt["label"]}</strong></a>')
+    else:
+        right = ('<span class="sa-step next dis"><small>pas següent →</small>'
+                 '<strong>Fi del curs 🎉</strong></span>')
+    key = f"{folder}/{base}"
+    return f"""
+<div class="sa-walk">
+  <h2>🧭 El teu recorregut pas a pas</h2>
+  <p class="sa-walk-hint">Fes la feina d'avui. Quan l'acabis, marca-la com a feta i passa al
+  següent pas. Pots tornar enrere sempre que vulguis.</p>
+  <div class="sa-steps">{left}{right}</div>
+  <div class="sa-done-row">
+    <button class="sa-done" type="button" data-step="{key}">Marca aquest pas com a fet ✓</button>
+  </div>
+</div>
+<script>(function(){{var b=document.querySelector('.sa-done[data-step="{key}"]');
+if(!b)return;var k='fet:'+b.dataset.step;
+function pinta(){{var f=localStorage.getItem(k)==='1';b.classList.toggle('fet',f);
+b.textContent=f?'Pas fet ✓ (torna-hi si vols)':'Marca aquest pas com a fet ✓';}}
+b.onclick=function(){{localStorage.setItem(k,localStorage.getItem(k)==='1'?'0':'1');pinta();}};
+pinta();}})();</script>
+"""
+
+
 def sa_cards(prefix):
     return "\n".join(
         f'<a class="card sa" href="{prefix}classes/{slugify(folder)}/index.html">'
@@ -351,7 +425,7 @@ def sa_context_bar(folder, current_base):
             chips.append(f'<span class="sa-chip cur">{lbl}</span>')
         else:
             chips.append(f'<a class="sa-chip" href="{base}">{lbl}</a>')
-    return f'<div class="sa-sib">{"".join(chips)}</div>'
+    return f'<div class="sa-sib">{"".join(chips)}</div>{step_nav(folder, current_base)}'
 
 
 def build_sa_hubs():
@@ -376,6 +450,7 @@ def build_sa_hubs():
 {primary}
 <h2>Tot el material d'aquesta SA</h2>
 <div class="grid">{cards}</div>
+<footer class="sa-foot">{step_nav(folder, "index.html")}</footer>
 """
         crumb = [("Inici", "index.html"), ("Classes", "classes/index.html"),
                  (f"{code} · {name}", None)]
@@ -615,6 +690,7 @@ def main():
         shutil.rmtree(OUT)
     (OUT / "assets").mkdir(parents=True)
     shutil.copyfile(ROOT / "web_assets" / "style.css", OUT / "assets" / "style.css")
+    build_sequence()
     pages = build_doc_pages()
     build_sa_hubs()
     build_section_indexes(pages)
