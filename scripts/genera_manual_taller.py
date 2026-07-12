@@ -280,8 +280,8 @@ def fitxa(c, t):
                          interlineat=5 * mm)
         y -= 1.5 * mm
 
-    # --- Esquema (columna dreta) ---
-    esq_y = 62 * mm
+    # --- Esquema (columna dreta, part superior) ---
+    esq_y = 156 * mm
     esq_alt = (H - M - 18 * mm) - esq_y
     requadre(c, col_dreta_x, esq_y, 62 * mm, esq_alt,
              color=LINIA, fons=colors.HexColor("#f4f5fb"))
@@ -373,6 +373,150 @@ def contraportada(c):
         y -= 6.5 * mm
     dibuixa_bici(c, W / 2, 34 * mm, escala=1.0, color=INDIGO)
     c.showPage()
+
+
+def _fletxa(c, x1, y1, x2, y2, color=INDIGO):
+    c.setStrokeColor(color)
+    c.setFillColor(color)
+    c.setLineWidth(1.4)
+    c.line(x1, y1, x2, y2)
+    ang = math.atan2(y2 - y1, x2 - x1)
+    for da in (2.6, -2.6):
+        c.line(x2, y2, x2 - 3 * mm * math.cos(ang + da), y2 - 3 * mm * math.sin(ang + da))
+
+
+def esq_mcheck(c, cx, cy):
+    """Bici amb 6 punts numerats sobre el recorregut de revisió."""
+    dibuixa_bici(c, cx, cy, escala=0.85, color=GRIS, gruix=1.2)
+    punts = [("1", cx + 15 * mm, cy), ("2", cx + 6 * mm, cy + 10 * mm),
+             ("3", cx + 11 * mm, cy + 20 * mm), ("4", cx - 8 * mm, cy + 22 * mm),
+             ("5", cx - 3 * mm, cy), ("6", cx - 17 * mm, cy)]
+    for n, x, y in punts:
+        c.setFillColor(INDIGO)
+        c.circle(x, y, 3 * mm, fill=1, stroke=0)
+        c.setFillColor(colors.white)
+        c.setFont("Helvetica-Bold", 8)
+        c.drawCentredString(x, y - 2.6, n)
+
+
+def esq_neteja(c, cx, cy):
+    """Llaç de cadena amb gotes d'oli i fletxa de pedaleig enrere."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(1.4)
+    c.ellipse(cx - 20 * mm, cy - 8 * mm, cx + 20 * mm, cy + 8 * mm, stroke=1, fill=0)
+    c.setFillColor(CIAN)
+    for dx in (-10 * mm, 0, 10 * mm):
+        c.circle(cx + dx, cy + 8 * mm, 1.3 * mm, fill=1, stroke=0)
+    _fletxa(c, cx + 6 * mm, cy - 12 * mm, cx - 6 * mm, cy - 12 * mm)
+    c.setFillColor(GRIS)
+    c.setFont("Helvetica", 8)
+    c.drawCentredString(cx, cy - 18 * mm, "pedala enrere")
+
+
+def esq_roda(c, cx, cy):
+    """Palanca de tancament ràpid: obert vs tancat."""
+    for x, estat, ang in ((cx - 12 * mm, "obert", 55), (cx + 12 * mm, "tancat", 0)):
+        c.setStrokeColor(GRIS)
+        c.setLineWidth(1.6)
+        c.line(x, cy - 10 * mm, x, cy + 10 * mm)
+        c.setStrokeColor(INDIGO)
+        c.setLineWidth(2.2)
+        c.line(x, cy, x + 12 * mm * math.cos(math.radians(ang)),
+               cy + 12 * mm * math.sin(math.radians(ang)))
+        c.setFillColor(GRIS)
+        c.setFont("Helvetica", 8)
+        c.drawCentredString(x, cy - 15 * mm, estat)
+
+
+def esq_punxada(c, cx, cy):
+    """Secció de pneumàtic amb cambra i forat marcat."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(1.6)
+    c.arc(cx - 18 * mm, cy - 10 * mm, cx + 18 * mm, cy + 14 * mm, startAng=200, extent=140)
+    c.setStrokeColor(CIAN)
+    c.circle(cx, cy + 2 * mm, 8 * mm, stroke=1, fill=0)
+    c.setFillColor(VERMELL)
+    c.circle(cx + 6 * mm, cy + 6 * mm, 1.4 * mm, fill=1, stroke=0)
+    c.setFillColor(GRIS)
+    c.setFont("Helvetica", 8)
+    c.drawCentredString(cx, cy - 14 * mm, "busca el forat")
+
+
+def esq_fre_sabata(c, cx, cy):
+    """Llanta i sabata amb separació 2-3 mm."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(2)
+    c.arc(cx - 4 * mm, cy - 20 * mm, cx + 30 * mm, cy + 20 * mm, startAng=120, extent=120)
+    c.setFillColor(INDIGO)
+    c.rect(cx - 14 * mm, cy - 3 * mm, 9 * mm, 6 * mm, fill=1, stroke=0)
+    _fletxa(c, cx - 5 * mm, cy + 9 * mm, cx - 1 * mm, cy + 9 * mm, color=VERMELL)
+    c.setFillColor(GRIS)
+    c.setFont("Helvetica", 8)
+    c.drawString(cx - 3 * mm, cy + 11 * mm, "2-3 mm")
+
+
+def esq_fre_disc(c, cx, cy):
+    """Disc de fre i pinça."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(1.6)
+    c.circle(cx, cy, 16 * mm, stroke=1, fill=0)
+    c.circle(cx, cy, 4 * mm, stroke=1, fill=0)
+    c.setFillColor(INDIGO)
+    c.rect(cx + 12 * mm, cy - 5 * mm, 7 * mm, 10 * mm, fill=1, stroke=0)
+    c.setFillColor(VERMELL)
+    c.setFont("Helvetica-Bold", 8)
+    c.drawCentredString(cx, cy - 22 * mm, "no toquis el disc")
+
+
+def esq_cadena(c, cx, cy):
+    """Tram de cadena amb mesurador i marca de desgast."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(1.2)
+    for i in range(6):
+        c.rect(cx - 24 * mm + i * 8 * mm, cy - 2 * mm, 6 * mm, 4 * mm, fill=0, stroke=1)
+    c.setStrokeColor(CIAN)
+    c.setLineWidth(1.6)
+    c.line(cx - 24 * mm, cy + 6 * mm, cx + 24 * mm, cy + 6 * mm)
+    c.setFillColor(VERMELL)
+    c.setFont("Helvetica-Bold", 8)
+    c.drawCentredString(cx, cy - 10 * mm, "0,75% = gastada")
+
+
+def esq_canvi(c, cx, cy):
+    """Pinyons concèntrics amb cargols H i L."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(1.4)
+    for r in (14 * mm, 10 * mm, 6 * mm):
+        c.circle(cx - 4 * mm, cy, r, stroke=1, fill=0)
+    c.setFillColor(INDIGO)
+    c.setFont("Helvetica-Bold", 9)
+    c.drawString(cx + 12 * mm, cy + 6 * mm, "H")
+    c.drawString(cx + 12 * mm, cy - 8 * mm, "L")
+    c.setFillColor(GRIS)
+    c.setFont("Helvetica", 8)
+    c.drawString(cx + 17 * mm, cy + 6 * mm, "petit")
+    c.drawString(cx + 17 * mm, cy - 8 * mm, "gran")
+
+
+def esq_seient(c, cx, cy):
+    """Tija del seient amb marca màxima."""
+    c.setStrokeColor(GRIS)
+    c.setLineWidth(2)
+    c.line(cx, cy - 16 * mm, cx, cy + 12 * mm)
+    c.setStrokeColor(VERMELL)
+    c.setLineWidth(1.4)
+    c.line(cx - 4 * mm, cy - 8 * mm, cx + 4 * mm, cy - 8 * mm)
+    c.setFillColor(INDIGO)
+    c.rect(cx - 7 * mm, cy + 12 * mm, 14 * mm, 3 * mm, fill=1, stroke=0)
+    c.setFillColor(VERMELL)
+    c.setFont("Helvetica", 8)
+    c.drawString(cx + 6 * mm, cy - 9 * mm, "marca màx.")
+
+
+_ESQUEMES = [esq_mcheck, esq_neteja, esq_roda, esq_punxada, esq_fre_sabata,
+             esq_fre_disc, esq_cadena, esq_canvi, esq_seient]
+for _t, _e in zip(TASQUES, _ESQUEMES):
+    _t["esquema"] = _e
 
 
 def main():
