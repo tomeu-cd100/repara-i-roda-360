@@ -117,13 +117,13 @@ sobretot **CE1, CE2, CE5 i CE6**; l'**aula maker**, **CE3 i CE4**. El **diari se
 
 | Unitat | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
 |--------|----------------------|---------------|----------------------------------|
-| **M0** Benvinguda maker | CE6 | CE5, CE7 | Carnet de màquina (làser/3D) + seguretat |
+| **M0** Benvinguda maker | CE6 | CE5, CE7 | Carnet de màquina (nivell 3D) + seguretat |
 | **M1** Tinkercad des de zero 🧊 | CE3 | CE5, CE2 | Primer disseny 3D exportat (STL) |
 | **M2** Mesurar amb el peu de rei 🧊 | CE3 | CE2, CE5 | Mides reals preses i portades al disseny 3D |
 | **M3** Enginyeria inversa: maneta de fre 🧊 | CE3 | CE2 | Maneta 3D (plànol 2D → model) provada i iterada |
 | **M4** Peces útils per a la bici 🧊 | CE3 | CE2 | Peça útil 3D provada al taller |
 | **M5** Peces decoratives 🧊 | CE3 | CE2, CE5 | Peça decorativa (temàtica bici) impresa |
-| **M6** Inkscape al Chromebook ✂️ | CE3 | CE2, CE5 | Primer disseny 2D amb codis de color per a la làser |
+| **M6** Inkscape al Chromebook ✂️ | CE3 | CE2, CE5 | Primer disseny 2D amb codis de color + carnet làser |
 | **M7** Tallar peces útils ✂️ | CE3 | CE2, CE5 | Peça útil tallada a làser i en ús al taller |
 | **M8** Rètols i decoració a làser ✂️ | CE3, CE4 | CE5, CE6 | Rètols/siluetes + material d'exposició |
 | **M9** Recorregut virtual 360/VR 🎥 | CE4 | CE3, CE5 | Suport càmera 360 + recorregut + estació VR |
@@ -144,6 +144,9 @@ El **diari setmanal en paper** (CE4/C3, vinculat a CE3 oficial) s'avalua a totes
 - La dimensió professionalitzadora (C6) i el servei comunitari (ApS) tenen ancoratge **directe**
   al text oficial: el criteri 1.1 demana solucions que «generin un valor a la comunitat» i el
   6.3, «projectes de servei a la comunitat». No és una interpretació forçada.
+- El **bloc 360/VR (M9) és flexible** («si queda temps»): si un curs es retalla, el criteri
+  propi CA4.2 (captura 360) queda sense evidència i la CE4 pròpia s'avalua per CA4.1 (diari
+  setmanal) i CA4.3 (memòria digital i exposició), mantenint la cobertura de la C5 transversal.
 
 ---
 

@@ -24,11 +24,19 @@
 
 | Carnet | Es guanya a | Què cal demostrar (checkpoint) |
 |--------|:-----------:|--------------------------------|
-| 🔧 **Carnet d'eines** | SA0, setmana 2 | 3 preguntes: quina eina per a quina feina, per què no es llancen, ordre en acabar. Demostració: triar i fer servir bé 3 eines. |
-| 🔴 **Operador/a làser** (xTool S1) | SA1 (maker) | 3 preguntes: materials prohibits i per què, ventilació, què fer si hi ha flama/fum. Demostració: col·locar el material i comprovar la tapa **amb supervisió**. |
-| 🟠 **Operador/a impressora 3D** (Bambu Lab P2S) | SA2–SA3 (maker) | 3 preguntes: parts calentes, per què no obrir la porta en marxa, què vigilar a la primera capa. Demostració: enviar una impressió i comprovar la placa. |
-| 🟢 **Operador/a càmera 360** | SA8 (maker) | 3 preguntes: drets d'imatge (qui pot sortir), espais a evitar, on s'amaga qui captura. Demostració: fer una captura estable i transferir-la. |
-| 🔵 **Usuari/ària responsable VR** | SA8 (maker) | 3 preguntes: temps màxim, què fer si hi ha mareig, higiene de les lents. Demostració: posar-se i ajustar les ulleres i fer de **guia** d'un company. |
+| 🔧 **Carnet d'eines** | B0, setmana 2 | 3 preguntes: quina eina per a quina feina, per què no es llancen, ordre en acabar. Demostració: triar i fer servir bé 3 eines. |
+| 🟠 **Operador/a impressora 3D** (Bambu Lab P2S) | M0, setmana 2 (abans de les primeres impressions de M1) | 3 preguntes: parts calentes, per què no obrir la porta en marxa, què vigilar a la primera capa. Demostració: enviar una impressió i comprovar la placa. |
+| 🔴 **Operador/a làser** (xTool S1) | M6, al primer tall (setmana 21) | 3 preguntes: materials prohibits i per què, ventilació, què fer si hi ha flama/fum. Demostració: col·locar el material i comprovar la tapa **amb supervisió**. |
+| 🟢 **Operador/a càmera 360** | M9, al primer ús | 3 preguntes: drets d'imatge (qui pot sortir), espais a evitar, on s'amaga qui captura. Demostració: fer una captura estable i transferir-la. |
+| 🔵 **Usuari/ària responsable VR** | M9, al primer ús | 3 preguntes: temps màxim, què fer si hi ha mareig, higiene de les lents. Demostració: posar-se i ajustar les ulleres i fer de **guia** d'un company. |
+
+> **Cada carnet es guanya just abans del primer ús real de la màquina** (no abans): així el
+> coneixement de seguretat és fresc quan cal. Per això el nivell 3D es fa a M0 (s'imprimeix des
+> de M1) i el nivell làser espera el bloc làser (M6).
+
+> ⚠️ **Norma de les peces fabricades:** les peces impreses en 3D o tallades a làser són per
+> **aprendre** i per a accessoris. **Mai no substitueixen una peça de seguretat** de la bici
+> (maneta o cable de fre, manillar, seient, forquilla): el plàstic imprès trenca de cop.
 
 > Els checkpoints es fan **dins la sessió indicada**, aprofitant els torns de màquina (mentre el
 > tall s'envia, mentre roda l'estació VR…): no necessiten temps extra. Qui s'incorpora tard al

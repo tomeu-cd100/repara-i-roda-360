@@ -329,6 +329,8 @@ def pagina_eines(c):
     normes = ["Treballa amb la bici ben subjecta i estable.",
               "Mans netes i cabells o roba recollits a prop de màquines.",
               "Fes servir cada eina per a la seva feina.",
+              "Les peces impreses en 3D o tallades a làser són per aprendre i per a accessoris: "
+              "mai no substitueixen una peça de seguretat (frens, manillar, seient).",
               "Si dubtes o alguna cosa no va, atura't i avisa el docent.",
               "Deixa l'espai net i les eines al seu lloc."]
     for n in normes:

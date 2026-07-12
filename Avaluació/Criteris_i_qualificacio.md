@@ -37,28 +37,51 @@ qualificació:
 
 | Instrument | Què avalua | On |
 |-----------|-----------|----|
-| **Rúbriques de SA** | El producte i la pràctica de cada SA | `Classes/SAx/Rubrica_SAx.md` |
+| **Taula d'avaluació de cada unitat** | Evidència, instrument i criteri de cada unitat | dins de cada `Classes/<Bicicletes\|Maker>/<unitat>/<codi>.md` |
 | **Rúbrica general** | Els indicadors transversals de les CE | `Rubrica_general_competencial.md` |
 | **Diari setmanal** | Procés, autonomia, documentació (CA4.1) | `Programació didàctica/Diari_setmanal_paper.md` |
 | **Full de seguiment del grup** | Observació diària (seguretat, actitud, parella) | `Full_seguiment_grup.md` |
 | **Carnets** (eines, màquina) | Seguretat i domini de l'eina/màquina | `Normativa/Carnet_de_maquina.md` |
 | **Autoavaluació i coavaluació** | Reflexió i contrast | `Autoavaluacio_coavaluacio.md` |
-| **Rúbrica de producte final** | Projecte final i exposició (SA9) | `Rubrica_producte_final.md` |
+| **Rúbrica de producte final** | Projecte final i exposició (B9 i M9) | `Rubrica_producte_final.md` |
 
-## 4. Matriu de traçabilitat SA ↔ criteris
+## 4. Matriu de traçabilitat unitat ↔ criteris
 
-| SA | Criteris focals | Constants (totes les SA) |
-|----|-----------------|--------------------------|
-| SA0 | CA6.1, CA2.3, CA1.1 | CA1.4 · CA4.1 · CA6.1 |
-| SA1 | CA1.1, CA1.2, CA3.1 | CA1.4 · CA4.1 · CA6.1 |
-| SA2 | CA2.1, CA2.2, CA3.1, CA3.2 | CA1.4 · CA4.1 · CA6.1 |
-| SA3 | CA1.2, CA1.3, CA3.1, CA3.2 | CA1.4 · CA4.1 · CA6.1 |
-| SA4 | CA1.3, CA1.4, CA3.2, CA3.3 | CA1.4 · CA4.1 · CA6.1 |
-| SA5 | CA1.2, CA1.3, CA2.2, CA3.1, CA3.2 | CA1.4 · CA4.1 · CA6.1 |
-| SA6 | CA1.2, CA1.3, CA6.2, CA3.1, CA3.2 | CA1.4 · CA4.1 · CA6.1 |
-| SA7 | CA1.2, CA1.3, CA3.2, CA3.3 | CA1.4 · CA4.1 · CA6.1 |
-| SA8 | CA5.1, CA4.2, CA3.2 | CA1.4 · CA4.1 · CA6.1 |
-| SA9 | CA5.2, CA5.3, CA4.2, CA4.3, CA6.3 | CA1.4 · CA4.1 · CA6.1 |
+Constants a **totes** les unitats: CA1.4 (seguretat) · CA4.1 (diari) · CA6.1 (parella).
+
+**🚲 Taller de bicicletes**
+
+| Unitat | Criteris focals |
+|--------|-----------------|
+| B0 | CA1.1, CA2.3 |
+| B1 | CA1.1, CA1.2 |
+| B2 | CA2.1, CA2.2 |
+| B3 | CA1.2, CA1.3 |
+| B4 | CA1.3, CA1.4 |
+| B5 | CA1.2, CA1.3, CA2.2 |
+| B6 | CA1.2, CA1.3, CA6.2 |
+| B7 | CA1.2, CA1.3 |
+| B8 | CA1.4, CA5.1 |
+| B9 | CA5.2, CA5.3, CA1.4, CA6.3 |
+
+**🛠️ Aula maker**
+
+| Unitat | Criteris focals |
+|--------|-----------------|
+| M0 | CA1.4 (carnet 3D), CA6.1 |
+| M1 | CA3.2 |
+| M2 | CA3.1, CA3.2 |
+| M3 | CA3.1, CA3.2, CA3.3 |
+| M4 | CA3.2, CA3.3 |
+| M5 | CA3.2, CA4.3 |
+| M6 | CA3.1, CA1.4 (carnet làser) |
+| M7 | CA3.2, CA3.3 |
+| M8 | CA3.2, CA4.3 |
+| M9 | CA3.2, CA4.2, CA4.3, CA6.3 |
+
+> **Si el bloc 360 (M9) es retalla** («si queda temps»), CA4.2 queda sense evidència aquell
+> curs: la CE4 s'avalua per CA4.1 (diari) i CA4.3 (memòria digital i exposició), i C5 manté
+> el pes amb aquestes evidències.
 
 ## 5. Recuperació i pas de curs
 

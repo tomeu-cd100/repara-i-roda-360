@@ -22,7 +22,7 @@ Repara una punxada de principi a fi i deixa la roda rodona i segura.
 
 - [ ] He tret i posat la roda sense danyar res.
 - [ ] He reparat la punxada i la roda aguanta la pressió.
-- [ ] La roda gira recta.
+- [ ] La roda gira sense fregar el fre.
 
 **El pas de la punxada que més em costa:** ________________
 

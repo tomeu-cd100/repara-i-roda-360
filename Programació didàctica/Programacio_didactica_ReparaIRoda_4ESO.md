@@ -97,8 +97,9 @@ La justificació pedagògica és triple:
 - **CA2.3** Manté l'ordre del lloc de treball i el control de les eines.
 
 ### CE3. Dissenyar i fabricar peces i eines auxiliars amb tecnologies maker al servei del taller.
-- **CA3.1** Dissenya en 2D (Inkscape) peces per a tall/gravat làser amb mesures reals.
-- **CA3.2** Modela i imprimeix en 3D peces funcionals per al taller.
+- **CA3.1** Dissenya peces en 2D amb mesures reals: plànol acotat a mà o disseny vectorial
+  (Inkscape) per a tall/gravat làser.
+- **CA3.2** Modela en 3D i fabrica peces funcionals per al taller (impressió 3D o tall làser).
 - **CA3.3** Prova la peça fabricada al taller, en valora el resultat i la millora si cal.
 
 ### CE4. Documentar el treball tècnic amb el diari setmanal i eines digitals.
@@ -242,6 +243,10 @@ i reparació, autoavaluació i coavaluació trimestrals, exposició pública fin
 | **C3** — personal, social i d'aprendre a aprendre | Autonomia, responsabilitat, constància (CE2, CE6) | Diari setmanal + carnet d'eines/màquina + observació | **25 %** |
 | **C8** — ciutadana i cívica | Cooperació, seguretat, comportament viari, ApS (CE5, CE6) | Observació + sortides + accions comunitàries | **25 %** |
 | **C5** — digital | Documentar i comunicar (CE4) | Rutes 360/VR, memòria digital, exposició | **15 %** |
+
+> **Flexibilitat del bloc 360:** el bloc 360/VR (M9) es fa «si queda temps». Si es retalla,
+> la CE4 s'avalua amb el diari setmanal (CA4.1) i la memòria digital i l'exposició (CA4.3),
+> i C5 manté el pes amb aquestes evidències; CA4.2 (captura 360) queda sense efecte aquell curs.
 
 Nivells d'assoliment (qualificació **qualitativa**): **NA** (No assolit) · **AS** (Assoliment
 satisfactori) · **AN** (Assoliment notable) · **AE** (Assoliment excel·lent).

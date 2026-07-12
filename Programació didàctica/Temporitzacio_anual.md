@@ -92,8 +92,10 @@
 
 ## Notes
 
-- ⏱️ **Temps-màquina:** amb 1 làser i 1 impressora 3D, la fabricació es gestiona per torns
-  mentre la resta treballa al taller o documenta. Els dissenys es preparen la setmana abans.
+- ⏱️ **Temps-màquina:** amb 1 làser i 1 impressora 3D, la fabricació es gestiona per torns.
+  Els dissenys es preparen la setmana abans i **el docent llança i retira les impressions
+  entre sessions** (cua d'impressió): a l'hora de maker es dissenya, es mesura i es prova;
+  la màquina treballa fora de l'hora de classe. Aquest supòsit és part de la programació.
 - 🧊✂️🎥 **Blocs maker:** l'aula maker avança per blocs (3D fins a la setmana 17, làser fins a
   la 27 i 360/VR si queda temps). Si el 3D o el làser s'allarguen, el bloc 360 es retalla o es
   fa parcial sense afectar la resta del curs.

@@ -23,6 +23,7 @@ Prepara el teu primer disseny 2D amb els codis de color correctes per a la làse
 - [ ] Tinc Inkscape al Chromebook o he usat l'alternativa web.
 - [ ] He fet un disseny senzill en mm.
 - [ ] He aplicat els codis de color correctes.
+- [ ] Tinc el carnet d'operador/a làser.
 
 **Inkscape instal·lat?** sí / he usat l'alternativa web
 
@@ -33,4 +34,5 @@ Prepara el teu primer disseny 2D amb els codis de color correctes per a la làse
 |-------------|-----|
 | Inkscape a punt | Observació |
 | Disseny amb codis de color | Criteris d'èxit |
+| Carnet làser | Checkpoint pràctic |
 | Diari (cara B) | Pauta del diari |

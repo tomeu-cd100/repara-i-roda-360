@@ -31,8 +31,8 @@ Rúbrica transversal aplicable a qualsevol SA. Cada SA hi afegeix indicadors esp
 
 | Indicador | NA | AS | AN | AE |
 |-----------|----|----|----|----|
-| Disseny 2D per a làser (CA3.1) | Encara no completa el disseny | Disseny bàsic amb ajuda | Disseny correcte amb mesures | Disseny acurat i optimitzat amb autonomia |
-| Modelatge i impressió 3D (CA3.2) | Encara no completa la peça | Peça bàsica amb ajuda | Peça funcional i mesurada | Peça precisa amb bona tolerància |
+| Disseny 2D amb mesures reals: plànol o vectorial (CA3.1) | Encara no completa el disseny | Disseny bàsic amb ajuda | Disseny correcte amb mesures | Disseny acurat i optimitzat amb autonomia |
+| Modelatge 3D i fabricació: impressió o làser (CA3.2) | Encara no completa la peça | Peça bàsica amb ajuda | Peça funcional i mesurada | Peça precisa amb bona tolerància |
 | Provar i millorar (CA3.3) | Encara no prova la peça | Prova amb ajuda | Prova la peça al taller i la valora | Itera i millora la peça de manera reflexiva |
 
 ### CE4 — Documentar el treball tècnic

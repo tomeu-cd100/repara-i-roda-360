@@ -3,7 +3,7 @@
 **Nom:** ______________________  **Setmana:** ______  **Data:** ____/____/______
 
 ## El repte 🛠️
-Copia una maneta de fre real: plànol 2D, model 3D i impressió que encaixi.
+Copia una maneta de fre real: plànol 2D, model 3D i impressió que encaixi. ⚠️ La maneta impresa és per aprendre: **mai no es munta com a fre de veritat**.
 
 ## 🧑‍🏫 Com ho aprendràs avui
 **No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.

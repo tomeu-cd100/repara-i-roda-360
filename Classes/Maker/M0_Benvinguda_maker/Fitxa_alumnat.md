@@ -21,7 +21,7 @@ Guanya't el carnet de màquina: demostra que saps operar la 3D i la làser amb s
 *(marca'ls a mesura que els aprens i els fas)*
 
 - [ ] Sé què fabricarem: peces 3D, després peces a làser i, si hi ha temps, el 360.
-- [ ] Tinc el carnet de màquina (nivell làser i nivell 3D).
+- [ ] Tinc el carnet de la impressora 3D (el de la làser me'l guanyaré quan comencem el bloc làser).
 
 **La norma de seguretat més important de les màquines:** ________________
 
@@ -34,6 +34,6 @@ Guanya't el carnet de màquina: demostra que saps operar la 3D i la làser amb s
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|
-| Carnet de màquina | Checkpoint pràctic |
+| Carnet de màquina (nivell 3D) | Checkpoint pràctic |
 | Seguretat a l'aula maker | Observació |
 | Diari (cara B) | Pauta del diari |
