@@ -12,6 +12,11 @@ Fabrica el suport de càmera 360 per a la bici i fes una primera captura 360.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/1uRtvs1_V5w" title="Càmera 360 Insta360 X3: guia d'iniciació (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Càmera 360 Insta360 X3: guia d'iniciació (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

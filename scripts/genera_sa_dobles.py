@@ -472,7 +472,8 @@ BICI = [
 
 # ─────────────────────────── DADES: MAKER (M0–M9) ───────────────────────────
 MAKER = [
- {"code": "M0", "folder": "M0_Benvinguda_maker", "name": "Benvinguda maker i seguretat",
+ {"video": ("Impressió 3D per a principiants: com funciona (en castellà)", "_MgJIf6H2cM"),
+  "code": "M0", "folder": "M0_Benvinguda_maker", "name": "Benvinguda maker i seguretat",
   "setm": "1–2", "producte": "**Carnet de màquina** (làser i 3D)",
   "compl": "l'hora de bicicletes **B0** (punt de partida i carnet d'eines)",
   "desc": "L'aula maker fabrica peces i eines reals per al taller. Primer, conèixer-la i treballar-hi segur.",
@@ -503,7 +504,8 @@ MAKER = [
            ("Seguretat a l'aula maker", "Observació", "CA1.4, CA6.1"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M1", "folder": "M1_Placa", "name": "Placa identificativa", "setm": "3–4",
+ {"video": ("Preparar text per a tall/gravat làser amb Inkscape (en castellà)", "n-eA69q_Gn0"),
+  "code": "M1", "folder": "M1_Placa", "name": "Placa identificativa", "setm": "3–4",
   "producte": "**Placa identificativa** gravada a làser",
   "compl": "l'hora de bicicletes **B1** (recepció i diagnosi de la bici)",
   "desc": "Cada bici del taller tindrà una placa amb el seu número, feta amb Inkscape i la làser.",
@@ -532,7 +534,8 @@ MAKER = [
            ("Gravat i muntatge", "Placa a la bici", "CA3.1"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M2", "folder": "M2_Organitzadors", "name": "Organitzadors d'eines", "setm": "5–7",
+ {"video": ("Preparar dissenys per a tall làser amb Inkscape (en castellà)", "QkOJrQtdGmU"),
+  "code": "M2", "folder": "M2_Organitzadors", "name": "Organitzadors d'eines", "setm": "5–7",
   "producte": "**Organitzadors i penjadors d'eines** + retolació del taller",
   "compl": "l'hora de bicicletes **B2** (posada a punt i M-check)",
   "desc": "Fabriquem el que el taller necessita per treballar ordenats: organitzadors i retolació.",
@@ -561,7 +564,8 @@ MAKER = [
            ("Utilitat al taller", "L'organitzador en ús", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M3", "folder": "M3_Kit_reparacio", "name": "Kit de reparació", "setm": "8–10",
+ {"video": ("Dissenyar una caixa amb encaix per a tall làser (en castellà)", "ZTTJj4GlKJQ"),
+  "code": "M3", "folder": "M3_Kit_reparacio", "name": "Kit de reparació", "setm": "8–10",
   "producte": "**Caixa-kit** amb palanques desmuntables",
   "compl": "l'hora de bicicletes **B3** (rodes i punxades)",
   "desc": "Fabriquem el kit de reparació (palanques 3D + caixa làser) que cada bici s'endurà.",
@@ -590,7 +594,8 @@ MAKER = [
            ("Prova del kit", "Funciona amb material real", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M4", "folder": "M4_Peces_de_fre", "name": "Peces de fre", "setm": "11–14",
+ {"video": ("Tinkercad: modelatge 3D de peces (en castellà)", "xvt7D38CYFQ"),
+  "code": "M4", "folder": "M4_Peces_de_fre", "name": "Peces de fre", "setm": "11–14",
   "producte": "**Separadors i guies de fre** en 3D, provats",
   "compl": "l'hora de bicicletes **B4** (frens)",
   "desc": "Fabriquem peces que ajuden en el manteniment del fre i les provem al taller.",
@@ -621,7 +626,8 @@ MAKER = [
            ("Prova i millora", "Peça iterada", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M5", "folder": "M5_Mesurador", "name": "Mesurador de desgast", "setm": "15–17",
+ {"video": ("Tinkercad: primers passos de disseny 3D (en castellà)", "csvBRWfgf1I"),
+  "code": "M5", "folder": "M5_Mesurador", "name": "Mesurador de desgast", "setm": "15–17",
   "producte": "**Mesurador de desgast de cadena** + clauer",
   "compl": "l'hora de bicicletes **B5** (transmissió I)",
   "desc": "Fabriquem un mesurador de desgast de cadena i un clauer per a la campanya de captació.",
@@ -650,7 +656,8 @@ MAKER = [
            ("Prova a cadenes reals", "El mesurador funciona", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M6", "folder": "M6_Classificadora", "name": "Caixa classificadora", "setm": "18–21",
+ {"video": ("Fer una caixa per a tall làser amb MakerCase (en castellà)", "i7H9dgyfM1Q"),
+  "code": "M6", "folder": "M6_Classificadora", "name": "Caixa classificadora", "setm": "18–21",
   "producte": "**Caixa classificadora de recanvis** + magatzem ordenat",
   "compl": "l'hora de bicicletes **B6** (transmissió II)",
   "desc": "Organitzem el magatzem de recanvis amb una caixa classificadora modular.",
@@ -681,7 +688,8 @@ MAKER = [
            ("Magatzem ordenat", "La caixa en ús", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M7", "folder": "M7_Confort", "name": "Peces de confort", "setm": "22–24",
+ {"video": ("Tinkercad: modelatge i disseny 3D per a principiants (en castellà)", "IVxa96tfey8"),
+  "code": "M7", "folder": "M7_Confort", "name": "Peces de confort", "setm": "22–24",
   "producte": "**Peces de confort i adaptadors** 3D, provats",
   "compl": "l'hora de bicicletes **B7** (punts de contacte)",
   "desc": "Fabriquem peces de confort i adaptadors a mida per a les bicis del taller.",
@@ -710,7 +718,8 @@ MAKER = [
            ("Prova i iteració", "Peça provada", "CA3.3"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M8", "folder": "M8_Suports_i_360", "name": "Suports i captura 360", "setm": "25–27",
+ {"video": ("Càmera 360 Insta360 X3: guia d'iniciació (en castellà)", "1uRtvs1_V5w"),
+  "code": "M8", "folder": "M8_Suports_i_360", "name": "Suports i captura 360", "setm": "25–27",
   "producte": "**Suport de càmera 360** + iniciació a la captura 360",
   "compl": "l'hora de bicicletes **B8** (seguretat i normativa viària)",
   "desc": "Fabriquem suports (llum, mòbil, càmera 360) i ens iniciem en la captura 360 i el visor VR.",
@@ -740,7 +749,8 @@ MAKER = [
            ("Captura 360", "La captura visualitzada", "CA4.2"),
            ("Diari (cara B)", "Pauta del diari", "CA4.1")]},
 
- {"code": "M9", "folder": "M9_Rutes_VR", "name": "Rutes virtualitzades 360/VR", "setm": "28–35",
+ {"video": ("Editar vídeo 360 amb Insta360 Studio (en castellà)", "EaZrXTpGSkI"),
+  "code": "M9", "folder": "M9_Rutes_VR", "name": "Rutes virtualitzades 360/VR", "setm": "28–35",
   "producte": "**Col·lecció de rutes 360/VR** + estació VR per a l'exposició",
   "compl": "l'hora de bicicletes **B9** (sortides i exposició)",
   "desc": "Documentem les sortides en 360 i muntem rutes virtualitzades per a l'exposició pública.",

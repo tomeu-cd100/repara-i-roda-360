@@ -12,6 +12,11 @@ Grava, edita i munta les rutes 360/VR i prepara l'estació VR de l'exposició.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/EaZrXTpGSkI" title="Editar vídeo 360 amb Insta360 Studio (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Editar vídeo 360 amb Insta360 Studio (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

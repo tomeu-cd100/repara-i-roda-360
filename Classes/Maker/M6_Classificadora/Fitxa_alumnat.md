@@ -12,6 +12,11 @@ Fabrica una caixa classificadora i ordena el magatzem de recanvis.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/i7H9dgyfM1Q" title="Fer una caixa per a tall làser amb MakerCase (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Fer una caixa per a tall làser amb MakerCase (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 

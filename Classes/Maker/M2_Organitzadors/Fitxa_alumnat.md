@@ -12,6 +12,11 @@ Dissenya i fabrica un organitzador d'eines útil per al taller.
 2. **Prova-ho amb ajuda** (pràctica guiada, en parella).
 3. **Fes-ho tu** i marca els passos de sota.
 
+## 📹 Mira com es fa
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/QkOJrQtdGmU" title="Preparar dissenys per a tall làser amb Inkscape (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+*Vídeo: Preparar dissenys per a tall làser amb Inkscape (en castellà) (YouTube).*
+
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 
