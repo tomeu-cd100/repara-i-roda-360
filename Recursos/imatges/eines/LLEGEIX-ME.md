@@ -20,3 +20,16 @@ Ordre suggerit (coincideix amb el desplegable de solucions):
 > del vostre taller** (sense cap problema de drets).
 
 Formats: `.jpg` (recomanat), `.png`, `.webp`. Quadrades o apaïsades; es reescalen soles.
+
+## Atribucions de les fotos actuals (Wikimedia Commons)
+
+Les fotos 1 i 2 són pròpies del docent. Les 3–8, de Wikimedia Commons amb llicència verificada:
+
+| Foto | Fitxer d'origen | Autor | Llicència |
+|---|---|---|---|
+| 3 (claus fixes) | [Gedore No. 7 combination wrenches 6–19 mm.jpg](https://commons.wikimedia.org/wiki/File:Gedore_No._7_combination_wrenches_6%E2%80%9319_mm.jpg) | Lucasbosch | CC BY-SA 3.0 |
+| 4 (palanques) | [TyreLevers.jpg](https://commons.wikimedia.org/wiki/File:TyreLevers.jpg) | Ian Harvey | Domini públic |
+| 5 (tronxacadenes) | [ChainTool1.jpg](https://commons.wikimedia.org/wiki/File:ChainTool1.jpg) | Ian Harvey | Domini públic |
+| 6 (bomba amb manòmetre) | [SKS Rennkompressor Standpumpe.jpg](https://commons.wikimedia.org/wiki/File:SKS_Rennkompressor_Standpumpe.jpg) | SKS GERMANY | CC BY-SA 4.0 |
+| 7 (clau de radis) | [Spoke wrench 001.jpg](https://commons.wikimedia.org/wiki/File:Spoke_wrench_001.jpg) | Ocdp | CC BY-SA 3.0 |
+| 8 (extractor de bieles) | [CrankExtractor1.jpg](https://commons.wikimedia.org/wiki/File:CrankExtractor1.jpg) | Ian Harvey | Domini públic |
