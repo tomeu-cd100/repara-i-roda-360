@@ -217,8 +217,8 @@ TASQUES = [
      "eines": ["Mesurador de cadena", "Alicates de baula ràpida"],
      "passos": [
         "Posa el mesurador sobre la cadena: si entra fins a la marca de 0,75 %, està gastada.",
-        "Si l'has de canviar, obre la baula ràpida amb els alicates (o el tronçador).",
-        "Compta que la cadena nova tingui els mateixos baules que la vella.",
+        "Si l'has de canviar, obre la baula ràpida amb les alicates (o el tronçador).",
+        "Compta que la cadena nova tingui les mateixes baules que la vella.",
         "Passa la cadena pels plats i els pinyons seguint el desviador.",
         "Tanca la baula ràpida i estira fort perquè encaixi bé."],
      "compte": "Una cadena molt gastada desgasta plats i pinyons: no esperis massa a canviar-la.",
