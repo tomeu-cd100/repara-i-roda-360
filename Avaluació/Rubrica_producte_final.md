@@ -1,7 +1,9 @@
 # Rúbrica de producte final — «Repara i Roda 360» (4t ESO)
 
-> S'aplica a la **SA9**: la bici acabada i donada, les rutes virtualitzades i l'exposició pública.
-> Complementa la `Classes/SA9/Rubrica_SA9.md`. Nivells: **NA / AS / AN / AE**.
+> S'aplica al final de curs (**B9** i, si s'ha fet, **M9**): la bici acabada i donada, el
+> recorregut virtual i l'exposició pública. Complementa les taules d'avaluació de
+> `Classes/Bicicletes/B9_Repara_i_Roda/B9.md` i `Classes/Maker/M9_Recorregut_360/M9.md`.
+> Nivells: **NA / AS / AN / AE**.
 
 ## 1. La bici reparada (producte tècnic central)
 
@@ -28,7 +30,7 @@
 
 ## 4. Valoració global del projecte final
 
-- **Nivell global de SA9:** ______
+- **Nivell global del producte final:** ______
 - **El millor de la seva feina de curs:** ______________________________________
 - **Contribució al servei comunitari:** ________________________________________
 - **Apte per al Certificat de Mecànic/a Júnior:** ⬜ Sí ⬜ Encara no

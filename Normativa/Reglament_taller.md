@@ -1,7 +1,7 @@
 # Reglament del taller — «Repara i Roda 360» (4t ESO)
 
 > Normes de convivència i funcionament del taller, complementàries a les de seguretat
-> (`Normes_seguretat_taller.md`). Es presenten a la SA0.
+> (`Normes_seguretat_taller.md`). Es presenten a B0.
 
 ## 1. Entrada i sortida
 

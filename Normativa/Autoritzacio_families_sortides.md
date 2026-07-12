@@ -37,4 +37,4 @@ Declaro que el meu fill o filla:
 Signatura: ____________________  Data: ____/____/______
 
 > Relacionat amb: `Carta_families_inici_curs.md`, `Normes_seguretat_taller.md`,
-> `Classes/SA9/SA9.md`.
+> `Classes/Bicicletes/B9_Repara_i_Roda/B9.md`.

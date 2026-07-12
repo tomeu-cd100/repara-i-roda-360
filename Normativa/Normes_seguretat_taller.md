@@ -1,6 +1,6 @@
 # Normes de seguretat — Taller de bicicletes i aula maker
 
-> Aquestes normes es treballen a la **SA0** (no s'imposen: es raonen una a una) i es donen per
+> Aquestes normes es treballen a **B0 i M0** (no s'imposen: es raonen una a una) i es donen per
 > vigents tot el curs. Signar-les és el **contracte d'aula**. La seguretat és l'única cosa
 > **innegociable**. Vegeu també `Carnet_de_maquina.md` (sense carnet no s'opera).
 
@@ -54,7 +54,7 @@
 - Petites ferides: es netegen i es comuniquen (registre a `Avaluació/Full_seguiment_grup.md`).
 - Flama a la làser: aturar, tapar, avisar. No obrir la tapa de cop.
 
-## Contracte d'aula (SA0)
+## Contracte d'aula (B0)
 
 Jo, ______________________, em comprometo a seguir aquestes normes de seguretat durant tot el
 curs, per la meva seguretat i la dels meus companys.

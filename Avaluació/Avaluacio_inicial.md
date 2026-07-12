@@ -1,8 +1,8 @@
 # Avaluació inicial — «Repara i Roda 360» (4t ESO)
 
-> S'aplica a la **SA0** (setmana 2). **Sense nota.** Serveix per conèixer el punt de partida
+> S'aplica a **B0** (setmana 2). **Sense nota.** Serveix per conèixer el punt de partida
 > real de cada alumne/a i ajustar el suport, els agrupaments i el ritme. Es torna a mirar al
-> final del curs (SA9) per fer visible l'evolució.
+> final del curs (B9) per fer visible l'evolució.
 
 ## Part A — Qüestionari breu (oral o escrit, DUA)
 
@@ -41,6 +41,6 @@
 - **Alumnat que caldrà acompanyar més de prop:** _______________________
 - **Ajust de parelles / ritme previst:** ________________________________
 
-> 🔁 **Al juny (SA9):** es recuperen les preguntes 6 (Part A) i les tasques de la Part B per
+> 🔁 **Al juny (B9):** es recuperen les preguntes 6 (Part A) i les tasques de la Part B per
 > comparar el punt de partida amb el d'arribada. És una de les evidències més motivadores per a
 > l'alumnat: veure tot el que ara sap fer i al setembre no sabia.

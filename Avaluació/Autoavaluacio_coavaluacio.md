@@ -24,7 +24,7 @@
 
 ## B. Coavaluació entre parelles (la diagnosi encreuada)
 
-> Especialment a **SA6** (diagnosi encreuada de canvis) i **SA9** (rutes i exposició). Es valora
+> Especialment a **B6** (diagnosi encreuada de canvis) i **B9/M9** (sortides, recorregut 360 i exposició). Es valora
 > la feina d'una altra parella de manera **respectuosa i útil** (dir què està bé i què milloraria).
 
 **La meva parella:** ______  **La parella que valoro:** ______

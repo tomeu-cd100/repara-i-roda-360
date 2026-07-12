@@ -7,7 +7,7 @@
 - [ ] Recollir les **autoritzacions** de famílies (VR/360 i sortides).
 - [ ] Verificar l'**edat mínima VR** vigent i omplir la fitxa de `Normativa/Protocol_us_VR.md` §8.
 - [ ] Posar en marxa la **campanya de captació de bicicletes** (cartells, contactes).
-- [ ] Preparar el **material de la gimcana** de la SA0 (`Classes/SA0/Material_gimcana_taller.md`).
+- [ ] Preparar el **material de la gimcana** de B0 (`Classes/Bicicletes/B0_Punt_de_partida/Material_gimcana_taller.md`).
 - [ ] Imprimir els **diaris setmanals** del 1r trimestre i els **carnets**.
 - [ ] Revisar l'estat de les **eines** i l'**estoc** de recanvis (`Inventari_material_fungible.md`).
 

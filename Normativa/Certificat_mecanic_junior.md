@@ -1,6 +1,6 @@
 # Certificat de Mecànic/a Júnior de Bicicletes i Mobilitat Sostenible
 
-> Reconeixement intern que es lliura a l'**exposició pública final** (SA9). Recull les hores de
+> Reconeixement intern que es lliura a l'**exposició pública final** (B9). Recull les hores de
 > formació, les competències assolides i la contribució comunitària de cada alumne/a. Reforça
 > l'autoestima i dona valor a la feina feta (especialment important en un grup
 > professionalitzador).
@@ -58,5 +58,5 @@ global assolit (`Avaluació/Full_progres_competencial.md`):
 > El certificat és **intern del centre** (no és una titulació oficial), però documenta de manera
 > clara i digna les competències adquirides, útil per a l'orientació i la transició de l'alumnat.
 
-> Relacionat amb: `Classes/SA9/SA9.md`, `Avaluació/Full_progres_competencial.md`,
+> Relacionat amb: `Classes/Bicicletes/B9_Repara_i_Roda/B9.md`, `Avaluació/Full_progres_competencial.md`,
 > `Avaluació/Criteris_i_qualificacio.md`.

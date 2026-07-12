@@ -1,6 +1,6 @@
 # Protocol d'ús de la realitat virtual i la càmera 360
 
-> S'aplica a la **SA8** i la **SA9** i a qualsevol ús de les ulleres VR i la càmera 360. Amb
+> S'aplica al bloc 360 (**M9**, i a les sortides de **B9** amb càmera) i a qualsevol ús de les ulleres VR i la càmera 360. Amb
 > menors cal precaució de salut, seguretat i privadesa, encara que a 4t d'ESO l'edat ja no sol
 > ser un impediment (vegeu §1).
 
@@ -45,7 +45,7 @@
 
 - No captar **persones** identificables sense la seva autorització (vegeu
   `Autoritzacio_families_VR_360.md`).
-- A les **sortides urbanes** (SA9), l'objectiu de la captura 360 és la **ruta i la
+- A les **sortides urbanes** (B9), l'objectiu de la captura 360 és la **ruta i la
   infraestructura**, no les persones: cal evitar enquadrar vianants o matrícules identificables
   sempre que sigui possible i, si apareixen, no difondre'n imatges reconeixibles.
 - Evitar espais privats.

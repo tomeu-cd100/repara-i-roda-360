@@ -10,7 +10,8 @@ Marc curricular: Decret 175/2022 (Catalunya), competències específiques de Tec
 
 ```
 ├── Programació didàctica\   Programació, temporització, mapatge competencial, diari setmanal
-├── Classes\SA0…SA9\         Situacions d'aprenentatge (fase 2)
+├── Classes\Bicicletes\B0…B9\  Unitats del taller de bicicletes
+├── Classes\Maker\M0…M9\     Unitats de l'aula maker (blocs 3D → làser → 360)
 ├── Avaluació\               Rúbriques i instruments (fase 2)
 ├── Normativa\               Normes de taller, autoritzacions, protocol VR (fase 2)
 ├── Memòria de treball\      Diari docent, inventari, incidències (fase 2)
