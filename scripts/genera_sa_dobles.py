@@ -474,7 +474,7 @@ BICI = [
 
 # ─────────────────────────── DADES: MAKER (M0–M9) ───────────────────────────
 MAKER = [
- {"video": ("Impressió 3D per a principiants: com funciona (en castellà)", "_MgJIf6H2cM"),
+ {"video": ("Vídeo càpsula: la impressió 3D (en català, Ajuntament de Girona)", "wQZB0LrQ9-s"),
   "code": "M0", "folder": "M0_Benvinguda_maker", "name": "Benvinguda maker i seguretat",
   "setm": "1–2", "producte": "**Carnet de màquina** (làser i 3D)",
   "compl": "l'hora de bicicletes **B0** (punt de partida i carnet d'eines)",

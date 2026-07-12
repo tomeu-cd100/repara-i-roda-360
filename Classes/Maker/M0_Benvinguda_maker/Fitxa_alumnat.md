@@ -13,9 +13,9 @@ Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb s
 3. **Fes-ho tu** i marca els passos de sota.
 
 ## 📹 Mira com es fa
-<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/_MgJIf6H2cM" title="Impressió 3D per a principiants: com funciona (en castellà)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/wQZB0LrQ9-s" title="Vídeo càpsula: la impressió 3D (en català, Ajuntament de Girona)" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
 
-*Vídeo: Impressió 3D per a principiants: com funciona (en castellà) (YouTube).*
+*Vídeo: Vídeo càpsula: la impressió 3D (en català, Ajuntament de Girona) (YouTube).*
 
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
