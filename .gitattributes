@@ -1,0 +1,10 @@
+# Assets binaris: mai conversió d'EOL ni diff de text (evita corrupció en clons Windows/Unix).
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.xlsx binary
+*.docx binary
+*.odt binary
