@@ -17,17 +17,21 @@ llestos per obrir amb **Inkscape** o **xTool Creative Space**.
 
 | Fitxer | Unitat | Què és | Personalitza |
 |---|---|---|---|
-| [placa_identificativa.svg](placa_identificativa.svg) | M1 | Placa 60×25 mm amb número de bici i forat Ø4 | El text `BICI NN` |
-| [etiqueta_organitzador.svg](etiqueta_organitzador.svg) | M2 / M6 | Etiqueta penjant per a eines o calaixos | El text `NOM EINA` |
-| [regle_desgast_cadena.svg](regle_desgast_cadena.svg) | M5 | Regle de desgast de cadena (marca `nova` i `0,5%`) | Res; comprova la mida en imprimir/tallar |
+| [placa_identificativa.svg](placa_identificativa.svg) | M7 | Placa 60×25 mm amb número de bici i forat Ø4 | El text `BICI NN` |
+| [etiqueta_organitzador.svg](etiqueta_organitzador.svg) | M7 | Etiqueta penjant per a eines o calaixos | El text `NOM EINA` |
+| [regle_desgast_cadena.svg](regle_desgast_cadena.svg) | M7 | Regle de desgast de cadena (marca `nova` i `0,5%`) | Res; comprova la mida en imprimir/tallar |
+
+Totes tres són del bloc làser: es preparen a **M6** (Inkscape i codis de color) i es tallen a
+**M7** (peces útils). Els rètols i la decoració de **M8** parteixen de zero o d'aquestes mateixes
+convencions.
 
 ## Peces amb encaix (caixes)
 
-Les **caixes** (kit M3, classificadora M6) es fan millor amb un generador d'encaixos:
-**MakerCase** (`makercase.com`) — hi ha vídeo-tutorial enllaçat a les unitats M3 i M6.
+La **caixa-kit** (M7) es fa millor amb un generador d'encaixos: **MakerCase**
+(`makercase.com`) — hi ha vídeo-tutorial enllaçat a la unitat M7.
 Exporta l'SVG, obre'l a Inkscape i aplica-hi la convenció de colors d'aquí dalt.
 
 ## Peces 3D
 
-Les peces impreses (palanques M3, peces de fre M4, confort M7, suports M8) es
+Les peces impreses (maneta M3, peces útils M4, decoratives M5, suport de càmera M9) es
 dissenyen amb **Tinkercad** (vídeos enllaçats a les unitats), no amb SVG.

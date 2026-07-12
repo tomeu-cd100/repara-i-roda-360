@@ -12,6 +12,7 @@ imprimibles `.xlsx` i els índexs enllaçats funcionen també des de la web.
 
 | Unitat | Recurs | Fitxer |
 |---|---|---|
+| **Transversal (B2–B7)** | **Manual ràpid de taller (alumnat)** — 12 pàgines A4, una tasca per full, per plastificar | [Manual_taller_bicicletes.pdf](Manual_taller_bicicletes.pdf) |
 | B0 Punt de partida | Normes del taller | `NORMES AL TALLER DE BICICLETES.docx` |
 | B0 Punt de partida | Fotos d'eines (gimcana) | [imatges/eines/](imatges/eines/LLEGEIX-ME.md) |
 | B0 Punt de partida | Història de la bicicleta (imatge) | `SANMIGUELHistoriabicicleta0031.jpg` |
@@ -28,7 +29,7 @@ imprimibles `.xlsx` i els índexs enllaçats funcionen també des de la web.
 
 ## Plantilles SVG per a l'aula maker
 
-Fitxers de partida (làser/Inkscape) per a M1, M2/M6 i M5 → [plantilles_svg/](plantilles_svg/LLEGEIX-ME.md).
+Fitxers de partida (làser/Inkscape) per al bloc làser M6–M8 → [plantilles_svg/](plantilles_svg/LLEGEIX-ME.md).
 
 ## Llibre de manteniment (referència interna, NO es distribueix)
 
