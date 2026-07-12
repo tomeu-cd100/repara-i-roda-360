@@ -1,9 +1,9 @@
-# Fitxa de l'alumnat — M5: Mesurador de desgast
+# Fitxa de l'alumnat — M1: Tinkercad des de zero
 
 **Nom:** ______________________  **Setmana:** ______  **Data:** ____/____/______
 
 ## El repte 🛠️
-Fabrica un mesurador de desgast i prova'l a totes les cadenes del taller.
+Dissenya el teu primer objecte 3D i imprimeix-lo.
 
 ## 🧑‍🏫 Com ho aprendràs avui
 **No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.
@@ -20,17 +20,17 @@ Fabrica un mesurador de desgast i prova'l a totes les cadenes del taller.
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 
-- [ ] He dissenyat el mesurador amb la mida crítica.
-- [ ] L'he fabricat.
-- [ ] Funciona a les cadenes del taller.
+- [ ] Sé entrar a Tinkercad i moure'm per la interfície.
+- [ ] He fet un disseny senzill combinant formes.
+- [ ] He exportat l'STL i s'ha imprès.
 
-**La mida crítica del mesurador:** ______ mm
+**El meu usuari de Tinkercad:** ________________
 
-**Funciona a les cadenes?** sí / cal ajustar-lo
+**Què he dissenyat:** ________________
 
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|
-| Mesurador fabricat | Criteris d'èxit |
-| Prova a cadenes reals | El mesurador funciona |
+| Ús bàsic de Tinkercad | Observació + criteris d'èxit |
+| Primer objecte imprès | El disseny imprès |
 | Diari (cara B) | Pauta del diari |

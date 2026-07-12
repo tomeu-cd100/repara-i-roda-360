@@ -3,7 +3,7 @@
 **Nom:** ______________________  **Setmana:** ______  **Data:** ____/____/______
 
 ## El repte 🛠️
-Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb seguretat.
+Guanya't el carnet de màquina: demostra que saps operar la 3D i la làser amb seguretat.
 
 ## 🧑‍🏫 Com ho aprendràs avui
 **No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.
@@ -20,12 +20,12 @@ Guanya't el carnet de màquina: demostra que saps operar la làser i la 3D amb s
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 
-- [ ] Sé què fabricarem per al taller aquest curs.
+- [ ] Sé què fabricarem: peces 3D, després peces a làser i, si hi ha temps, el 360.
 - [ ] Tinc el carnet de màquina (nivell làser i nivell 3D).
 
-**La norma de seguretat més important de la làser:** ________________
+**La norma de seguretat més important de les màquines:** ________________
 
-**Una cosa que vull fabricar aquest curs:** ________________
+**Una peça que vull fabricar aquest curs:** ________________
 
 ## 🖨️ Per imprimir
 - [Contracte d'aula i carnet de màquina (PDF)](Contracte_carnet_maker.pdf)

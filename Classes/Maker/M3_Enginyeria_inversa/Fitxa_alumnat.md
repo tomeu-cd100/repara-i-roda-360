@@ -1,9 +1,9 @@
-# Fitxa de l'alumnat — M4: Peces de fre
+# Fitxa de l'alumnat — M3: Enginyeria inversa: la maneta de fre
 
 **Nom:** ______________________  **Setmana:** ______  **Data:** ____/____/______
 
 ## El repte 🛠️
-Fabrica una peça de fre (separador o guia) i millora-la segons la prova real.
+Copia una maneta de fre real: plànol 2D, model 3D i impressió que encaixi.
 
 ## 🧑‍🏫 Com ho aprendràs avui
 **No cal saber-ho abans: ho aprens fent-ho**, pas a pas amb el professor.
@@ -20,17 +20,17 @@ Fabrica una peça de fre (separador o guia) i millora-la segons la prova real.
 ## Els passos d'avui
 *(marca'ls a mesura que els aprens i els fas)*
 
-- [ ] He dissenyat i imprès una peça de fre.
-- [ ] L'he provada al taller.
-- [ ] L'he millorada segons la prova.
+- [ ] He mesurat i dibuixat la maneta.
+- [ ] L'he modelada a Tinkercad.
+- [ ] L'he impresa i he provat l'encaix.
 
-**Quina peça he fet:** separador / guia / altra
+**La cota crítica de la maneta:** ______ mm
 
-**Funciona al fre?** sí / cal millorar-la
+**Encaixa a la bici?** sí / cal ajustar
 
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|
-| Peça de fre fabricada | Criteris d'èxit |
-| Prova i millora | Peça iterada |
+| Plànol i model | Criteris d'èxit + rúbrica |
+| Impressió i encaix | La peça provada |
 | Diari (cara B) | Pauta del diari |
