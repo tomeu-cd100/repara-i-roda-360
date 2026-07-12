@@ -20,7 +20,7 @@
 
 ## Cara A — Taller de bicicletes 🚲
 
-**Nom:** ______________________ **Setmana:** ____ **SA:** ____ **Data:** ____/____/______
+**Nom:** ______________________ **Setmana:** ____ **Unitat:** ____ **Data:** ____/____/______
 
 **Aquesta setmana treballo:** ⬜ sol/a ⬜ amb parella — company/a: ________________
 
@@ -93,20 +93,20 @@ _______________________________________________________________
   oral breu al marge.
 - El **semàfor** 🔴🟡🟢 és la mateixa escala a tot el curs (autoregulació).
 
-## Tancament de SA (mitja pàgina extra al final de cada SA)
+## Tancament d'unitat (mitja pàgina extra al final de cada unitat)
 
 - **El que hem deixat fet:** (ex. «la bici 04 ja frena bé», «els penjadors ja són a la paret»)
 - **El que més m'ha agradat / el que em costa encara:**
-- **El meu objectiu per a la propera SA:**
+- **El meu objectiu per a la propera unitat:**
 
 ## Producció i ús
 
 - **Impressió per trimestres:** quadern grapat per alumne/a amb els fulls setmanals ja
-  etiquetats (setmana i SA), seguint el model del Maker de 1r
+  etiquetats (setmana i unitat), seguint el model del Maker de 1r
   (`web_assets/impressos/diari_taller_T1/T2/T3.html`) — es generarà a la fase web del projecte.
 - **Plastificat no**: el diari s'escriu; les que es plastifiquen són les **fitxes de passos**
-  de cada reparació (material de les SA, fase 2).
-- Els diaris **no es llencen**: són l'evidència principal de C3 i CE4. Al final de curs
+  de cada reparació (material de les unitats, fase 2).
+- Els diaris **no es llencen**: són l'evidència principal de C3 i del criteri del diari (CA4.1). Al final de curs
   s'adjunten al dossier que acompanya el Certificat de Mecànic/a Júnior.
 - **Revisió docent setmanal ràpida**: segell o inicial a cada full revisat; el semàfor
   alimenta el full de seguiment del grup (fase 2, `Avaluació/`).

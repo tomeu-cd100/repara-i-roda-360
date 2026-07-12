@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70mm" height="30mm" viewBox="0 0 70 30">
+  <!-- Plantilla M2/M6: etiqueta penjant per a organitzador/penjador d'eines o calaix.
+       Unitats = mm. Escriu el nom de l'eina o del recanvi a la zona de gravat.
+       CONVENCIÓ: vermell #FF0000 = TALL · negre = GRAVAT · blau #0000FF = marca. -->
+  <!-- TALL: contorn amb pestanya superior -->
+  <path d="M2,10 L2,28 Q2,29.9 3.9,29.9 L66.1,29.9 Q68,29.9 68,28 L68,10
+           Q68,8.1 66.1,8.1 L44,8.1 L38,1 L32,8.1 L3.9,8.1 Q2,8.1 2,10 Z"
+        fill="none" stroke="#FF0000" stroke-width="0.1"/>
+  <!-- TALL: forat de penjar -->
+  <circle cx="35" cy="4.4" r="1.4" fill="none" stroke="#FF0000" stroke-width="0.1"/>
+  <!-- GRAVAT: zona de nom (edita) -->
+  <text x="35" y="18" font-family="Arial" font-size="6" font-weight="bold" fill="#000000" text-anchor="middle">NOM EINA</text>
+  <!-- MARCA: línia per escriure a mà si es vol -->
+  <line x1="8" y1="24" x2="62" y2="24" stroke="#0000FF" stroke-width="0.1"/>
+</svg>

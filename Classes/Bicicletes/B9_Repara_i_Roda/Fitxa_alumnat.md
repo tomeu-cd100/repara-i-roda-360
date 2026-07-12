@@ -28,6 +28,10 @@ Acaba les bicis, surt a rodar amb seguretat i dona-les a la comunitat.
 
 **La bici que he reparat es donarà a:** ________________
 
+## 🖨️ Per imprimir
+- [Fitxa de sortida en bicicleta (PDF)](Fitxa_sortida_bici.pdf)
+- [Diari setmanal (PDF)](Diari_setmanal_paper.pdf)
+
 ## Com m'avaluaran
 | Què miraran | Com |
 |-------------|-----|

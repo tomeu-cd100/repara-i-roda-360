@@ -98,8 +98,8 @@ def capcalera_dades(c, y):
     ratlles(c, M + 12 * mm, y - 1, 55 * mm)
     gris(c, M + 72 * mm, y, "Setmana:")
     ratlles(c, M + 92 * mm, y - 1, 18 * mm)
-    gris(c, M + 114 * mm, y, "SA:")
-    ratlles(c, M + 122 * mm, y - 1, 14 * mm)
+    gris(c, M + 114 * mm, y, "Unitat:")
+    ratlles(c, M + 126 * mm, y - 1, 10 * mm)
     gris(c, M + 140 * mm, y, "Data:")
     ratlles(c, M + 152 * mm, y - 1, 26 * mm)
 

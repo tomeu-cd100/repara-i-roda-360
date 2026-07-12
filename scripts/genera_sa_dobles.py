@@ -461,8 +461,10 @@ BICI = [
           "Cadascú aporta a l'exposició des del que se li dona millor.",
           "Públic real i bicis que canvien de mans."],
   "materials": ["Bicis reparades, cascos, armilles, kit portàtil.",
-                "`Normativa/Autoritzacio_families_sortides.md`, "
-                "`Recursos/Projecte Bicicletes/Annex1_Fitxa_Sortida_Repara_i_Roda_360.md.docx`."],
+                "`Normativa/Autoritzacio_families_sortides.md`.",
+                "Imprimible: `Normativa/Fitxa_sortida_bici.pdf` (una per alumne i sortida)."],
+  "imprimibles": [("Fitxa de sortida en bicicleta (PDF)", "Fitxa_sortida_bici.pdf"),
+                  ("Diari setmanal (PDF)", "Diari_setmanal_paper.pdf")],
   "fitxa": [("Una cosa que he vist del carrer i milloraria:", "________________"),
             ("La bici que he reparat es donarà a:", "________________")],
   "aval": [("Comportament a les sortides", "Fitxa de sortida + observació", "CA5.2, CA5.3"),
