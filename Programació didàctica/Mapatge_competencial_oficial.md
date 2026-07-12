@@ -118,15 +118,15 @@ sobretot **CE1, CE2, CE5 i CE6**; l'**aula maker**, **CE3 i CE4**. El **diari se
 | Unitat | CE pròpies principals | CE oficial(s) | Instrument principal d'avaluació |
 |--------|----------------------|---------------|----------------------------------|
 | **M0** Benvinguda maker | CE6 | CE5, CE7 | Carnet de màquina (làser/3D) + seguretat |
-| **M1** Placa identificativa | CE3 | CE5, CE2 | Placa dissenyada i gravada |
-| **M2** Organitzadors d'eines | CE3 | CE2, CE5 | Organitzador fabricat + retolació |
-| **M3** Kit de reparació | CE3 | CE2, CE5 | Palanques 3D + caixa fabricada |
-| **M4** Peces de fre | CE3 | CE2 | Peça 3D provada i iterada |
-| **M5** Mesurador de desgast | CE3 | CE2, CE5 | Mesurador fabricat i aplicat |
-| **M6** Caixa classificadora | CE3 | CE2, CE5 | Classificadora + magatzem ordenat |
-| **M7** Peces de confort | CE3 | CE2 | Adaptador 3D provat |
-| **M8** Suports i captura 360 | CE3, CE4 | CE5, CE6 | Suport càmera 360 + primera captura |
-| **M9** Rutes 360/VR | CE4 | CE3, CE5 | Rutes virtualitzades + estació VR |
+| **M1** Tinkercad des de zero 🧊 | CE3 | CE5, CE2 | Primer disseny 3D exportat (STL) |
+| **M2** Mesurar amb el peu de rei 🧊 | CE3 | CE2, CE5 | Mides reals preses i portades al disseny 3D |
+| **M3** Enginyeria inversa: maneta de fre 🧊 | CE3 | CE2 | Maneta 3D (plànol 2D → model) provada i iterada |
+| **M4** Peces útils per a la bici 🧊 | CE3 | CE2 | Peça útil 3D provada al taller |
+| **M5** Peces decoratives 🧊 | CE3 | CE2, CE5 | Peça decorativa (temàtica bici) impresa |
+| **M6** Inkscape al Chromebook ✂️ | CE3 | CE2, CE5 | Primer disseny 2D amb codis de color per a la làser |
+| **M7** Tallar peces útils ✂️ | CE3 | CE2, CE5 | Peça útil tallada a làser i en ús al taller |
+| **M8** Rètols i decoració a làser ✂️ | CE3, CE4 | CE5, CE6 | Rètols/siluetes + material d'exposició |
+| **M9** Recorregut virtual 360/VR 🎥 | CE4 | CE3, CE5 | Suport càmera 360 + recorregut + estació VR |
 
 El **diari setmanal en paper** (CE4/C3, vinculat a CE3 oficial) s'avalua a totes les unitats
 (cara A al taller, cara B a l'aula maker).

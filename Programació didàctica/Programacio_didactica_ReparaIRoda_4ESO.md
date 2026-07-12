@@ -157,8 +157,10 @@ La justificació pedagògica és triple:
 - **Dues assignatures que es complementen:** el projecte s'organitza en **dues seqüències
   separades** que es treballen com dues matèries diferents, tot i que es complementen:
   el **🚲 Taller de bicicletes** (2 h/setmana, unitats **B0–B9**) i l'**🛠️ Aula maker**
-  (1 h/setmana, unitats **M0–M9**). Cada unitat de maker fabrica peces al servei de la unitat
-  de bicicletes del mateix número (M3 fa el kit que B3 fa servir a rodes i punxades, etc.).
+  (1 h/setmana, unitats **M0–M9**). L'aula maker avança en **tres blocs tecnològics** (🧊 3D
+  amb Tinkercad → ✂️ làser amb Inkscape → 🎥 360/VR) pensats per a un grup que parteix de zero,
+  i les peces que fabrica **serveixen o decoren** les bicis del taller (lligam temàtic, no
+  estricte setmana a setmana; p. ex. la maneta de fre de M3 es connecta amb els frens de B4).
 - **Sessió tipus fixa i predictible**, adequada al perfil del grup:
   1. Acollida i recordatori d'objectius (10')
   2. Demostració guiada pas a pas (20')
@@ -207,15 +209,15 @@ Curs de ~35 setmanes lectives. **Dues assignatures** en paral·lel: 2 h de talle
 | Unitat | Títol | Setm. | Contingut | Serveix |
 |--------|-------|-------|-----------|:------:|
 | **M0** | Benvinguda maker | 1–2 | L'aula, seguretat làser/3D, carnet de màquina | B0 |
-| **M1** | Placa identificativa | 3–4 | Inkscape + gravat làser | B1 |
-| **M2** | Organitzadors d'eines | 5–7 | Suports d'eines (làser/3D) + retolació | B2 |
-| **M3** | Kit de reparació | 8–10 | Palanques 3D + caixa làser | B3 |
-| **M4** | Peces de fre | 11–14 | Separadors i guies (3D) | B4 |
-| **M5** | Mesurador de desgast | 15–17 | Mesurador de cadena + clauer | B5 |
-| **M6** | Caixa classificadora | 18–21 | Classificadora de recanvis | B6 |
-| **M7** | Peces de confort | 22–24 | Adaptadors i peces de confort (3D) | B7 |
-| **M8** | Suports i captura 360 | 25–27 | Suport càmera 360 + iniciació captura 360 | B8 |
-| **M9** | Rutes 360/VR | 28–35 | Rutes virtualitzades + estació VR de l'exposició | B9 |
+| **M1** 🧊 | Tinkercad des de zero | 3–5 | Registre, interfície, moure/escalar/agrupar, exportar STL | Taller |
+| **M2** 🧊 | Mesurar amb el peu de rei | 6–8 | Peu de rei, mides en mm, toleràncies i disseny 3D | Taller |
+| **M3** 🧊 | Enginyeria inversa: maneta de fre | 9–11 | Peça física → plànol 2D acotat → model 3D → imprimir i provar | B4 |
+| **M4** 🧊 | Peces útils per a la bici | 12–14 | Disseny, impressió i prova d'una peça útil (3D) | Taller |
+| **M5** 🧊 | Peces decoratives | 15–17 | Objecte decoratiu temàtica bici (baula, tapes…) imprès | ApS |
+| **M6** ✂️ | Inkscape al Chromebook | 18–21 | Instal·lació (Crostini/web), mm, codis de color, exportar | Taller |
+| **M7** ✂️ | Tallar peces útils | 22–24 | Placa, etiquetes, regle de cadena, caixa-kit (làser) | Taller |
+| **M8** ✂️ | Rètols i decoració a làser | 25–27 | Rètols i siluetes (tall + gravat) + material d'exposició | Exposició |
+| **M9** 🎥 | Recorregut virtual 360/VR | 28–35 | Suport càmera 360, recorregut virtual i estació VR | B9 |
 
 **Trimestres** (per a les dues assignatures): 1r = unitats 0–4 (setm. 1–12) · 2n = unitats 4–7
 (13–24) · 3r = unitats 8–9 (25–35).
