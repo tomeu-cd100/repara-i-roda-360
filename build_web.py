@@ -709,11 +709,16 @@ def build_track_indexes():
         out_rel = f"classes/{t['slug']}/index.html"
         altre = "maker" if tkey == "bicicletes" else "bicicletes"
         alt = TRACKS[altre]
+        manual = ('<p class="lead"><a class="doclink" '
+                  'href="../../impressos/Manual_taller_bicicletes.pdf" download>'
+                  '📘 Descarrega el manual ràpid de taller (PDF)</a></p>'
+                  if tkey == "bicicletes" else "")
         body = f"""
 <h1>{t["icon"]} {html.escape(t["label"])} <span class="badge">{t["hores"]}/setmana</span></h1>
 <p class="lead">Aquesta és una de les dues assignatures. Es complementa amb
 <a href="../{alt['slug']}/index.html">{alt["icon"]} {html.escape(alt["label"])}</a>, però es
 treballa <strong>a part</strong>: aquí, només {html.escape(t["label"]).lower()}.</p>
+{manual}
 {track_map_svg(tkey)}
 <p class="lead">Clica una unitat per obrir-la: hi trobaràs la fitxa de l'alumnat i el material
 del docent, amb la navegació pas a pas.</p>
@@ -933,6 +938,12 @@ def copy_assets():
     for x in (ROOT / "Recursos").glob("*.xlsx"):
         (OUT / "impressos").mkdir(parents=True, exist_ok=True)
         shutil.copyfile(x, OUT / "impressos" / x.name)
+    # Manual de taller de l'alumnat (PDF PROPI, generat per scripts/genera_manual_taller.py).
+    # Es copia NOMÉS aquest fitxer pel nom, mai un glob de Recursos/*.pdf (vegeu l'avís de dalt).
+    manual = ROOT / "Recursos" / "Manual_taller_bicicletes.pdf"
+    if manual.exists():
+        (OUT / "impressos").mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(manual, OUT / "impressos" / manual.name)
     if (ROOT / "LICENSE").exists():
         shutil.copyfile(ROOT / "LICENSE", OUT / "LICENSE")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
