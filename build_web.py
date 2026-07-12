@@ -68,16 +68,16 @@ BIKE_CARDS = [
     ("B9", "Repara i Roda", "3r trim.", "🚦", "Bicicletes/B9_Repara_i_Roda"),
 ]
 MAKER_CARDS = [
-    ("M0", "Benvinguda maker", "setm. 1-2", "🔒", "Maker/M0_Benvinguda_maker"),
-    ("M1", "Placa identificativa", "1r trim.", "🔑", "Maker/M1_Placa"),
-    ("M2", "Organitzadors d'eines", "1r trim.", "🧰", "Maker/M2_Organitzadors"),
-    ("M3", "Kit de reparació", "1r trim.", "🧳", "Maker/M3_Kit_reparacio"),
-    ("M4", "Peces de fre", "1r-2n trim.", "🖨️", "Maker/M4_Peces_de_fre"),
-    ("M5", "Mesurador de desgast", "2n trim.", "📏", "Maker/M5_Mesurador"),
-    ("M6", "Caixa classificadora", "2n trim.", "🗄️", "Maker/M6_Classificadora"),
-    ("M7", "Peces de confort", "2n trim.", "🛋️", "Maker/M7_Confort"),
-    ("M8", "Suports i captura 360", "3r trim.", "🎥", "Maker/M8_Suports_i_360"),
-    ("M9", "Rutes 360/VR", "3r trim.", "🥽", "Maker/M9_Rutes_VR"),
+    ("M0", "Benvinguda maker", "🧊 3D · setm. 1-2", "🔒", "Maker/M0_Benvinguda_maker"),
+    ("M1", "Tinkercad des de zero", "🧊 3D · setm. 3-5", "🧊", "Maker/M1_Tinkercad"),
+    ("M2", "Mesurar amb el peu de rei", "🧊 3D · setm. 6-8", "📐", "Maker/M2_Peu_de_rei"),
+    ("M3", "Enginyeria inversa: maneta", "🧊 3D · setm. 9-11", "🔧", "Maker/M3_Enginyeria_inversa"),
+    ("M4", "Peces útils per a la bici", "🧊 3D · setm. 12-14", "🖨️", "Maker/M4_Peces_utils"),
+    ("M5", "Peces decoratives", "🧊 3D · setm. 15-17", "✨", "Maker/M5_Decoratives"),
+    ("M6", "Inkscape al Chromebook", "✂️ Làser · setm. 18-21", "🖥️", "Maker/M6_Inkscape"),
+    ("M7", "Tallar peces útils", "✂️ Làser · setm. 22-24", "🧰", "Maker/M7_Tallar_utils"),
+    ("M8", "Rètols i decoració", "✂️ Làser · setm. 25-27", "🪧", "Maker/M8_Retols_laser"),
+    ("M9", "Recorregut virtual 360", "🎥 360 · setm. 28-35", "🥽", "Maker/M9_Recorregut_360"),
 ]
 TRACKS = {
     "bicicletes": {"slug": "bicicletes", "icon": "🚲", "label": "Taller de bicicletes",

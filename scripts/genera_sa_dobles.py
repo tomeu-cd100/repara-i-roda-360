@@ -28,6 +28,8 @@ def sa_md(track, s):
     out.append("| **Nivell** | 4t ESO · grup professionalitzador |")
     out.append(f"| **Setmanes** | {s['setm']} |")
     out.append(f"| **Producte** | {s['producte']} |")
+    if s.get("bloc"):
+        out.append(f"| **Bloc** | {s['bloc']} |")
     out.append("")
     out.append(f"> 🔗 **Es complementa amb** {s['compl']}, però són **dues assignatures "
                f"separades**: aquí, només {t['full'].lower()}.")
