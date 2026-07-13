@@ -88,13 +88,20 @@ indicada amb la bomba i el manòmetre. *Objectiu: llegir la dada real i no infla
 
 ## Estació 4 — Parts de la bici contrarellotge
 
-Sobre una bici real, l'alumnat assenyala i anomena el màxim de parts en 1 minut. **Projecta la
-làmina** de parts per corregir-ho en comú (**clica-hi per veure-la a pantalla completa**):
+Sobre una bici real, l'alumnat assenyala i anomena el màxim de parts en 1 minut, **sense veure
+els noms enlloc** (és un exercici de memòria: es tracta de saber què en recorden i què no).
+
+<details>
+<summary><strong>Solució — làmina amb els noms (obre-la només per corregir en comú)</strong></summary>
+
+**Projecta la làmina** per corregir-ho en comú (**clica-hi per veure-la a pantalla completa**):
 
 <img class="zoomable" src="Recursos/parts-de-la-bicicleta-en-català-1024x602.png"
      alt="Làmina de les parts de la bicicleta en català"
      onclick="if(this.requestFullscreen){this.requestFullscreen()}else if(this.webkitRequestFullscreen){this.webkitRequestFullscreen()}">
 <p class="zoomhint">🔍 Clica la imatge per projectar-la a pantalla completa (Esc per sortir).</p>
+
+</details>
 
 ## Checkpoint del carnet d'eines (final de la gimcana)
 
