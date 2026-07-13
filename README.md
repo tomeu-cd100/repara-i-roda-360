@@ -21,8 +21,8 @@ Marc curricular: Decret 175/2022 (Catalunya), competències específiques de Tec
 
 ## Documents clau
 
-- [Disseny del projecte](docs/superpowers/specs/2026-07-11-repara-i-roda-360-design.md)
-- [Pla d'implementació fase 1](docs/superpowers/plans/2026-07-11-repara-i-roda-360-fase1.md)
+- [Disseny del projecte](https://github.com/tomeu-cd100/repara-i-roda-360/blob/master/docs/superpowers/specs/2026-07-11-repara-i-roda-360-design.md)
+- [Pla d'implementació fase 1](https://github.com/tomeu-cd100/repara-i-roda-360/blob/master/docs/superpowers/plans/2026-07-11-repara-i-roda-360-fase1.md)
 - Programació didàctica: `Programació didàctica\Programacio_didactica_ReparaIRoda_4ESO.md`
 
 Projectes germans: «Aula Maker» (1r ESO) i «Robòtica» (1r Batx) del mateix docent.

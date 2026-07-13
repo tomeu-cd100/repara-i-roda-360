@@ -178,6 +178,19 @@ FOLDER_MAP.update({f"{s.replace(' ', '%20')}/": slugify(s) + "/index.html"
                    for s in SECTIONS})
 FOLDER_MAP["web/"] = "index.html"
 
+# Noms de fitxer que realment acaben a web/impressos/ (mateixes fonts que la
+# còpia de baix). Serveix per NO convertir en enllaç trencat cap referència
+# `.pdf`/`.xlsx` que apunti a un fitxer no publicat (p. ex. el llibre amb
+# drets d'autor a Recursos/, o una URL externa que acaba en .pdf).
+PRINTABLES = set()
+for _section in ("Avaluació", "Programació didàctica", "Normativa"):
+    _d = ROOT / _section
+    if _d.is_dir():
+        PRINTABLES.update(f.name for f in _d.glob("*.pdf"))
+PRINTABLES.update(f.name for f in (ROOT / "Recursos").glob("*.xlsx"))
+if (ROOT / "Recursos" / "Manual_taller_bicicletes.pdf").exists():
+    PRINTABLES.add("Manual_taller_bicicletes.pdf")
+
 
 def resolve_ref(ref: str, current_rel_dir: str):
     ref = ref.strip().lstrip("./")
@@ -213,7 +226,7 @@ def rewrite_links(html_text: str, out_rel: str, current_rel_dir: str) -> str:
             target = FOLDER_MAP.get(href, FOLDER_MAP.get(href.rstrip("/") + "/"))
         elif href.endswith(".md"):
             target = resolve_ref(href.replace("%20", " "), current_rel_dir)
-        elif href.endswith((".pdf", ".xlsx")):
+        elif href.endswith((".pdf", ".xlsx")) and href.rsplit("/", 1)[-1] in PRINTABLES:
             target = "impressos/" + href.rsplit("/", 1)[-1]
         if target:
             return f'href="{prefix}{target}"'
@@ -228,7 +241,7 @@ def rewrite_links(html_text: str, out_rel: str, current_rel_dir: str) -> str:
         target = None
         if base.endswith(".md"):
             target = resolve_ref(base, current_rel_dir)
-        elif base.endswith((".pdf", ".xlsx")):
+        elif base.endswith((".pdf", ".xlsx")) and "://" not in base and base.rsplit("/", 1)[-1] in PRINTABLES:
             target = "impressos/" + base.rsplit("/", 1)[-1]
         elif base in FOLDER_MAP:
             target = FOLDER_MAP[base]
