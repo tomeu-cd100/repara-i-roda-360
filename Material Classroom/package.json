@@ -1,0 +1,10 @@
+{
+  "name": "automatitzacio-classroom-bicis",
+  "version": "1.0.0",
+  "description": "Automatització per crear Google Forms i penjar al Google Classroom (Repara i Roda 360)",
+  "type": "module",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "googleapis": "^144.0.0"
+  }
+}

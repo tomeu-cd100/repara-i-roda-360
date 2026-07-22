@@ -19,3 +19,13 @@ Recursos/Llibre Manteniment Bici/
 dades/
 *_DADES.*
 *_dades.*
+
+# Material Classroom: ignora tota la carpeta (node_modules + credencials +
+# secrets: token.json es llegeix en temps d'execució, no s'incrusta) i
+# desmarca només els scripts font que sí van al repo.
+Material Classroom/*
+!Material Classroom/config.js
+!Material Classroom/_form_sa_lib.js
+!Material Classroom/estat_classroom.js
+!Material Classroom/package.json
+!Material Classroom/crear_temes_i_tasques.js
