@@ -29,3 +29,8 @@ Material Classroom/*
 !Material Classroom/estat_classroom.js
 !Material Classroom/package.json
 !Material Classroom/crear_temes_i_tasques.js
+
+# Material docent amb respostes (repo públic): només en local
+Avaluació/*solucionari*
+Avaluació/Examen_B3_B4_preguntes_obertes.md
+scripts/genera_examen_b3_b4.py
