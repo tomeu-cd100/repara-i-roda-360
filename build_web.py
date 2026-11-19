@@ -819,6 +819,9 @@ es llegeixi sola i <strong>🌗</strong> pel mode fosc.</p></blockquote>
         card("impressos/Diari_setmanal_paper.pdf", "📓", "Diari setmanal de l'alumnat",
              "A4, 2 cares: taller (cara A) i aula maker (cara B). Una còpia per alumne i setmana",
              "imprimible"),
+        card("impressos/Full_reparacio_alumne.pdf", "🔧", "Full de reparació (checklist)",
+             "A4: les accions de reparació de la bici, per sistemes. Un per alumne/a tot el curs",
+             "imprimible"),
     ])
     impr_docent = "\n".join([
         card("impressos/Full_valoracio_alumne.pdf", "✅", "Valoració diària per alumne (checklist)",
